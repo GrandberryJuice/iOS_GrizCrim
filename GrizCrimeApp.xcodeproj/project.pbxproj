@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98AA07BF0CC3C8EDF107536B /* Pods_GrizCrimeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2D673D85D66EF4B326965C /* Pods_GrizCrimeAppUITests.framework */; };
+		AF2927DAD00A013285BDE0A9 /* Pods_GrizCrimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D749805CFBEA2454E41E4E86 /* Pods_GrizCrimeApp.framework */; };
 		C71E009A1D04CB31007D6D99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E00991D04CB31007D6D99 /* AppDelegate.swift */; };
 		C71E009C1D04CB31007D6D99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E009B1D04CB31007D6D99 /* ViewController.swift */; };
 		C71E009F1D04CB31007D6D99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71E009D1D04CB31007D6D99 /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		C71E00A41D04CB31007D6D99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71E00A21D04CB31007D6D99 /* LaunchScreen.storyboard */; };
 		C71E00AF1D04CB32007D6D99 /* GrizCrimeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E00AE1D04CB32007D6D99 /* GrizCrimeAppTests.swift */; };
 		C71E00BA1D04CB32007D6D99 /* GrizCrimeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E00B91D04CB32007D6D99 /* GrizCrimeAppUITests.swift */; };
+		C71E00CC1D04F417007D6D99 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = C71E00CB1D04F417007D6D99 /* GoogleService-Info (1).plist */; };
+		DBF47B9A08860473953D28EA /* Pods_GrizCrimeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47BCA39F5B7156001749672 /* Pods_GrizCrimeAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DA98B84F9C1B710EC3127D6 /* Pods-GrizCrimeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrizCrimeAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrizCrimeAppTests/Pods-GrizCrimeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9882AFBB3C496D1F425C31E9 /* Pods-GrizCrimeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrizCrimeAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrizCrimeAppUITests/Pods-GrizCrimeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A427ADE9270B5FA2D95BA6F5 /* Pods-GrizCrimeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrizCrimeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp.release.xcconfig"; sourceTree = "<group>"; };
+		C47BCA39F5B7156001749672 /* Pods_GrizCrimeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrizCrimeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71E00961D04CB31007D6D99 /* GrizCrimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrizCrimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71E00991D04CB31007D6D99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C71E009B1D04CB31007D6D99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,13 @@
 		C71E00B51D04CB32007D6D99 /* GrizCrimeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrizCrimeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71E00B91D04CB32007D6D99 /* GrizCrimeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrizCrimeAppUITests.swift; sourceTree = "<group>"; };
 		C71E00BB1D04CB32007D6D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C71E00C71D04F1E9007D6D99 /* GrizCrimeApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GrizCrimeApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		C71E00CB1D04F417007D6D99 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		CC3B9C476078B7D1199BD6A7 /* Pods-GrizCrimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrizCrimeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D749805CFBEA2454E41E4E86 /* Pods_GrizCrimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrizCrimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2D673D85D66EF4B326965C /* Pods_GrizCrimeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrizCrimeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6D82734A5EE42080B0BDE1 /* Pods-GrizCrimeAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrizCrimeAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrizCrimeAppUITests/Pods-GrizCrimeAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5595DE9E90CE131C7BEAC17 /* Pods-GrizCrimeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrizCrimeAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrizCrimeAppTests/Pods-GrizCrimeAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2927DAD00A013285BDE0A9 /* Pods_GrizCrimeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF47B9A08860473953D28EA /* Pods_GrizCrimeAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +85,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98AA07BF0CC3C8EDF107536B /* Pods_GrizCrimeAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23E8967FAACC8F92F87C4660 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D749805CFBEA2454E41E4E86 /* Pods_GrizCrimeApp.framework */,
+				C47BCA39F5B7156001749672 /* Pods_GrizCrimeAppTests.framework */,
+				DB2D673D85D66EF4B326965C /* Pods_GrizCrimeAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C71E008D1D04CB31007D6D99 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				C71E00AD1D04CB32007D6D99 /* GrizCrimeAppTests */,
 				C71E00B81D04CB32007D6D99 /* GrizCrimeAppUITests */,
 				C71E00971D04CB31007D6D99 /* Products */,
+				D8256FD27FDC8C7045A86474 /* Pods */,
+				23E8967FAACC8F92F87C4660 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +133,8 @@
 				C71E00A01D04CB31007D6D99 /* Assets.xcassets */,
 				C71E00A21D04CB31007D6D99 /* LaunchScreen.storyboard */,
 				C71E00A51D04CB31007D6D99 /* Info.plist */,
+				C71E00C71D04F1E9007D6D99 /* GrizCrimeApp-Bridging-Header.h */,
+				C71E00CB1D04F417007D6D99 /* GoogleService-Info (1).plist */,
 			);
 			path = GrizCrimeApp;
 			sourceTree = "<group>";
@@ -125,6 +157,19 @@
 			path = GrizCrimeAppUITests;
 			sourceTree = "<group>";
 		};
+		D8256FD27FDC8C7045A86474 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC3B9C476078B7D1199BD6A7 /* Pods-GrizCrimeApp.debug.xcconfig */,
+				A427ADE9270B5FA2D95BA6F5 /* Pods-GrizCrimeApp.release.xcconfig */,
+				3DA98B84F9C1B710EC3127D6 /* Pods-GrizCrimeAppTests.debug.xcconfig */,
+				F5595DE9E90CE131C7BEAC17 /* Pods-GrizCrimeAppTests.release.xcconfig */,
+				DF6D82734A5EE42080B0BDE1 /* Pods-GrizCrimeAppUITests.debug.xcconfig */,
+				9882AFBB3C496D1F425C31E9 /* Pods-GrizCrimeAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C71E00BE1D04CB32007D6D99 /* Build configuration list for PBXNativeTarget "GrizCrimeApp" */;
 			buildPhases = (
+				2099B2178A3DF5ACEEA3EEA7 /* 📦 Check Pods Manifest.lock */,
 				C71E00921D04CB31007D6D99 /* Sources */,
 				C71E00931D04CB31007D6D99 /* Frameworks */,
 				C71E00941D04CB31007D6D99 /* Resources */,
+				9606386DF7DA4E3976DA2B56 /* 📦 Embed Pods Frameworks */,
+				C20FB9C59386A45BEA9020EF /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C71E00C11D04CB32007D6D99 /* Build configuration list for PBXNativeTarget "GrizCrimeAppTests" */;
 			buildPhases = (
+				08800B38E1D7394738620228 /* 📦 Check Pods Manifest.lock */,
 				C71E00A61D04CB32007D6D99 /* Sources */,
 				C71E00A71D04CB32007D6D99 /* Frameworks */,
 				C71E00A81D04CB32007D6D99 /* Resources */,
+				30F18AD73F1ED08B5481FAEF /* 📦 Embed Pods Frameworks */,
+				D5557EA5C1E8011B7DD973E2 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C71E00C41D04CB32007D6D99 /* Build configuration list for PBXNativeTarget "GrizCrimeAppUITests" */;
 			buildPhases = (
+				024D76CDDE52840A77C7FBCB /* 📦 Check Pods Manifest.lock */,
 				C71E00B11D04CB32007D6D99 /* Sources */,
 				C71E00B21D04CB32007D6D99 /* Frameworks */,
 				C71E00B31D04CB32007D6D99 /* Resources */,
+				FCC6DABA0F26DAA773D38FD0 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +285,7 @@
 				C71E00A41D04CB31007D6D99 /* LaunchScreen.storyboard in Resources */,
 				C71E00A11D04CB31007D6D99 /* Assets.xcassets in Resources */,
 				C71E009F1D04CB31007D6D99 /* Main.storyboard in Resources */,
+				C71E00CC1D04F417007D6D99 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +304,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		024D76CDDE52840A77C7FBCB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		08800B38E1D7394738620228 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2099B2178A3DF5ACEEA3EEA7 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30F18AD73F1ED08B5481FAEF /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrizCrimeAppTests/Pods-GrizCrimeAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9606386DF7DA4E3976DA2B56 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20FB9C59386A45BEA9020EF /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5557EA5C1E8011B7DD973E2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrizCrimeAppTests/Pods-GrizCrimeAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCC6DABA0F26DAA773D38FD0 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrizCrimeAppUITests/Pods-GrizCrimeAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C71E00921D04CB31007D6D99 /* Sources */ = {
@@ -399,28 +576,36 @@
 		};
 		C71E00BF1D04CB32007D6D99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC3B9C476078B7D1199BD6A7 /* Pods-GrizCrimeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GrizCrimeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.GrizCrimeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GrizCrimeApp/GrizCrimeApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C71E00C01D04CB32007D6D99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A427ADE9270B5FA2D95BA6F5 /* Pods-GrizCrimeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GrizCrimeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.GrizCrimeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GrizCrimeApp/GrizCrimeApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		C71E00C21D04CB32007D6D99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA98B84F9C1B710EC3127D6 /* Pods-GrizCrimeAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GrizCrimeAppTests/Info.plist;
@@ -433,6 +618,7 @@
 		};
 		C71E00C31D04CB32007D6D99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5595DE9E90CE131C7BEAC17 /* Pods-GrizCrimeAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GrizCrimeAppTests/Info.plist;
@@ -445,6 +631,7 @@
 		};
 		C71E00C51D04CB32007D6D99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6D82734A5EE42080B0BDE1 /* Pods-GrizCrimeAppUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GrizCrimeAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +643,7 @@
 		};
 		C71E00C61D04CB32007D6D99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9882AFBB3C496D1F425C31E9 /* Pods-GrizCrimeAppUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GrizCrimeAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +672,7 @@
 				C71E00C01D04CB32007D6D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C71E00C11D04CB32007D6D99 /* Build configuration list for PBXNativeTarget "GrizCrimeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +681,7 @@
 				C71E00C31D04CB32007D6D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C71E00C41D04CB32007D6D99 /* Build configuration list for PBXNativeTarget "GrizCrimeAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +690,7 @@
 				C71E00C61D04CB32007D6D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

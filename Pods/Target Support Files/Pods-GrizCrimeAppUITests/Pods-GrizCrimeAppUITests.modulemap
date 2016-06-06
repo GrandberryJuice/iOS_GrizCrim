@@ -1,0 +1,6 @@
+framework module Pods_GrizCrimeAppUITests {
+  umbrella header "Pods-GrizCrimeAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
