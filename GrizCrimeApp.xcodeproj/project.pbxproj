@@ -10,13 +10,18 @@
 		98AA07BF0CC3C8EDF107536B /* Pods_GrizCrimeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2D673D85D66EF4B326965C /* Pods_GrizCrimeAppUITests.framework */; };
 		AF2927DAD00A013285BDE0A9 /* Pods_GrizCrimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D749805CFBEA2454E41E4E86 /* Pods_GrizCrimeApp.framework */; };
 		C71E009A1D04CB31007D6D99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E00991D04CB31007D6D99 /* AppDelegate.swift */; };
-		C71E009C1D04CB31007D6D99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E009B1D04CB31007D6D99 /* ViewController.swift */; };
+		C71E009C1D04CB31007D6D99 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E009B1D04CB31007D6D99 /* LoginVC.swift */; };
 		C71E009F1D04CB31007D6D99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71E009D1D04CB31007D6D99 /* Main.storyboard */; };
 		C71E00A11D04CB31007D6D99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71E00A01D04CB31007D6D99 /* Assets.xcassets */; };
 		C71E00A41D04CB31007D6D99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71E00A21D04CB31007D6D99 /* LaunchScreen.storyboard */; };
 		C71E00AF1D04CB32007D6D99 /* GrizCrimeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E00AE1D04CB32007D6D99 /* GrizCrimeAppTests.swift */; };
 		C71E00BA1D04CB32007D6D99 /* GrizCrimeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E00B91D04CB32007D6D99 /* GrizCrimeAppUITests.swift */; };
-		C71E00CC1D04F417007D6D99 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = C71E00CB1D04F417007D6D99 /* GoogleService-Info (1).plist */; };
+		C71E00CC1D04F417007D6D99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C71E00CB1D04F417007D6D99 /* GoogleService-Info.plist */; };
+		C71E00D41D0549EF007D6D99 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E00D31D0549EF007D6D99 /* DataService.swift */; };
+		C71E00D71D054AB7007D6D99 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E00D61D054AB7007D6D99 /* Constants.swift */; };
+		C71E01271D0652D0007D6D99 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71E01241D0652D0007D6D99 /* Bolts.framework */; };
+		C71E01281D0652D0007D6D99 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71E01251D0652D0007D6D99 /* FBSDKCoreKit.framework */; };
+		C71E01291D0652D0007D6D99 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71E01261D0652D0007D6D99 /* FBSDKLoginKit.framework */; };
 		DBF47B9A08860473953D28EA /* Pods_GrizCrimeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47BCA39F5B7156001749672 /* Pods_GrizCrimeAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +49,7 @@
 		C47BCA39F5B7156001749672 /* Pods_GrizCrimeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrizCrimeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71E00961D04CB31007D6D99 /* GrizCrimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrizCrimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71E00991D04CB31007D6D99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C71E009B1D04CB31007D6D99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C71E009B1D04CB31007D6D99 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C71E009E1D04CB31007D6D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C71E00A01D04CB31007D6D99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C71E00A31D04CB31007D6D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,7 +61,12 @@
 		C71E00B91D04CB32007D6D99 /* GrizCrimeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrizCrimeAppUITests.swift; sourceTree = "<group>"; };
 		C71E00BB1D04CB32007D6D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C71E00C71D04F1E9007D6D99 /* GrizCrimeApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GrizCrimeApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		C71E00CB1D04F417007D6D99 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		C71E00CB1D04F417007D6D99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C71E00D31D0549EF007D6D99 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C71E00D61D054AB7007D6D99 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C71E01241D0652D0007D6D99 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		C71E01251D0652D0007D6D99 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		C71E01261D0652D0007D6D99 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CC3B9C476078B7D1199BD6A7 /* Pods-GrizCrimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrizCrimeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D749805CFBEA2454E41E4E86 /* Pods_GrizCrimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrizCrimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2D673D85D66EF4B326965C /* Pods_GrizCrimeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrizCrimeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +80,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF2927DAD00A013285BDE0A9 /* Pods_GrizCrimeApp.framework in Frameworks */,
+				C71E01281D0652D0007D6D99 /* FBSDKCoreKit.framework in Frameworks */,
+				C71E01291D0652D0007D6D99 /* FBSDKLoginKit.framework in Frameworks */,
+				C71E01271D0652D0007D6D99 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,14 +140,14 @@
 		C71E00981D04CB31007D6D99 /* GrizCrimeApp */ = {
 			isa = PBXGroup;
 			children = (
-				C71E00991D04CB31007D6D99 /* AppDelegate.swift */,
-				C71E009B1D04CB31007D6D99 /* ViewController.swift */,
-				C71E009D1D04CB31007D6D99 /* Main.storyboard */,
-				C71E00A01D04CB31007D6D99 /* Assets.xcassets */,
-				C71E00A21D04CB31007D6D99 /* LaunchScreen.storyboard */,
-				C71E00A51D04CB31007D6D99 /* Info.plist */,
-				C71E00C71D04F1E9007D6D99 /* GrizCrimeApp-Bridging-Header.h */,
-				C71E00CB1D04F417007D6D99 /* GoogleService-Info (1).plist */,
+				C71E01231D0652B2007D6D99 /* frameworks */,
+				C71E00D51D054A9C007D6D99 /* Util */,
+				C71E00D11D054938007D6D99 /* Extension */,
+				C71E00D01D05491E007D6D99 /* Service */,
+				C71E00CF1D054911007D6D99 /* Controller */,
+				C71E00CE1D054908007D6D99 /* View */,
+				C71E00CD1D0548FE007D6D99 /* Model */,
+				C71E00D21D05498C007D6D99 /* Misc */,
 			);
 			path = GrizCrimeApp;
 			sourceTree = "<group>";
@@ -155,6 +168,75 @@
 				C71E00BB1D04CB32007D6D99 /* Info.plist */,
 			);
 			path = GrizCrimeAppUITests;
+			sourceTree = "<group>";
+		};
+		C71E00CD1D0548FE007D6D99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C71E00CE1D054908007D6D99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C71E009D1D04CB31007D6D99 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C71E00CF1D054911007D6D99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C71E009B1D04CB31007D6D99 /* LoginVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C71E00D01D05491E007D6D99 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C71E00D31D0549EF007D6D99 /* DataService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		C71E00D11D054938007D6D99 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		C71E00D21D05498C007D6D99 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				C71E00991D04CB31007D6D99 /* AppDelegate.swift */,
+				C71E00A01D04CB31007D6D99 /* Assets.xcassets */,
+				C71E00A21D04CB31007D6D99 /* LaunchScreen.storyboard */,
+				C71E00A51D04CB31007D6D99 /* Info.plist */,
+				C71E00C71D04F1E9007D6D99 /* GrizCrimeApp-Bridging-Header.h */,
+				C71E00CB1D04F417007D6D99 /* GoogleService-Info.plist */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		C71E00D51D054A9C007D6D99 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C71E00D61D054AB7007D6D99 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		C71E01231D0652B2007D6D99 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C71E01241D0652D0007D6D99 /* Bolts.framework */,
+				C71E01251D0652D0007D6D99 /* FBSDKCoreKit.framework */,
+				C71E01261D0652D0007D6D99 /* FBSDKLoginKit.framework */,
+			);
+			name = frameworks;
 			sourceTree = "<group>";
 		};
 		D8256FD27FDC8C7045A86474 /* Pods */ = {
@@ -285,7 +367,7 @@
 				C71E00A41D04CB31007D6D99 /* LaunchScreen.storyboard in Resources */,
 				C71E00A11D04CB31007D6D99 /* Assets.xcassets in Resources */,
 				C71E009F1D04CB31007D6D99 /* Main.storyboard in Resources */,
-				C71E00CC1D04F417007D6D99 /* GoogleService-Info (1).plist in Resources */,
+				C71E00CC1D04F417007D6D99 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,8 +515,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C71E009C1D04CB31007D6D99 /* ViewController.swift in Sources */,
+				C71E00D41D0549EF007D6D99 /* DataService.swift in Sources */,
+				C71E009C1D04CB31007D6D99 /* LoginVC.swift in Sources */,
 				C71E009A1D04CB31007D6D99 /* AppDelegate.swift in Sources */,
+				C71E00D71D054AB7007D6D99 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +664,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GrizCrimeApp",
+				);
 				INFOPLIST_FILE = GrizCrimeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.GrizCrimeApp;
@@ -595,6 +683,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GrizCrimeApp",
+				);
 				INFOPLIST_FILE = GrizCrimeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.GrizCrimeApp;
