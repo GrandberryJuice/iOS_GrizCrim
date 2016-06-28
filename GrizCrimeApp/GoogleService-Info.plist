@@ -36,7 +36,5 @@
 	<string>1:464800888090:ios:59cd8c2db7b4c9c6</string>
 	<key>DATABASE_URL</key>
 	<string>https://grizcrimeapp.firebaseio.com</string>
-	<key>FacebookAppID</key>
-	<string>283510418658175</string>
 </dict>
 </plist>

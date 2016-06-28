@@ -10,7 +10,7 @@ import Foundation
 import Firebase
 
 
-let URL_BASE = FIRDatabase.database().reference()
+let URL_BASE =  FIRDatabase.database().reference()
 
 
 class DataService {

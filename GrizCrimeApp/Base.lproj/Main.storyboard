@@ -131,10 +131,89 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="1CA-fV-ix8" kind="show" identifier="TimelineVC" id="fFY-KU-Ax4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.5" y="392.5"/>
+            <point key="canvasLocation" x="58.5" y="392.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kuf-sV-pP5">
+            <objects>
+                <viewController id="1CA-fV-ix8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t35-aU-GXg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ojt-LM-k4w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fRa-d8-ev7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="y4q-De-bIg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ojt-LM-k4w" firstAttribute="top" secondItem="y4q-De-bIg" secondAttribute="bottom" id="Btx-bS-QJU"/>
+                            <constraint firstAttribute="trailing" secondItem="y4q-De-bIg" secondAttribute="trailing" id="IEG-1M-eK1"/>
+                            <constraint firstItem="y4q-De-bIg" firstAttribute="top" secondItem="fRa-d8-ev7" secondAttribute="top" id="eot-wi-9To"/>
+                            <constraint firstItem="y4q-De-bIg" firstAttribute="leading" secondItem="fRa-d8-ev7" secondAttribute="leading" id="pDt-6G-44K"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfM-44-kgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="517.5" y="392.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lHN-hY-APP">
+            <objects>
+                <viewController id="4cA-Oh-Nwx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gbe-Mg-Iz1"/>
+                        <viewControllerLayoutGuide type="bottom" id="DP1-kc-0zN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5FH-J9-G7d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="u3d-Q8-z5e">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="7eU-w3-TRm">
+                                <rect key="frame" x="20" y="384" width="285" height="174"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email" translatesAutoresizingMaskIntoConstraints="NO" id="Xaf-hA-O8c">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="52"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email" translatesAutoresizingMaskIntoConstraints="NO" id="gS3-bs-PTS">
+                                        <rect key="frame" x="0.0" y="61" width="285" height="52"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook" translatesAutoresizingMaskIntoConstraints="NO" id="ThF-1T-dFj">
+                                        <rect key="frame" x="0.0" y="122" width="285" height="52"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u3d-Q8-z5e" firstAttribute="leading" secondItem="5FH-J9-G7d" secondAttribute="leading" id="NQb-Ue-i1R"/>
+                            <constraint firstItem="DP1-kc-0zN" firstAttribute="top" secondItem="u3d-Q8-z5e" secondAttribute="bottom" id="PDb-BI-gDg"/>
+                            <constraint firstItem="7eU-w3-TRm" firstAttribute="centerX" secondItem="5FH-J9-G7d" secondAttribute="centerX" id="TWf-Jl-rLh"/>
+                            <constraint firstItem="u3d-Q8-z5e" firstAttribute="top" secondItem="5FH-J9-G7d" secondAttribute="top" id="bNa-Ey-7Mc"/>
+                            <constraint firstAttribute="trailing" secondItem="u3d-Q8-z5e" secondAttribute="trailing" id="cnW-4m-XDe"/>
+                            <constraint firstItem="DP1-kc-0zN" firstAttribute="top" secondItem="7eU-w3-TRm" secondAttribute="bottom" constant="28" id="rWy-wY-sBj"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvJ-6D-q22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="421"/>
         </scene>
     </scenes>
     <resources>

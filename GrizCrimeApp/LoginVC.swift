@@ -10,6 +10,7 @@ import UIKit
 import pop
 import FBSDKLoginKit
 import FBSDKCoreKit
+import Firebase
 
 
 class LoginVC: UIViewController {
@@ -20,10 +21,11 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func fbBtnPressed(sender:UIButton!) {
-        let ref = URL_BASE
+        //let ref = URL_BASE
         let facebookLogin = FBSDKLoginManager()
+       
     
-        facebookLogin.logInWithReadPermissions(["email"], handler: {(facebookResult, facebookError) -> Void in
+       facebookLogin.logInWithReadPermissions(["email"], fromViewController: self) { facebookResult, facebookError in
             if facebookError != nil {
             //If there is a facebook login error handle here!!
                 print("Login with facebook error \(facebookError)")
@@ -31,21 +33,32 @@ class LoginVC: UIViewController {
                 
             } else if facebookResult.isCancelled {
                 //if facebook login was cancelled handle here!!
+             
                 
                 
             } else {
+                //User was able to login
+//              let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
+//                
+//                let credentials = FIRFacebookAuthProvider.credentialWithAccessToken(accessToken)
+                
                 let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
-                print("Successfully logged in with facebook. \(accessToken)")
-//                ref.authWithOAuthProvider("facebook", token: accessToken,
-//                    withCompletionBlock: { error, authData in
-//                        if error != nil {
-//                            println("Login failed. \(error)")
-//                        } else {
-//                            println("Logged in! \(authData)")
-//                        }
-//                })
+                let credentials = FIRFacebookAuthProvider.credentialWithAccessToken(accessToken)
+                
+                FIRAuth.auth()?.signInWithCredential(credentials, completion: { (user, error) in
+                    if error != nil {
+                        print("Login failed. \(error)")
+                    } else {
+                        
+                        let userData = ["provider" : credentials.provider]
+                        DataService.ds.createFirebaseUser(user!.uid, user: userData)
+                        NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
+                        self.performSegueWithIdentifier("TimelineVC", sender: nil)
+                        print("working")
+                    }
+                })
             }
-        })
+        }
     }
 
 }
