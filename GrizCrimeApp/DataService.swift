@@ -13,10 +13,11 @@ import Firebase
 let URL_BASE =  FIRDatabase.database().reference()
 
 
+
 class DataService {
     static let ds = DataService()
     private var _Ref_Base = URL_BASE
-    private var _Ref_Post = URL_BASE.child("posts")
+    private var _Ref_Post = URL_BASE.child("post")
     private var _Ref_Users = URL_BASE.child("users")
     
     
@@ -32,11 +33,11 @@ class DataService {
         return _Ref_Users
     }
     
-//    var Ref_User_Current:FIRDatabaseReference {
-//       // let uid = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID)
-//        let user = URL_BASE.child("users").child(uid)
-//        return user
-//    }
+    var Ref_User_Current:FIRDatabaseReference {
+       let uid = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as! String
+        let user = URL_BASE.child("users").child(uid)
+        return user
+    }
     
     func createFirebaseUser(uid:String, user:Dictionary<String,String>) {
         Ref_Users.child(uid).updateChildValues(user)
