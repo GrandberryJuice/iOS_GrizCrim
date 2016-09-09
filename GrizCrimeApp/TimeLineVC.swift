@@ -22,7 +22,7 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
         TableView.dataSource = self
         TableView.estimatedRowHeight = 335
         
-        //Firebase Data Retrieve
+        //MARK: Firebase Data Retrieve
         DataService.ds.Ref_Post.observeEventType(.Value, withBlock:  { snapshot in
             self.posts = []
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {

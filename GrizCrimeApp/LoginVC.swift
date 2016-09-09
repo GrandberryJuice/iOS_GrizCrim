@@ -15,14 +15,15 @@ import Firebase
 
 class LoginVC: UIViewController {
     
+    //MARK: Outlets
     @IBOutlet weak var emailtxtField:UITextField!
     @IBOutlet weak var passwordtxtField:UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    //MARK: Facebook login
     @IBAction func fbBtnPressed(sender:UIButton!) {
         //let ref = URL_BASE
         let facebookLogin = FBSDKLoginManager()
@@ -43,7 +44,7 @@ class LoginVC: UIViewController {
                         let userData = ["provider": "Facebook"]
                         DataService.ds.createFirebaseUser(user!.uid, user: userData)
                         NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
-                        self.performSegueWithIdentifier("TimelineVC", sender: nil)
+                        self.performSegueWithIdentifier("ProfileVC", sender: nil)
                     }
                 }
             }
@@ -51,7 +52,7 @@ class LoginVC: UIViewController {
         
     }
     
-    //email sign in
+    //MARK: Email sign in
     @IBAction func Login_Signup(sender: AnyObject) {
         FIRAuth.auth()?.createUserWithEmail(emailtxtField.text!, password: passwordtxtField.text!, completion: {
         user, error in
@@ -65,6 +66,7 @@ class LoginVC: UIViewController {
         })
     }
     
+    //MARK: Login in User
     func login() {
         FIRAuth.auth()?.signInWithEmail(emailtxtField.text!, password: passwordtxtField.text!, completion: {
         user, error in
@@ -79,12 +81,13 @@ class LoginVC: UIViewController {
                 NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
                 let userData = ["provider":"email"]
                 DataService.ds.createFirebaseUser(user!.uid, user: userData)
-                self.performSegueWithIdentifier("TimelineVC", sender: nil)
+                self.performSegueWithIdentifier("ProfileVC", sender: nil)
             }
             
         })
     }
     
+    //MARK: Error message to User
     func showErrorAlert(title:String, msg:String) {
         let alert = UIAlertController(title: title , message: msg, preferredStyle: .Alert)
         let action = UIAlertAction(title: "ok", style:.Default, handler:nil)
