@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Firebase
 
 class PostCell: UITableViewCell {
     
@@ -35,17 +36,24 @@ class PostCell: UITableViewCell {
             if img != nil {
                 self.postImage.image = img
             } else {
-                //fetch request
-                request = Alamofire.request(.GET, post.imageUrl!).validate(contentType:["image/*"]).response(completionHandler: {
-                    request, response, data,  err in
+                if let imageUrl = post.imageUrl {
+                 let ref = FIRStorage.storage().referenceForURL(imageUrl)
+                    ref.dataWithMaxSize(2*1024*1024, completion: { (data, error) in
+                        if error != nil {
+                            print("There was an error with image download")
+                        } else {
+                            print("There images where downloaded")
+                            
+                            if let postImg = data {
+                                if let img = UIImage(data:postImg) {
+                                    self.postImage.image = img
+                                     TimeLineVC.imageCache.setObject(img, forKey: post.imageUrl!)
+                                }
+                            }
+                        }
+                    })
                     
-                    if err == nil {
-                        let img = UIImage(data:data!)!
-                        self.postImage.image = img
-                        TimeLineVC.imageCache.setObject(img, forKey: self.post.imageUrl!)
-                    }
-                })
-                
+                }
             }
             
         } else {

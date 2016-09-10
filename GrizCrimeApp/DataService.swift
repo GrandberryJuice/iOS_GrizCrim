@@ -11,14 +11,19 @@ import Firebase
 
 
 let URL_BASE =  FIRDatabase.database().reference()
+let STORAGE_BASE = FIRStorage.storage().reference()
 
 
 //MARK: Firebase Services
 class DataService {
+    
     static let ds = DataService()
+    //DB reference
     private var _Ref_Base = URL_BASE
     private var _Ref_Post = URL_BASE.child("post")
     private var _Ref_Users = URL_BASE.child("users")
+    
+    private var _Ref_Post_Images = STORAGE_BASE.child("post-images")
     
     
     var Ref_Base:FIRDatabaseReference {
@@ -31,6 +36,11 @@ class DataService {
     
     var Ref_Users:FIRDatabaseReference {
         return _Ref_Users
+    }
+    
+    
+    var Ref_Post_Images:FIRStorageReference {
+        return _Ref_Post_Images
     }
     
     var Ref_User_Current:FIRDatabaseReference {

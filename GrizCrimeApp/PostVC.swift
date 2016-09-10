@@ -18,6 +18,8 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
     @IBOutlet weak var uploadImg: UIImageView!
     var imagePicker:UIImagePickerController!
     
+    typealias Block = () -> ()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         textCountLbl.text = "140"
@@ -75,10 +77,9 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
                 
                 if let img = uploadImg.image {
                     let upload = UIImagePNGRepresentation(img)
-                   PostToFirebase(upload)
-                    
+                    PostToFirebase(upload)
+                    dismissViewControllerAnimated(true, completion: {})
                 }
-                
             }
         }
         
@@ -97,6 +98,11 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
         
     }
     
+    func getmain(block:Block) {
+        let queue = dispatch_get_main_queue()
+        dispatch_async(queue, block)
+    }
+    
     
     func PostToFirebase(imgUrl:NSData?) {
         
@@ -104,9 +110,27 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
             "description" : textViewLbl.text
         ]
         
-        let storage = FIRStorage.storage()
-        let storageRef = storage.reference()
+        let storage = FIRStorage.storage().reference().child("myImage.png")
+        let firebasePost = DataService.ds.Ref_Post.childByAutoId()
         
-        
+        if (imgUrl != nil) {
+            
+           getmain({ 
+            storage.putData(imgUrl!, metadata:nil, completion: { (metadata,error) in
+                if error != nil {
+                    print(error)
+                    return
+                } else {
+                    //print(metadata)
+                    postDict["imageUrl"] = metadata?.downloadURL()
+                    firebasePost.setValue(postDict)
+                }
+                
+            })
+           })
+            
+        } else {
+            firebasePost.setValue(postDict)
+        }
     }
 }

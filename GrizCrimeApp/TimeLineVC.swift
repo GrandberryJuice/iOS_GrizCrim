@@ -10,11 +10,12 @@
 import UIKit
 import Firebase
 
+
 class TimeLineVC: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var TableView:UITableView!
     var posts = [Post]()
-    static var imageCache = NSCache()
+    static var imageCache:NSCache = NSCache()
     
     override func viewDidLoad() {
         super.viewDidLoad()
