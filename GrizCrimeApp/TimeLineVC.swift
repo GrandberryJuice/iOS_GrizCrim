@@ -30,6 +30,7 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
                 
                 for snap in snapshots {
                     //value is all data inside the key
+                    //print(snap)
                     if let postDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let post = Post(postKey: key, dictionary: postDict)
@@ -37,6 +38,7 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
                     }
                 }
             }
+            //print(self.posts[2].imageUrl)
             self.TableView.reloadData()
         })
     }

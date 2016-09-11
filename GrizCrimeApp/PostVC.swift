@@ -76,9 +76,10 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
                 self.presentViewController(alert, animated: true, completion: nil)
                 
                 if let img = uploadImg.image {
-                    let upload = UIImagePNGRepresentation(img)
-                    PostToFirebase(upload)
+                    let upload = UIImageJPEGRepresentation(img, 0.2)
                     dismissViewControllerAnimated(true, completion: {})
+                    PostToFirebase(upload)
+                    
                 }
             }
         }
@@ -98,37 +99,44 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
         
     }
     
+    //MARK: 
     func getmain(block:Block) {
         let queue = dispatch_get_main_queue()
         dispatch_async(queue, block)
     }
     
-    
+    //MARK: Post Data to Firebase
     func PostToFirebase(imgUrl:NSData?) {
-        
         var postDict:Dictionary<String,AnyObject> = [
             "description" : textViewLbl.text
         ]
         
-        let storage = FIRStorage.storage().reference().child("myImage.png")
         let firebasePost = DataService.ds.Ref_Post.childByAutoId()
+        
         
         if (imgUrl != nil) {
             
-           getmain({ 
-            storage.putData(imgUrl!, metadata:nil, completion: { (metadata,error) in
-                if error != nil {
-                    print(error)
-                    return
-                } else {
-                    //print(metadata)
-                    postDict["imageUrl"] = metadata?.downloadURL()
-                    firebasePost.setValue(postDict)
-                }
-                
-            })
-           })
+            let imgUid = NSUUID().UUIDString
+            DataService.ds.Ref_Post_Images.child(imgUid)
+            let metaData = FIRStorageMetadata()
+            metaData.contentType = "image/jpeg"
             
+            DataService.ds.Ref_Post_Images.child(imgUid).putData(imgUrl!, metadata: metaData) {
+                (metaData,error) in
+                
+                if error != nil {
+                    print("Error with uploading img")
+                } else {
+                    print("Successfully post image")
+                    let downloadUrl = metaData?.downloadURL()?.absoluteString
+                    postDict["imageUrl"] = downloadUrl
+                    
+                    firebasePost.setValue(postDict)
+                    self.uploadImg = nil
+                }
+            }
+            
+
         } else {
             firebasePost.setValue(postDict)
         }

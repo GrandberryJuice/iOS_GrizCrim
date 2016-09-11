@@ -12,17 +12,19 @@ extension TimeLineVC : UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let post = posts[indexPath.row]
-        print(post)
+        print(posts.count)
         
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
             cell.request?.cancel()
             var img:UIImage?
+            print(post.imageUrl)
             
             if let url = post.imageUrl {
+                //print(url)
                 img = TimeLineVC.imageCache.objectForKey(url) as? UIImage
             }
             
-            cell.configureCell(img,post: post)
+            cell.configureCell(img, post: post)
             return cell
         } else {
             return PostCell()
@@ -30,11 +32,11 @@ extension TimeLineVC : UITableViewDataSource {
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return posts.count
+        return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return posts.count
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

@@ -9,6 +9,7 @@
 import Foundation
 
 class Post {
+    
     private var _postDescription:String!
     private var _imageUrl:String?
     private var _username:String!
