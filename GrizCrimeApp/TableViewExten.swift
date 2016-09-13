@@ -11,24 +11,41 @@ import Foundation
 extension TimeLineVC : UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let post = posts[indexPath.row]
-        print(posts.count)
-        
-        if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
-            cell.request?.cancel()
-            var img:UIImage?
-            print(post.imageUrl)
+       
+        if tableView == self.TableView {
             
-            if let url = post.imageUrl {
-                //print(url)
-                img = TimeLineVC.imageCache.objectForKey(url) as? UIImage
+            let post = posts[indexPath.row]
+            if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
+                cell.request?.cancel()
+                var img:UIImage?
+                print(post.imageUrl)
+                
+                if let url = post.imageUrl {
+                    //print(url)
+                    img = TimeLineVC.imageCache.objectForKey(url) as? UIImage
+                }
+                
+                cell.configureCell(img, post: post)
+                return cell
+            } else {
+                return PostCell()
+            }
+        } else {
+        
+            let menuTitle = menuArray[indexPath.row]
+            let icon = menuIcons[indexPath.row]
+            
+            if let cell = tableView.dequeueReusableCellWithIdentifier("MenuCell") as? MenuCell {
+                    cell.configureCell(menuTitle, icon: icon)
+                    return cell
+            } else {
+                let cell = MenuCell()
+                cell.configureCell(menuTitle, icon: icon)
+                return cell
             }
             
-            cell.configureCell(img, post: post)
-            return cell
-        } else {
-            return PostCell()
         }
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -36,17 +53,26 @@ extension TimeLineVC : UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        if tableView == self.TableView{
+            return posts.count
+        } else {
+        return self.menuArray.count
+        }
+        
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let post = posts[indexPath.row]
-        if post.imageUrl == nil {
-            return 200
+        if tableView == self.TableView {
+            let post = posts[indexPath.row]
+            if post.imageUrl == nil {
+                return 200
+            } else {
+                return TableView.estimatedRowHeight
+            }
         } else {
-            return TableView.estimatedRowHeight
+            return menuTableView.estimatedRowHeight
         }
+        
     }
-    
     
 }
