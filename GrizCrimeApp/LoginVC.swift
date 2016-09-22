@@ -49,7 +49,6 @@ class LoginVC: UIViewController {
                 }
             }
         }
-        
     }
     
     //MARK: Email sign in

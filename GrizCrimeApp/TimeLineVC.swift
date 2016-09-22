@@ -19,8 +19,10 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
     @IBOutlet weak var menuTableView: UITableView!
     @IBOutlet weak var tableViewMenuConstraints: NSLayoutConstraint!
     
-    let menuArray = ["Profile","Map","About","Close"]
-    let menuIcons = ["profilemenu.png","menuMap.png","menuAbout.png", "menuClose.png"]
+    let listArray = ["Profile","Map","About","Close"]
+    let menu = ["profilemenu.png","menuMap.png","menuAbout.png", "menuClose.png"]
+    
+ 
     
     
     
@@ -30,13 +32,14 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        menuTableView.delegate = self
+        menuTableView.dataSource = self
+       
         TableView.delegate = self
         TableView.dataSource = self
         
-        menuTableView.delegate = self
-        menuTableView.dataSource = self
         menuTableView.reloadData()
-        
+        self.menuTableView.reloadData()
         TableView.estimatedRowHeight = 335
         
         //MARK: Firebase Data Retrieve
@@ -56,6 +59,7 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
             }
            
             self.TableView.reloadData()
+           
         })
         self.menuConstraints.constant = -300
     }
@@ -68,6 +72,7 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
         darkbackground.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleDismiss)))
             
         UIView.animateWithDuration(0.5) { () -> Void in
+            self.menuTableView.reloadData()
             self.menuConstraints.constant = 0
             //self.tableViewMenuConstraints.constant = 0
             
@@ -80,7 +85,6 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
         UIView.animateWithDuration(0.5) { () -> Void in
             self.darkbackground.hidden = true
             self.menuConstraints.constant = -300
-           
         }
     }
     

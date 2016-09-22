@@ -19,8 +19,7 @@ class MenuCell: UITableViewCell {
     
     func configureCell(title:String, icon:String) {
         titleLbl.text = title
-        titleIconImg.image = UIImage(imageLiteral:icon)
-        
+        titleIconImg.image = UIImage(named:icon)
     }
     
     

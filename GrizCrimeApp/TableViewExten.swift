@@ -18,10 +18,8 @@ extension TimeLineVC : UITableViewDataSource {
             if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
                 cell.request?.cancel()
                 var img:UIImage?
-                print(post.imageUrl)
                 
                 if let url = post.imageUrl {
-                    //print(url)
                     img = TimeLineVC.imageCache.objectForKey(url) as? UIImage
                 }
                 
@@ -32,18 +30,17 @@ extension TimeLineVC : UITableViewDataSource {
             }
         } else {
         
-            let menuTitle = menuArray[indexPath.row]
-            let icon = menuIcons[indexPath.row]
+            let menuTitle = listArray[indexPath.row]
+            let icon = menu[indexPath.row]
             
             if let cell = tableView.dequeueReusableCellWithIdentifier("MenuCell") as? MenuCell {
-                    cell.configureCell(menuTitle, icon: icon)
-                    return cell
+                cell.configureCell(menuTitle, icon: icon)
+                return cell
             } else {
                 let cell = MenuCell()
                 cell.configureCell(menuTitle, icon: icon)
                 return cell
             }
-            
         }
         
     }
@@ -56,23 +53,20 @@ extension TimeLineVC : UITableViewDataSource {
         if tableView == self.TableView{
             return posts.count
         } else {
-        return self.menuArray.count
+        return self.listArray.count
         }
-        
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if tableView == self.TableView {
-            let post = posts[indexPath.row]
-            if post.imageUrl == nil {
-                return 200
-            } else {
-                return TableView.estimatedRowHeight
-            }
-        } else {
-            return menuTableView.estimatedRowHeight
-        }
-        
-    }
+//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        if tableView == self.TableView {
+//            let post = posts[indexPath.row]
+//            if post.imageUrl == nil {
+//                return 200
+//            } else {
+//                return TableView.estimatedRowHeight
+//            }
+//        }
+//        return menuTableView.estimatedRowHeight
+//    }
     
 }

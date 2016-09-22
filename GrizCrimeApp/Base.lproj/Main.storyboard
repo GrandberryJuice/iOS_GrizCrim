@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="huw-dO-Mk6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Eaq-CT-KWr">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -555,23 +555,23 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eao-5M-IY4">
-                                <rect key="frame" x="16" y="420" width="351" height="247"/>
+                                <rect key="frame" x="16" y="447" width="351" height="220"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nno-27-8ve">
-                                        <rect key="frame" x="17" y="5" width="318" height="242"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="52" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nno-27-8ve">
+                                        <rect key="frame" x="17" y="5" width="318" height="215"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="242" id="i4K-Xw-ikJ"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="55" id="vFj-de-uzO" customClass="MenuCell" customModule="GrizCrimeApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="318" height="55"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="52" id="vFj-de-uzO" customClass="MenuCell" customModule="GrizCrimeApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="318" height="52"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vFj-de-uzO" id="8e2-fB-XWI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="318" height="54"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="318" height="51"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilemenu" translatesAutoresizingMaskIntoConstraints="NO" id="GSj-9J-AGb">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilemenu" translatesAutoresizingMaskIntoConstraints="NO" id="GSj-9J-AGb">
                                                             <rect key="frame" x="16" y="8" width="32" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="32" id="6cE-xc-Udh"/>
@@ -584,8 +584,8 @@
                                                                 </mask>
                                                             </variation>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Profile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD5-Xf-1rf">
-                                                            <rect key="frame" x="210" y="8" width="49" height="38"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GD5-Xf-1rf">
+                                                            <rect key="frame" x="78" y="6" width="49" height="38"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="38" id="iDq-cl-ZeT"/>
                                                             </constraints>
@@ -595,6 +595,7 @@
                                                         </label>
                                                     </subviews>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="GD5-Xf-1rf" secondAttribute="bottom" constant="-3" id="2BC-ID-oQo"/>
                                                         <constraint firstItem="GD5-Xf-1rf" firstAttribute="bottom" secondItem="8e2-fB-XWI" secondAttribute="bottomMargin" id="2LC-Rn-vj5"/>
                                                         <constraint firstItem="GD5-Xf-1rf" firstAttribute="top" secondItem="8e2-fB-XWI" secondAttribute="topMargin" id="IUg-8C-RU7"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="GSj-9J-AGb" secondAttribute="bottom" constant="-2" id="NBb-w9-VEp"/>
@@ -603,6 +604,9 @@
                                                         <constraint firstAttribute="trailingMargin" secondItem="GD5-Xf-1rf" secondAttribute="trailing" constant="43" id="cxJ-qr-foW"/>
                                                         <constraint firstItem="GSj-9J-AGb" firstAttribute="leading" secondItem="8e2-fB-XWI" secondAttribute="leadingMargin" constant="8" id="eas-JW-pmc"/>
                                                         <constraint firstItem="GSj-9J-AGb" firstAttribute="top" secondItem="8e2-fB-XWI" secondAttribute="topMargin" id="mCj-WN-plX"/>
+                                                        <constraint firstItem="GD5-Xf-1rf" firstAttribute="leading" secondItem="GSj-9J-AGb" secondAttribute="trailing" constant="30" id="nK9-vr-8qj"/>
+                                                        <constraint firstItem="GD5-Xf-1rf" firstAttribute="top" secondItem="8e2-fB-XWI" secondAttribute="topMargin" constant="-2" id="ph1-9Z-DzN"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="GD5-Xf-1rf" secondAttribute="trailing" constant="43" id="spT-iH-LE9"/>
                                                         <constraint firstItem="GSj-9J-AGb" firstAttribute="top" secondItem="GD5-Xf-1rf" secondAttribute="top" id="xbo-Ir-mxS"/>
                                                         <constraint firstItem="GSj-9J-AGb" firstAttribute="top" secondItem="8e2-fB-XWI" secondAttribute="topMargin" id="z2P-Qz-2e9"/>
                                                         <constraint firstItem="GD5-Xf-1rf" firstAttribute="leading" secondItem="GSj-9J-AGb" secondAttribute="trailing" constant="36" id="zNc-4S-Jux"/>
@@ -613,12 +617,17 @@
                                                             <exclude reference="eas-JW-pmc"/>
                                                             <exclude reference="xbo-Ir-mxS"/>
                                                             <exclude reference="z2P-Qz-2e9"/>
+                                                            <exclude reference="2BC-ID-oQo"/>
+                                                            <exclude reference="2LC-Rn-vj5"/>
+                                                            <exclude reference="IUg-8C-RU7"/>
                                                             <exclude reference="XHE-zz-9UO"/>
+                                                            <exclude reference="cxJ-qr-foW"/>
+                                                            <exclude reference="spT-iH-LE9"/>
                                                             <exclude reference="zNc-4S-Jux"/>
                                                         </mask>
                                                     </variation>
                                                 </tableViewCellContentView>
-                                                <color key="backgroundColor" red="1" green="0.61843964240000004" blue="0.1226318846" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <connections>
                                                     <outlet property="titleIconImg" destination="GSj-9J-AGb" id="F5V-mw-8Fx"/>
                                                     <outlet property="titleLbl" destination="GD5-Xf-1rf" id="SQ0-rZ-Yyt"/>
@@ -635,7 +644,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="247" id="0Os-Cv-WGa"/>
+                                    <constraint firstAttribute="height" constant="220" id="0Os-Cv-WGa"/>
                                     <constraint firstItem="Nno-27-8ve" firstAttribute="top" secondItem="Eao-5M-IY4" secondAttribute="top" constant="5" id="EMI-Om-Nl0"/>
                                     <constraint firstAttribute="bottom" secondItem="Nno-27-8ve" secondAttribute="bottom" id="QTH-kG-nZ7"/>
                                     <constraint firstItem="Nno-27-8ve" firstAttribute="leading" secondItem="Eao-5M-IY4" secondAttribute="leading" constant="17" id="ftL-UV-xYQ"/>
@@ -681,11 +690,71 @@
                         <outlet property="menuConstraints" destination="81T-0y-hyc" id="idb-GX-BqG"/>
                         <outlet property="menuTableView" destination="Nno-27-8ve" id="kwl-6b-5LQ"/>
                         <outlet property="tableViewMenuConstraints" destination="QTH-kG-nZ7" id="JJo-I1-VQg"/>
+                        <segue destination="IsF-Qk-fN1" kind="show" identifier="MapVC" id="Vl3-QT-aOJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8k-eA-ojW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1043.5" y="356.5"/>
+            <point key="canvasLocation" x="1057.5" y="303.5"/>
+        </scene>
+        <!--MapVC-->
+        <scene sceneID="77l-bn-dMt">
+            <objects>
+                <viewController id="IsF-Qk-fN1" customClass="MapVC" customModule="GrizCrimeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u36-S9-uHy"/>
+                        <viewControllerLayoutGuide type="bottom" id="UCK-yO-Cxy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8lx-23-kt3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IX2-KP-05F">
+                                <rect key="frame" x="62" y="168" width="240" height="128"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsO-OI-qb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.5" y="1136.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GHN-Eq-0ow">
+            <objects>
+                <viewController id="GOM-Lb-pjl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6wM-dO-Blh"/>
+                        <viewControllerLayoutGuide type="bottom" id="MbR-7O-nlp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GEv-pd-vEH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Cn-br-qTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="1073"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ol9-Fv-aUS">
+            <objects>
+                <viewController id="aUk-jX-IYi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xYh-HA-Ixc"/>
+                        <viewControllerLayoutGuide type="bottom" id="TyH-nC-rsp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YHa-Mt-ipN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NE5-mz-AJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556" y="1073"/>
         </scene>
         <!--PostVC-->
         <scene sceneID="E1Q-Yr-LnY">
