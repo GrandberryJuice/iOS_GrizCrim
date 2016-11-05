@@ -27,6 +27,8 @@ class PostCell: UITableViewCell {
         ContentView.backgroundColor = UIColor.clearColor()
     }
     
+    
+    //UIImage?
     //MARK: Setup posts and images for tableView Cell
     func configureCell(img:UIImage?, post:Post) {
         self.post = post
@@ -34,35 +36,62 @@ class PostCell: UITableViewCell {
         
         if post.imageUrl != nil {
             if img != nil {
-                self.postImage.image = img
+                 self.postImage.hidden = false
+                print("imaged Cached:  \(img)")
+                postImage.image = img
+                return
+                
             } else {
-                //print(post.imageUrl)
                 if let imageUrl = post.imageUrl {
-                 
-                    let ref = FIRStorage.storage().referenceForURL(imageUrl)
-                    ref.dataWithMaxSize(2*1024*1024, completion: { (data, error) in
-                        if error != nil {
-                            print("There was an error with image download")
-                        } else {
-                            print("There images where downloaded")
-                            
-                            if let postImg = data {
-                                if let img = UIImage(data:postImg) {
-                                    self.postImage.image = img
-                                    //print(img)
-                                    //print(self.post.imageUrl)
-                                     TimeLineVC.imageCache.setObject(img, forKey: imageUrl)
+            
+                    let url = NSURL(string:imageUrl)
+                    if let imgUrl = url {
+                        NSURLSession.sharedSession().dataTaskWithURL(imgUrl, completionHandler: { (data, response, error) in
+                            if error != nil {
+                                print("error")
+                            } else {
+                                if let imgData = data {
+                                    if let downloadimg = UIImage(data: imgData) {
+                                        TimeLineVC.imageCache.setObject(downloadimg, forKey:imageUrl)
+                                        dispatch_async(dispatch_get_main_queue(), {
+                                            self.postImage.image = downloadimg
+                                            self.postImage.hidden = false
+                                        })
+                                    }
                                 }
                             }
-                        }
-                    })
+                            
+                        }).resume()
                     
+                    }
                 }
             }
-            
         } else {
             self.postImage.hidden = true
         }
+    }
+    
+    func configureCellProfile(username:String,imgProfile:String ) {
+        self.username.text = username
+        
+        let ref = FIRStorage.storage().referenceForURL(imgProfile)
+        ref.dataWithMaxSize(2*1024*1024, completion: { (data, error) in
+            if error != nil {
+                print("There was an error with image download")
+            } else {
+                print("There images where downloaded")
+                
+                if let postImg = data {
+                    if let img = UIImage(data:postImg) {
+                        self.postImage.image = img
+                       
+                        TimeLineVC.imageCache.setObject(img, forKey:imgProfile )
+                    }
+                }
+            }
+        })
+        
+        
     }
     
     //MARK Draw Circles around images

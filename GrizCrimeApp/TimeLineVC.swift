@@ -19,15 +19,15 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
     @IBOutlet weak var menuTableView: UITableView!
     @IBOutlet weak var tableViewMenuConstraints: NSLayoutConstraint!
     
+    @IBOutlet weak var menuview: UIView!
     let listArray = ["Profile","Map","About","Close"]
-    let menu = ["profilemenu.png","menuMap.png","menuAbout.png", "menuClose.png"]
-    
- 
-    
-    
+    let menu = ["user.png","menuMap-1.png","menuAbout-1.png", "menuClose-1.png"]
     
     var posts = [Post]()
-    static var imageCache:NSCache = NSCache()
+    var profilePost = [PostProfile]()
+    
+    
+    static var imageCache = NSCache()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,14 +42,15 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
         self.menuTableView.reloadData()
         TableView.estimatedRowHeight = 335
         
+    
+        menuview.layer.cornerRadius = 5.0
+       
         //MARK: Firebase Data Retrieve
         DataService.ds.Ref_Post.observeEventType(.Value, withBlock:  { snapshot in
             self.posts = []
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 
                 for snap in snapshots {
-                    //value is all data inside the key
-                    //print(snap)
                     if let postDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let post = Post(postKey: key, dictionary: postDict)
@@ -57,9 +58,8 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
                     }
                 }
             }
-           
             self.TableView.reloadData()
-           
+            print(self.posts)
         })
         self.menuConstraints.constant = -300
     }

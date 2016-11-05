@@ -16,15 +16,30 @@ extension TimeLineVC : UITableViewDataSource {
             
             let post = posts[indexPath.row]
             if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
+                
                 cell.request?.cancel()
-                var img:UIImage?
+                var img: UIImage?
+                
+                //img = TimeLineVC.imageCache.objectForKey(post.imageUrl) as? UIImage
+               // print(post.imageUrl)
+                
                 
                 if let url = post.imageUrl {
                     img = TimeLineVC.imageCache.objectForKey(url) as? UIImage
                 }
                 
-                cell.configureCell(img, post: post)
-                return cell
+                
+                    print(img)
+                    print(post.postDescription)
+                    cell.configureCell(img, post: post)
+                    return cell
+                
+//                } else {
+//                    cell.configureCell(nil, post: post)
+//                    return cell
+//                }
+                
+                
             } else {
                 return PostCell()
             }
@@ -57,16 +72,30 @@ extension TimeLineVC : UITableViewDataSource {
         }
     }
     
-//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        if tableView == self.TableView {
-//            let post = posts[indexPath.row]
-//            if post.imageUrl == nil {
-//                return 200
-//            } else {
-//                return TableView.estimatedRowHeight
-//            }
-//        }
-//        return menuTableView.estimatedRowHeight
-//    }
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if tableView == self.TableView {
+            let post = posts[indexPath.row]
+            if post.imageUrl == nil {
+                return 250
+            } else {
+                return TableView.estimatedRowHeight
+            
+            }
+//            return TableView.estimatedRowHeight
+        } else {
+            return 52
+        }
+        
+    }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if tableView == self.menuTableView {
+            let menuTitle = listArray[indexPath.row]
+            if menuTitle == "Map" {
+                performSegueWithIdentifier("MapVC", sender: nil)
+            }
+        }
+    }
     
 }

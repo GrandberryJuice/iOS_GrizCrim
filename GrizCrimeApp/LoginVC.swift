@@ -21,35 +21,51 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        emailtxtField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
+        passwordtxtField.attributedPlaceholder = NSAttributedString(string:"Password", attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
+        
+        emailtxtField.textColor = UIColor.whiteColor()
+        passwordtxtField.textColor = UIColor.whiteColor()
+       // UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        if let email = NSUserDefaults.standardUserDefaults().valueForKey("email") as? String,
+            let password = NSUserDefaults.standardUserDefaults().valueForKey("password") as? String {
+            emailtxtField.text = email
+            passwordtxtField.text = password
+            login()
+        }
+    
     }
     
     //MARK: Facebook login
-    @IBAction func fbBtnPressed(sender:UIButton!) {
-        //let ref = URL_BASE
-        let facebookLogin = FBSDKLoginManager()
-        // not being used at the moment
-        // Firebase 17999 error issue
-        facebookLogin.logInWithReadPermissions(["email"], fromViewController: self) { (facebookResult, facebookError) -> Void in
-            if facebookError != nil {
-                print("Facebook login failed. Error \(facebookError)")
-            } else if facebookResult.isCancelled {
-                print("Facebook login was cancelled")
-            } else {
-                let credential = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
-                FIRAuth.auth()?.signInWithCredential(credential) { user, error in
-                    if error != nil {
-                        print("Login failed. \(error)")
-                    } else {
-                        print("Logged in! \(user)")
-                        let userData = ["provider": "Facebook"]
-                        DataService.ds.createFirebaseUser(user!.uid, user: userData)
-                        NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
-                        self.performSegueWithIdentifier("ProfileVC", sender: nil)
-                    }
-                }
-            }
-        }
-    }
+//    @IBAction func fbBtnPressed(sender:UIButton!) {
+//        //let ref = URL_BASE
+//        let facebookLogin = FBSDKLoginManager()
+//        // not being used at the moment
+//        // Firebase 17999 error issue
+//        facebookLogin.logInWithReadPermissions(["email"], fromViewController: self) { (facebookResult, facebookError) -> Void in
+//            if facebookError != nil {
+//                print("Facebook login failed. Error \(facebookError)")
+//            } else if facebookResult.isCancelled {
+//                print("Facebook login was cancelled")
+//            } else {
+//                let credential = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
+//                FIRAuth.auth()?.signInWithCredential(credential) { user, error in
+//                    if error != nil {
+//                        print("Login failed. \(error)")
+//                    } else {
+//                        print("Logged in! \(user)")
+//                        let userData = ["provider": "Facebook"]
+//                        DataService.ds.createFirebaseUser(user!.uid, user: userData)
+//                        NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
+//                        self.performSegueWithIdentifier("ProfileVC", sender: nil)
+//                    }
+//                }
+//            }
+//        }
+//    }
     
     //MARK: Email sign in
     @IBAction func Login_Signup(sender: AnyObject) {
@@ -77,10 +93,27 @@ class LoginVC: UIViewController {
                 
             } else {
                 //write if let on user to ensure its not empty
-                NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
-                let userData = ["provider":"email"]
-                DataService.ds.createFirebaseUser(user!.uid, user: userData)
-                self.performSegueWithIdentifier("ProfileVC", sender: nil)
+                if let userKey = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as? String {
+                    if userKey == user!.uid {
+                        NSUserDefaults.standardUserDefaults().setValue(self.emailtxtField.text, forKey:"email")
+                        NSUserDefaults.standardUserDefaults().setValue(self.passwordtxtField.text, forKey: "password")
+                        self.performSegueWithIdentifier("LogTimeline", sender: nil)
+                    } else {
+                        NSUserDefaults.standardUserDefaults().setValue(self.emailtxtField.text, forKey:"email")
+                        NSUserDefaults.standardUserDefaults().setValue(self.passwordtxtField.text, forKey: "password")
+                        NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
+                        let userData = ["provider":"email"]
+                        DataService.ds.createFirebaseUser(user!.uid, user: userData)
+                        self.performSegueWithIdentifier("ProfileVC", sender: nil)
+                    }
+                } else {
+                    NSUserDefaults.standardUserDefaults().setValue(self.emailtxtField.text, forKey:"email")
+                    NSUserDefaults.standardUserDefaults().setValue(self.passwordtxtField.text, forKey: "password")
+                    NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
+                    let userData = ["provider":"email"]
+                    DataService.ds.createFirebaseUser(user!.uid, user: userData)
+                    self.performSegueWithIdentifier("ProfileVC", sender: nil)
+                }
             }
             
         })

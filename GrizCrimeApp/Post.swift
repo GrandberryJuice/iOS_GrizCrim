@@ -14,6 +14,9 @@ class Post {
     private var _imageUrl:String?
     private var _username:String!
     private var _postKey:String!
+    private var _profilePic:String!
+
+    
     
     var postDescription:String {
         return _postDescription
@@ -30,6 +33,10 @@ class Post {
     
     var postKey:String {
         return _postKey
+    }
+    
+    var profilePic:String{
+        return _profilePic
     }
     
     init(description:String, imageUrl:String?, username:String) {
@@ -50,7 +57,12 @@ class Post {
             self._postDescription = desc
         }
         
-        //add username later on!!
+        if let proPic = dictionary["profilePic"] as? String {
+            self._profilePic = proPic
+        }
         
+        if let username = dictionary["username"] as? String {
+            self._username = username
+        }
     }
 }

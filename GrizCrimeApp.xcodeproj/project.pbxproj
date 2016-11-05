@@ -24,6 +24,16 @@
 		C71E01281D0652D0007D6D99 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71E01251D0652D0007D6D99 /* FBSDKCoreKit.framework */; };
 		C71E01291D0652D0007D6D99 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71E01261D0652D0007D6D99 /* FBSDKLoginKit.framework */; };
 		C73FD36F1D938D9500C40546 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FD36E1D938D9500C40546 /* MapVC.swift */; };
+		C73FD3821D94B71500C40546 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = C73FD3791D94B71500C40546 /* GeoFire.m */; };
+		C73FD3831D94B71500C40546 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C73FD37B1D94B71500C40546 /* GFBase32Utils.m */; };
+		C73FD3841D94B71500C40546 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = C73FD37D1D94B71500C40546 /* GFGeoHash.m */; };
+		C73FD3851D94B71500C40546 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C73FD37F1D94B71500C40546 /* GFGeoHashQuery.m */; };
+		C73FD3861D94B71500C40546 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = C73FD3811D94B71500C40546 /* GFQuery.m */; };
+		C73FD3881D94E48000C40546 /* CrimeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FD3871D94E48000C40546 /* CrimeAnnotation.swift */; };
+		C73FD38A1D96CEB200C40546 /* CrimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FD3891D96CEB200C40546 /* CrimeCell.swift */; };
+		C73FD38C1D96D17A00C40546 /* CrimeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FD38B1D96D17A00C40546 /* CrimeCollectionView.swift */; };
+		C73FD38E1D96D47D00C40546 /* CollectionViewCrimeExten.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FD38D1D96D47D00C40546 /* CollectionViewCrimeExten.swift */; };
+		C73FD3901D9CC33A00C40546 /* PostProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FD38F1D9CC33A00C40546 /* PostProfile.swift */; };
 		C7CE22471D7DEEBD00318B82 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CE22461D7DEEBD00318B82 /* ProfileVC.swift */; };
 		C7CE22491D7DF13D00318B82 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CE22481D7DF13D00318B82 /* PostVC.swift */; };
 		C7F3DD9A1D236786006D95EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7F3DD991D236786006D95EA /* GoogleService-Info.plist */; };
@@ -83,6 +93,26 @@
 		C71E01251D0652D0007D6D99 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		C71E01261D0652D0007D6D99 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		C73FD36E1D938D9500C40546 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		C73FD3721D94B71500C40546 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		C73FD3731D94B71500C40546 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		C73FD3741D94B71500C40546 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		C73FD3751D94B71500C40546 /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		C73FD3761D94B71500C40546 /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		C73FD3781D94B71500C40546 /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		C73FD3791D94B71500C40546 /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		C73FD37A1D94B71500C40546 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		C73FD37B1D94B71500C40546 /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		C73FD37C1D94B71500C40546 /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		C73FD37D1D94B71500C40546 /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		C73FD37E1D94B71500C40546 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		C73FD37F1D94B71500C40546 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		C73FD3801D94B71500C40546 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		C73FD3811D94B71500C40546 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		C73FD3871D94E48000C40546 /* CrimeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeAnnotation.swift; sourceTree = "<group>"; };
+		C73FD3891D96CEB200C40546 /* CrimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeCell.swift; sourceTree = "<group>"; };
+		C73FD38B1D96D17A00C40546 /* CrimeCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeCollectionView.swift; sourceTree = "<group>"; };
+		C73FD38D1D96D47D00C40546 /* CollectionViewCrimeExten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCrimeExten.swift; sourceTree = "<group>"; };
+		C73FD38F1D9CC33A00C40546 /* PostProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostProfile.swift; sourceTree = "<group>"; };
 		C7CE22461D7DEEBD00318B82 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C7CE22481D7DF13D00318B82 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		C7F3DD991D236786006D95EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -168,6 +198,7 @@
 		C71E00981D04CB31007D6D99 /* GrizCrimeApp */ = {
 			isa = PBXGroup;
 			children = (
+				C73FD3701D94B71500C40546 /* GeoFire */,
 				C71E01231D0652B2007D6D99 /* frameworks */,
 				C71E00D51D054A9C007D6D99 /* Util */,
 				C71E00D11D054938007D6D99 /* Extension */,
@@ -202,6 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				C7F3DDAD1D2F7869006D95EA /* Post.swift */,
+				C73FD3871D94E48000C40546 /* CrimeAnnotation.swift */,
+				C73FD38B1D96D17A00C40546 /* CrimeCollectionView.swift */,
+				C73FD38F1D9CC33A00C40546 /* PostProfile.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -216,6 +250,7 @@
 				C7F3DDA71D25834A006D95EA /* CustomUIView.swift */,
 				C7F3DDAB1D2CB14C006D95EA /* MaterialView.swift */,
 				C70C429B1D85FBF500F83C49 /* AnimationEngine.swift */,
+				C73FD3891D96CEB200C40546 /* CrimeCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -246,6 +281,7 @@
 				C7F3DD9D1D24E127006D95EA /* TableViewExten.swift */,
 				C7F3DDA31D256983006D95EA /* ImageExten.swift */,
 				C7F3DDA91D25C007006D95EA /* UIViewExten.swift */,
+				C73FD38D1D96D47D00C40546 /* CollectionViewCrimeExten.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -279,6 +315,44 @@
 				C71E01261D0652D0007D6D99 /* FBSDKLoginKit.framework */,
 			);
 			name = frameworks;
+			sourceTree = "<group>";
+		};
+		C73FD3701D94B71500C40546 /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				C73FD3711D94B71500C40546 /* API */,
+				C73FD3761D94B71500C40546 /* GeoFire-Prefix.pch */,
+				C73FD3771D94B71500C40546 /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		C73FD3711D94B71500C40546 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C73FD3721D94B71500C40546 /* GeoFire.h */,
+				C73FD3731D94B71500C40546 /* GFCircleQuery.h */,
+				C73FD3741D94B71500C40546 /* GFQuery.h */,
+				C73FD3751D94B71500C40546 /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C73FD3771D94B71500C40546 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				C73FD3781D94B71500C40546 /* GeoFire+Private.h */,
+				C73FD3791D94B71500C40546 /* GeoFire.m */,
+				C73FD37A1D94B71500C40546 /* GFBase32Utils.h */,
+				C73FD37B1D94B71500C40546 /* GFBase32Utils.m */,
+				C73FD37C1D94B71500C40546 /* GFGeoHash.h */,
+				C73FD37D1D94B71500C40546 /* GFGeoHash.m */,
+				C73FD37E1D94B71500C40546 /* GFGeoHashQuery.h */,
+				C73FD37F1D94B71500C40546 /* GFGeoHashQuery.m */,
+				C73FD3801D94B71500C40546 /* GFQuery+Private.h */,
+				C73FD3811D94B71500C40546 /* GFQuery.m */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		D8256FD27FDC8C7045A86474 /* Pods */ = {
@@ -562,18 +636,28 @@
 				C7CE22471D7DEEBD00318B82 /* ProfileVC.swift in Sources */,
 				C7F3DD9E1D24E127006D95EA /* TableViewExten.swift in Sources */,
 				C7F3DDAC1D2CB14C006D95EA /* MaterialView.swift in Sources */,
+				C73FD38C1D96D17A00C40546 /* CrimeCollectionView.swift in Sources */,
 				C7F3DDAE1D2F7869006D95EA /* Post.swift in Sources */,
+				C73FD3821D94B71500C40546 /* GeoFire.m in Sources */,
 				C70C429C1D85FBF500F83C49 /* AnimationEngine.swift in Sources */,
 				C73FD36F1D938D9500C40546 /* MapVC.swift in Sources */,
+				C73FD3851D94B71500C40546 /* GFGeoHashQuery.m in Sources */,
+				C73FD3901D9CC33A00C40546 /* PostProfile.swift in Sources */,
 				C7F3DDA41D256983006D95EA /* ImageExten.swift in Sources */,
+				C73FD3881D94E48000C40546 /* CrimeAnnotation.swift in Sources */,
 				C71E00D41D0549EF007D6D99 /* DataService.swift in Sources */,
+				C73FD3861D94B71500C40546 /* GFQuery.m in Sources */,
 				C71E009C1D04CB31007D6D99 /* LoginVC.swift in Sources */,
 				C7CE22491D7DF13D00318B82 /* PostVC.swift in Sources */,
 				C71E009A1D04CB31007D6D99 /* AppDelegate.swift in Sources */,
+				C73FD38E1D96D47D00C40546 /* CollectionViewCrimeExten.swift in Sources */,
 				C71E00D71D054AB7007D6D99 /* Constants.swift in Sources */,
 				C7F3DDAA1D25C007006D95EA /* UIViewExten.swift in Sources */,
+				C73FD3831D94B71500C40546 /* GFBase32Utils.m in Sources */,
 				C7F3DD9C1D24E0AB006D95EA /* TimeLineVC.swift in Sources */,
 				C70C429E1D862DE300F83C49 /* MenuCell.swift in Sources */,
+				C73FD38A1D96CEB200C40546 /* CrimeCell.swift in Sources */,
+				C73FD3841D94B71500C40546 /* GFGeoHash.m in Sources */,
 				C7F3DDA61D25779E006D95EA /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -77,10 +77,13 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
                 
                 if let img = uploadImg.image {
                     let upload = UIImageJPEGRepresentation(img, 0.2)
-                    dismissViewControllerAnimated(true, completion: {})
-                    PostToFirebase(upload)
                     
+                    PostToFirebase(upload)
+                    dismissViewControllerAnimated(true, completion: {})
+                } else {
+                    PostToFirebase(nil)
                 }
+                
             }
         }
         
@@ -107,9 +110,18 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
     
     //MARK: Post Data to Firebase
     func PostToFirebase(imgUrl:NSData?) {
+        
         var postDict:Dictionary<String,AnyObject> = [
             "description" : textViewLbl.text
         ]
+        
+        if let username = NSUserDefaults.standardUserDefaults().valueForKey("username") as? String {
+            postDict["username"] = username
+        }
+        
+        if let profilePic = NSUserDefaults.standardUserDefaults().valueForKey("profileImg") as? String {
+            postDict["profilePic"]  = profilePic
+        }
         
         let firebasePost = DataService.ds.Ref_Post.childByAutoId()
         
@@ -133,12 +145,16 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
                     
                     firebasePost.setValue(postDict)
                     self.uploadImg = nil
+                    self.dismissViewControllerAnimated(true, completion: {})
                 }
             }
             
-
+            
         } else {
             firebasePost.setValue(postDict)
+            self.dismissViewControllerAnimated(true, completion: {})
         }
+        
+        
     }
 }
