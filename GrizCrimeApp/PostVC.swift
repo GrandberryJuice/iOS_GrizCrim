@@ -28,6 +28,8 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
         textViewLbl.textColor = UIColor.darkGrayColor()
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
        
     }
     
@@ -154,7 +156,11 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
             firebasePost.setValue(postDict)
             self.dismissViewControllerAnimated(true, completion: {})
         }
-        
-        
     }
+    
+    func dismissKeyboard() {
+        //Close keyboard
+        view.endEditing(true)
+    }
+    
 }

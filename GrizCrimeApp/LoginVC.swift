@@ -13,11 +13,12 @@ import FBSDKCoreKit
 import Firebase
 
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController, UITextFieldDelegate {
     
     //MARK: Outlets
     @IBOutlet weak var emailtxtField:UITextField!
     @IBOutlet weak var passwordtxtField:UITextField!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,9 @@ class LoginVC: UIViewController {
         
         emailtxtField.textColor = UIColor.whiteColor()
         passwordtxtField.textColor = UIColor.whiteColor()
+        
+        emailtxtField.delegate = self
+        passwordtxtField.delegate = self
        // UIApplication.sharedApplication().statusBarStyle = .LightContent
         
         if let email = NSUserDefaults.standardUserDefaults().valueForKey("email") as? String,
@@ -39,33 +43,6 @@ class LoginVC: UIViewController {
     
     }
     
-    //MARK: Facebook login
-//    @IBAction func fbBtnPressed(sender:UIButton!) {
-//        //let ref = URL_BASE
-//        let facebookLogin = FBSDKLoginManager()
-//        // not being used at the moment
-//        // Firebase 17999 error issue
-//        facebookLogin.logInWithReadPermissions(["email"], fromViewController: self) { (facebookResult, facebookError) -> Void in
-//            if facebookError != nil {
-//                print("Facebook login failed. Error \(facebookError)")
-//            } else if facebookResult.isCancelled {
-//                print("Facebook login was cancelled")
-//            } else {
-//                let credential = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
-//                FIRAuth.auth()?.signInWithCredential(credential) { user, error in
-//                    if error != nil {
-//                        print("Login failed. \(error)")
-//                    } else {
-//                        print("Logged in! \(user)")
-//                        let userData = ["provider": "Facebook"]
-//                        DataService.ds.createFirebaseUser(user!.uid, user: userData)
-//                        NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
-//                        self.performSegueWithIdentifier("ProfileVC", sender: nil)
-//                    }
-//                }
-//            }
-//        }
-//    }
     
     //MARK: Email sign in
     @IBAction func Login_Signup(sender: AnyObject) {
@@ -117,6 +94,24 @@ class LoginVC: UIViewController {
             }
             
         })
+    }
+    
+    //Move ScrollView for TextField
+    func textFieldDidBeginEditing(textField: UITextField) {
+        scrollView.setContentOffset(CGPoint(x: 0,y: 100), animated: true)
+        scrollView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleDiss)))
+    }
+    
+    //Close keyboard
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        scrollView.setContentOffset(CGPointMake(0, 0), animated: true)
+        return true
+    }
+    
+    func handleDiss() {
+        scrollView.setContentOffset(CGPointMake(0, 0), animated: true)
+        view.endEditing(true)
     }
     
     //MARK: Error message to User

@@ -35,9 +35,6 @@ class MapVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate, UICol
         geoFireRef = FIRDatabase.database().reference()
         geoFire = GeoFire(firebaseRef:geoFireRef)
         collectionView.layer.cornerRadius = 5.0
-    
-        
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -129,7 +126,6 @@ class MapVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate, UICol
                 self.mapView.addAnnotation(anno)
             }
        })
-    
     }
     
     

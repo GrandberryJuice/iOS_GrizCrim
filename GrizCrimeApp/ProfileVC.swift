@@ -19,7 +19,8 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         super.viewDidLoad()
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        // Do any additional setup after loading the view.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
     }
  
 
@@ -72,4 +73,10 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
             
         }
     }
+    
+    func dismissKeyboard() {
+        //Close keyboard
+        view.endEditing(true)
+    }
+    
 }

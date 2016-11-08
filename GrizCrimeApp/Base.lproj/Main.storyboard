@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-794.5" y="391.5"/>
+            <point key="canvasLocation" x="-971.5" y="361.5"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="kuf-sV-pP5">
@@ -372,7 +372,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small logo" translatesAutoresizingMaskIntoConstraints="NO" id="1TI-KR-Ueb">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logogriz" translatesAutoresizingMaskIntoConstraints="NO" id="1TI-KR-Ueb">
                                         <rect key="frame" x="83" y="5" width="54" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="54" id="3dB-Lc-rNL"/>
@@ -433,17 +433,17 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="izs-ih-ACI">
                                                             <rect key="frame" x="3" y="3" width="321" height="655"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Kjw-gg-xNZ">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Kjw-gg-xNZ">
                                                                     <rect key="frame" x="5" y="0.0" width="311" height="40"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="celebrities-rocking-colorful-hair-u1" translatesAutoresizingMaskIntoConstraints="NO" id="ULn-6t-WnP">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="celebrities-rocking-colorful-hair-u1" translatesAutoresizingMaskIntoConstraints="NO" id="ULn-6t-WnP">
                                                                             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="40" id="Z3B-X5-g0m"/>
                                                                                 <constraint firstAttribute="height" constant="40" id="xGc-fY-OZt"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="@GrandberryJuice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0Y-Fz-LF7">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="@GrandberryJuice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0Y-Fz-LF7">
                                                                             <rect key="frame" x="52" y="0.0" width="259" height="40"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1062,117 +1062,139 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="EAe-XE-7nP">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vpP-EA-2PH">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8h8-aB-2Gd">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jdv-RR-Rx2">
-                                        <rect key="frame" x="209" y="0.0" width="183" height="183"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="EAe-XE-7nP">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="I3N-Nt-5SR">
+                                        <rect key="frame" x="0.0" y="8" width="600" height="592"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="D6q-iT-JqX">
-                                                <rect key="frame" x="0.0" y="0.0" width="183" height="183"/>
+                                                <rect key="frame" x="209" y="0.0" width="183" height="183"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="183" id="edM-mM-wr7"/>
+                                                    <constraint firstAttribute="width" constant="183" id="lIq-aF-a54"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="edM-mM-wr7"/>
+                                                        <exclude reference="lIq-aF-a54"/>
+                                                    </mask>
+                                                </variation>
                                             </imageView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-1G-xKd">
-                                        <rect key="frame" x="235" y="193" width="131" height="28"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GrizCrime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQU-zy-rZT">
-                                                <rect key="frame" x="0.0" y="0.0" width="131" height="28"/>
-                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ELJ-6R-EVj">
-                                        <rect key="frame" x="74" y="231" width="453" height="19"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay in touch with some of the crime in Memphis" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyg-KI-61s">
-                                                <rect key="frame" x="0.0" y="0.0" width="453" height="19"/>
-                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="576-6C-Fjk">
-                                        <rect key="frame" x="158" y="260" width="285" height="52"/>
-                                        <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" background="Email" translatesAutoresizingMaskIntoConstraints="NO" id="cJd-bI-Kcs" customClass="CustomTextField" customModule="GrizCrimeApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="285" height="52"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="285" id="NGK-FI-jdf"/>
-                                                    <constraint firstAttribute="height" constant="52" id="fAa-vQ-WUh"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
-                                                        <real key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LmM-tZ-q3U">
-                                        <rect key="frame" x="158" y="322" width="285" height="52"/>
-                                        <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" background="Email" translatesAutoresizingMaskIntoConstraints="NO" id="b22-Xo-lzY" customClass="CustomTextField" customModule="GrizCrimeApp" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="285" height="52"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="52" id="Lvl-Ja-RVk"/>
-                                                    <constraint firstAttribute="width" constant="285" id="uNg-6D-Rg6"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
-                                                        <real key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DXt-Sw-bBi">
-                                        <rect key="frame" x="158" y="384" width="285" height="216"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5Y-rM-AzP">
-                                                <rect key="frame" x="0.0" y="0.0" width="285" height="216"/>
-                                                <state key="normal" image=" Sign up"/>
-                                                <connections>
-                                                    <action selector="Login_Signup:" destination="huw-dO-Mk6" eventType="touchUpInside" id="JKR-uF-UDt"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ELJ-6R-EVj">
+                                                <rect key="frame" x="74" y="189" width="453" height="19"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay in touch with some of the crime in Memphis" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyg-KI-61s">
+                                                        <rect key="frame" x="0.0" y="0.0" width="453" height="19"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-1G-xKd">
+                                                <rect key="frame" x="235" y="214" width="131" height="28"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GrizCrime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQU-zy-rZT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="131" height="28"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="576-6C-Fjk">
+                                                <rect key="frame" x="158" y="248" width="285" height="52"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" background="Email" translatesAutoresizingMaskIntoConstraints="NO" id="cJd-bI-Kcs" customClass="CustomTextField" customModule="GrizCrimeApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="52"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="285" id="NGK-FI-jdf"/>
+                                                            <constraint firstAttribute="height" constant="52" id="fAa-vQ-WUh"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LmM-tZ-q3U">
+                                                <rect key="frame" x="158" y="306" width="285" height="52"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" background="Email" translatesAutoresizingMaskIntoConstraints="NO" id="b22-Xo-lzY" customClass="CustomTextField" customModule="GrizCrimeApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="52"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="52" id="Lvl-Ja-RVk"/>
+                                                            <constraint firstAttribute="width" constant="285" id="uNg-6D-Rg6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DXt-Sw-bBi">
+                                                <rect key="frame" x="158" y="364" width="285" height="228"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5Y-rM-AzP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="228"/>
+                                                        <state key="normal" image=" Sign up"/>
+                                                        <connections>
+                                                            <action selector="Login_Signup:" destination="huw-dO-Mk6" eventType="touchUpInside" id="JKR-uF-UDt"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstItem="EAe-XE-7nP" firstAttribute="leading" secondItem="8h8-aB-2Gd" secondAttribute="leading" id="1uK-a7-0Zy"/>
+                                    <constraint firstAttribute="bottom" secondItem="EAe-XE-7nP" secondAttribute="bottom" id="8Fr-v2-Ks0"/>
+                                    <constraint firstItem="I3N-Nt-5SR" firstAttribute="centerY" secondItem="8h8-aB-2Gd" secondAttribute="centerY" id="RpR-v3-Kos"/>
+                                    <constraint firstAttribute="trailing" secondItem="EAe-XE-7nP" secondAttribute="trailing" id="Wev-bd-bS0"/>
+                                    <constraint firstAttribute="bottom" secondItem="I3N-Nt-5SR" secondAttribute="bottom" id="Xgv-LM-25F"/>
+                                    <constraint firstItem="EAe-XE-7nP" firstAttribute="centerY" secondItem="8h8-aB-2Gd" secondAttribute="centerY" id="eYH-aL-YUM"/>
+                                    <constraint firstItem="I3N-Nt-5SR" firstAttribute="leading" secondItem="8h8-aB-2Gd" secondAttribute="leading" id="gWe-vG-CCr"/>
+                                    <constraint firstAttribute="trailing" secondItem="I3N-Nt-5SR" secondAttribute="trailing" id="gtk-AP-A1Y"/>
+                                    <constraint firstItem="EAe-XE-7nP" firstAttribute="top" secondItem="8h8-aB-2Gd" secondAttribute="top" id="mfI-Z4-hHe"/>
+                                    <constraint firstItem="EAe-XE-7nP" firstAttribute="leading" secondItem="8h8-aB-2Gd" secondAttribute="leading" id="o6I-YF-gYb"/>
+                                    <constraint firstItem="I3N-Nt-5SR" firstAttribute="top" secondItem="8h8-aB-2Gd" secondAttribute="top" constant="8" id="pSe-9M-iLV"/>
+                                    <constraint firstItem="I3N-Nt-5SR" firstAttribute="centerX" secondItem="8h8-aB-2Gd" secondAttribute="centerX" id="svt-ox-79c"/>
+                                    <constraint firstItem="EAe-XE-7nP" firstAttribute="top" secondItem="8h8-aB-2Gd" secondAttribute="top" id="xfE-mf-zWZ"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="EAe-XE-7nP" firstAttribute="leading" secondItem="t3K-ci-LGV" secondAttribute="leading" id="CrD-aR-MUM"/>
-                            <constraint firstItem="EAe-XE-7nP" firstAttribute="top" secondItem="t3K-ci-LGV" secondAttribute="top" id="VX4-PM-mnO"/>
-                            <constraint firstAttribute="trailing" secondItem="vpP-EA-2PH" secondAttribute="trailing" id="Vop-hm-QjF"/>
-                            <constraint firstAttribute="trailing" secondItem="EAe-XE-7nP" secondAttribute="trailing" id="Wq8-rv-qaZ"/>
-                            <constraint firstItem="vpP-EA-2PH" firstAttribute="leading" secondItem="t3K-ci-LGV" secondAttribute="leading" id="ZZd-Iy-lWU"/>
-                            <constraint firstItem="vpP-EA-2PH" firstAttribute="top" secondItem="t3K-ci-LGV" secondAttribute="top" id="dzo-Vw-j0n"/>
-                            <constraint firstItem="CGO-iq-VKV" firstAttribute="top" secondItem="EAe-XE-7nP" secondAttribute="bottom" id="mKk-9f-rtb"/>
-                            <constraint firstItem="CGO-iq-VKV" firstAttribute="top" secondItem="vpP-EA-2PH" secondAttribute="bottom" id="ogu-n1-P4O"/>
+                            <constraint firstAttribute="trailing" secondItem="8h8-aB-2Gd" secondAttribute="trailing" id="1I4-1U-iQO"/>
+                            <constraint firstItem="8h8-aB-2Gd" firstAttribute="top" secondItem="t3K-ci-LGV" secondAttribute="top" id="MiT-C2-jvH"/>
+                            <constraint firstItem="CGO-iq-VKV" firstAttribute="top" secondItem="8h8-aB-2Gd" secondAttribute="bottom" id="km6-F2-HfJ"/>
+                            <constraint firstItem="8h8-aB-2Gd" firstAttribute="leading" secondItem="t3K-ci-LGV" secondAttribute="leading" id="nw5-OM-vIQ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailtxtField" destination="cJd-bI-Kcs" id="CaO-R3-Uyc"/>
                         <outlet property="passwordtxtField" destination="b22-Xo-lzY" id="8rq-1V-u2A"/>
+                        <outlet property="scrollView" destination="8h8-aB-2Gd" id="6yL-u4-F5K"/>
                         <segue destination="1CA-fV-ix8" kind="show" identifier="ProfileVC" id="62z-JA-F5B"/>
                         <segue destination="Eaq-CT-KWr" kind="show" identifier="LogTimeline" id="eJM-RK-y5x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EkN-aU-bGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-202" y="323"/>
+            <point key="canvasLocation" x="-116" y="300"/>
         </scene>
     </scenes>
     <resources>
@@ -1187,6 +1209,7 @@
         <image name="celebrities-rocking-colorful-hair-u1" width="480" height="253"/>
         <image name="collectionTheif" width="70" height="70"/>
         <image name="logo" width="183" height="183"/>
+        <image name="logogriz" width="54" height="54"/>
         <image name="menuBtn" width="26" height="20"/>
         <image name="messagebtn" width="30" height="30"/>
         <image name="plus" width="50" height="50"/>
@@ -1195,6 +1218,6 @@
         <image name="small logo" width="54" height="54"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="thV-sH-5Vj"/>
+        <segue reference="eJM-RK-y5x"/>
     </inferredMetricsTieBreakers>
 </document>
