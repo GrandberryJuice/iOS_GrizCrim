@@ -114,6 +114,7 @@ class PostCell: UITableViewCell {
     override func draw(_ rect: CGRect) {
         profileImage.circleImage(profileImage)
         profileImage.clipsToBounds = true
+        postImage.clipsToBounds = true
     }
     
 }
