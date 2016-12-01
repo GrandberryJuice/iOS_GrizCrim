@@ -19,23 +19,23 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         super.viewDidLoad()
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ProfileVC.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
  
 
-    @IBAction func selectProfilePic(sender: AnyObject) {
-         presentViewController(imagePicker, animated: true, completion: nil)
+    @IBAction func selectProfilePic(_ sender: AnyObject) {
+         present(imagePicker, animated: true, completion: nil)
     }
 
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        imagePicker.dismiss(animated: true, completion: nil)
         uploadImage.image = image
     }
     
     
-    @IBAction func PressedContinue(sender:UIButton) {
+    @IBAction func PressedContinue(_ sender:UIButton) {
         if uploadImage.image != nil && username.text != nil {
             if let img = uploadImage.image {
                 let upload = UIImageJPEGRepresentation(img, 0.2)
@@ -44,30 +44,30 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         }
     }
     
-    func PostToFirebase(imgUrl:NSData) {
+    func PostToFirebase(_ imgUrl:Data) {
         var postDict:Dictionary<String,AnyObject> = [
-            "username": username.text!
+            "username": username.text! as AnyObject
         ]
         
         
-        let imgUid = NSUUID().UUIDString
+        let imgUid = UUID().uuidString
         DataService.ds.Ref_Profile_Images.child(imgUid)
         let metaData = FIRStorageMetadata()
         metaData.contentType = "image/jpeg"
         
-        DataService.ds.Ref_Profile_Images.child(imgUid).putData(imgUrl, metadata:metaData) { (metaData, error) in
+        DataService.ds.Ref_Profile_Images.child(imgUid).put(imgUrl, metadata:metaData) { (metaData, error) in
             
             if error != nil {
                 print("Error with uploading Profile img")
             } else {
                 print("Successfully posted image")
                 let downloadUrl = metaData?.downloadURL()?.absoluteString
-                postDict["profilePic"] = downloadUrl
+                postDict["profilePic"] = downloadUrl as AnyObject?
                
-               NSUserDefaults.standardUserDefaults().setValue(downloadUrl, forKey:"profileImg")
-               NSUserDefaults.standardUserDefaults().setValue(self.username.text, forKey:"username")
+               UserDefaults.standard.setValue(downloadUrl, forKey:"profileImg")
+               UserDefaults.standard.setValue(self.username.text, forKey:"username")
                 
-               let userid = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as? String
+               let userid = UserDefaults.standard.value(forKey: KEY_UID) as? String
                 DataService.ds.createFirebaseUserProfile(userid!, user: postDict)
             }
             

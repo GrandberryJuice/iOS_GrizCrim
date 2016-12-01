@@ -10,35 +10,31 @@ import Foundation
 
 extension TimeLineVC : UITableViewDataSource {
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         if tableView == self.TableView {
             
             let post = posts[indexPath.row]
-            if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
                 
                 cell.request?.cancel()
                 var img: UIImage?
+                var profilePicture:UIImage?
                 
-                //img = TimeLineVC.imageCache.objectForKey(post.imageUrl) as? UIImage
-               // print(post.imageUrl)
-                
-                
+                //post pictures
                 if let url = post.imageUrl {
-                    img = TimeLineVC.imageCache.objectForKey(url) as? UIImage
+                    img = TimeLineVC.imageCache.object(forKey: url as AnyObject) as? UIImage
+                   
                 }
                 
+                //profile picture
+                if let propic = post.profilePic {
+                    profilePicture = TimeLineVC.imageCache.object(forKey: propic as AnyObject) as? UIImage
+                }
                 
-                    print(img)
-                    print(post.postDescription)
-                    cell.configureCell(img, post: post)
-                    return cell
-                
-//                } else {
-//                    cell.configureCell(nil, post: post)
-//                    return cell
-//                }
-                
+                cell.configureCell(propicCrazy: profilePicture, img: img, post: post)
+                cell.configureProfileImages(propicCrazy: profilePicture, post: post)
+                return cell
                 
             } else {
                 return PostCell()
@@ -48,7 +44,7 @@ extension TimeLineVC : UITableViewDataSource {
             let menuTitle = listArray[indexPath.row]
             let icon = menu[indexPath.row]
             
-            if let cell = tableView.dequeueReusableCellWithIdentifier("MenuCell") as? MenuCell {
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell") as? MenuCell {
                 cell.configureCell(menuTitle, icon: icon)
                 return cell
             } else {
@@ -60,19 +56,19 @@ extension TimeLineVC : UITableViewDataSource {
         
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == self.TableView{
             return posts.count
         } else {
-        return self.listArray.count
+            return self.listArray.count
         }
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if tableView == self.TableView {
             let post = posts[indexPath.row]
             if post.imageUrl == nil {
@@ -81,19 +77,31 @@ extension TimeLineVC : UITableViewDataSource {
                 return TableView.estimatedRowHeight
             
             }
-//            return TableView.estimatedRowHeight
         } else {
             return 52
         }
-        
     }
     
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView == self.menuTableView {
             let menuTitle = listArray[indexPath.row]
+            
+            //Operate menu
             if menuTitle == "Map" {
-                performSegueWithIdentifier("MapVC", sender: nil)
+                performSegue(withIdentifier: "MapVC", sender: nil)
+                handleDismiss()
+            } else if menuTitle == "Profile" {
+                performSegue(withIdentifier: "ProfileVC", sender: nil)
+                handleDismiss()
+            } else  if menuTitle == "About" {
+                performSegue(withIdentifier: "AboutUsVC", sender: nil)
+                handleDismiss()
+            } else if menuTitle == "Close"{
+                UIView.animate(withDuration: 0.5, animations: { () -> Void in
+                    self.darkbackground.isHidden = true
+                    self.menuConstraints.constant = -300
+                })
             }
         }
     }

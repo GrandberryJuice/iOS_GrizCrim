@@ -10,7 +10,7 @@ import Foundation
 
 extension UIImageView {
     
-    func circleImage (image:UIImageView) {
+    func circleImage (_ image:UIImageView) {
         image.layer.cornerRadius = image.frame.size.width / 2
     }
 }

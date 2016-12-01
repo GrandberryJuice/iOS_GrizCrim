@@ -19,11 +19,11 @@ class DataService {
     
     static let ds = DataService()
     //DB reference
-    private var _Ref_Base = URL_BASE
-    private var _Ref_Post = URL_BASE.child("post")
-    private var _Ref_Users = URL_BASE.child("users")
-    private var _Ref_Post_Images = STORAGE_BASE.child("post-images")
-    private var _Ref_Profile_Images = STORAGE_BASE.child("profile-images")
+    fileprivate var _Ref_Base = URL_BASE
+    fileprivate var _Ref_Post = URL_BASE.child("post")
+    fileprivate var _Ref_Users = URL_BASE.child("users")
+    fileprivate var _Ref_Post_Images = STORAGE_BASE.child("post-images")
+    fileprivate var _Ref_Profile_Images = STORAGE_BASE.child("profile-images")
     
     
     var Ref_Base:FIRDatabaseReference {
@@ -48,16 +48,16 @@ class DataService {
     }
     
     var Ref_User_Current:FIRDatabaseReference {
-       let uid = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as! String
+       let uid = UserDefaults.standard.value(forKey: KEY_UID) as! String
         let user = URL_BASE.child("users").child(uid)
         return user
     }
     
-    func createFirebaseUser(uid:String, user:Dictionary<String,String>) {
+    func createFirebaseUser(_ uid:String, user:Dictionary<String,String>) {
         Ref_Users.child(uid).updateChildValues(user)
     }
 
-    func createFirebaseUserProfile(uid:String, user:Dictionary<String,AnyObject>) {
+    func createFirebaseUserProfile(_ uid:String, user:Dictionary<String,AnyObject>) {
         Ref_Users.child(uid).updateChildValues(user)
     }
 

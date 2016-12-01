@@ -9,8 +9,8 @@
 import Foundation
 
 class PostProfile {
-    private var _profileImage:String!
-    private var _username:String!
+    fileprivate var _profileImage:String!
+    fileprivate var _username:String!
     
     var profileImage:String {
         return _profileImage

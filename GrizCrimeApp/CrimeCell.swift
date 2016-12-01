@@ -20,7 +20,7 @@ class CrimeCell: UICollectionViewCell {
         layer.cornerRadius = 5.0
     }
     
-    func configureCell(crimeName:String,crimeImage:String) {
+    func configureCell(_ crimeName:String,crimeImage:String) {
 //        self.crimeVC = crime
         
         thumbImg.image = UIImage(named:crimeImage)

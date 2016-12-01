@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		030EE94515C2356DAD997BBD884B07B6 /* POPAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE8487F7F6552F2C6C447EFFB926CE5 /* POPAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		06120AA8AE9B68E701F0F71E208D6B73 /* Pods-GrizCrimeApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7BB1ECEA9F738A3EC481B99FD813D /* Pods-GrizCrimeApp-dummy.m */; };
-		095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D81CB3E7B6B3F13974A76DAD10FE1 /* Error.swift */; };
+		0C1B4E9FFB8B81E8833A3BAD537B1990 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305474D3F89C40B83622C7CE21FD4E77 /* Notifications.swift */; };
 		11C63A9D789F7870050D6EA4255DC847 /* pop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76292AD864461FD8FC15C722185B2D5F /* pop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12118C354EFA36292F82A8D0CFCE45B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731719B02A3F99EC62D6F212C1720660 /* Request.swift */; };
 		15D20E83F20CAA120956D15C3BFE598A /* POPAnimatorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 93CDE71DA9F6968509041F8D1255C2A5 /* POPAnimatorPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037F14D371F629D50FF31545AF46641B /* Timeline.swift */; };
 		16AE502267107DA67FEF2EBDB1A31CF9 /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9FCAFFCBEEEC557F9FEC0FC72724F83E /* POPCustomAnimation.mm */; };
 		17DB569CFD4BD0CC3307C2BBFD3E260B /* POPAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = D14060636DEF19449E350FDB93103835 /* POPAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1878E2FAD21BC32B902FC7376DFADE99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
@@ -21,56 +21,52 @@
 		229E638923D68486555F6A1A465BCDE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		2943540465AFEC43337C9EA9FBC6C13C /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A3171EFCC8CD51419AAAFC6CF2541CD /* POPAnimationExtras.mm */; };
 		2C4FEF47989575C0243658B9B22A4F71 /* POPSpringSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CE0C64F3101E95839AED743C5B2FF4E /* POPSpringSolver.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEDF4A61B3873B606A5FCBA56CA512 /* Validation.swift */; };
 		33D2769B5A49D916FD03DE0D5ED4E889 /* POPVector.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF5E649E4E99EFFF4D2F1A95B22130C /* POPVector.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		34CCDCA848A701466256BC2927DA8856 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD8C3CC4F39925292D4E987C334B56 /* NetworkReachabilityManager.swift */; };
 		3763D5572DFABE2F18E923BADABA7511 /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1888488E9DEB6B04824C48809AE3452E /* POPGeometry.mm */; };
+		3982B850C43B41BA6D25F440F0412E9B /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D48390FE06098DDDDA45165305EA900 /* Timeline.swift */; };
 		3A9E64324C1EE92B75E5FDE4EAE78089 /* POPMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFFAB8DF937CC309B2B0155DA8242DB8 /* POPMath.mm */; };
-		3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DBED244CC620F8E24CE3A16A1D2755 /* ResponseSerialization.swift */; };
 		40295919CFA54DB5BFAFA1B9C11B79F9 /* Pods-GrizCrimeAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF1C9381C8041EBE7C7AA45A7E1461 /* Pods-GrizCrimeAppTests-dummy.m */; };
-		4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50D693033C1F339307B7BA17B43D16F /* Manager.swift */; };
 		42AA7B154BB0C17891E5BAC25312949D /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = B364E1DC4B645C5F058EF2564E6FC766 /* POPSpringAnimation.mm */; };
 		4730948829574C01C0CACF46DF561596 /* POPGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 606818C4B6BC118CB85B7FDC9B91D8E0 /* POPGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4954AEBD8FB91EF1149BD98B1D1C9651 /* pop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3250551ABFC9D9517E42F5745F0C2 /* pop-dummy.m */; };
 		541EAAAB3587444C6D6A150CCBDA316D /* FloatConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E25DA6A36FED3AE6DEC1EF4EB08B023 /* FloatConversion.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		54401E0A8C4DD5706AB6786B4B68FCFC /* POPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B4A60BA7C7E06B0AA93EB4159DE5F77 /* POPPropertyAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CC5782C2C55CF638E5AF3896D2E2AC /* Upload.swift */; };
 		5C4FE470E950C0A3DA657FB80BEA0DEB /* Pods-GrizCrimeAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E1310EAACAE2300B476A5084D1A386D /* Pods-GrizCrimeAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713839567765A0BE07C5BBFFDB26E461 /* Download.swift */; };
 		5D0417A210667B53B15EAC7A993A1479 /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = D11253666585CACA41DD5B0BA6E421F9 /* POPCGUtils.mm */; };
 		5E95A2BF68A8EDBAADCB3110BF43D776 /* Pods-GrizCrimeAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B2073CD75C61B2383E0B64B4B3824 /* Pods-GrizCrimeAppUITests-dummy.m */; };
+		62143065F94E53F437DCE5D7A998D66D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A832DEB7A16F660ED4DD93F5153AE1 /* AFError.swift */; };
 		629ED60CD69B6E386A03A61E497D467E /* POPCustomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C417AA9B9488BF19613A9E5CE9CB9139 /* POPCustomAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B1452A30BC536666CF6627CDA99D75 /* Response.swift */; };
 		64C97B95B0DFBF810FE3AADDECB8152C /* POPDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 94825ECD86A4ECB91292770D1CF68681 /* POPDecayAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6574137BED88D388F1047C410DBB760C /* POPLayerExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 9731C63098038185C031F2526024ACD6 /* POPLayerExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CFFE9C1A8CA18EE5D512B2BDBB180EE /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED83C033E6D02F13025DD2257A1C8EE6 /* POPVector.mm */; };
 		710C49540960D9ED35A5A7A183F81AB3 /* Pods-GrizCrimeAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B65CB70DEB04FAEB5FB94A143B9EA530 /* Pods-GrizCrimeAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750848A735F8896802453EC89A472910 /* ServerTrustPolicy.swift */; };
+		7CA5A9BA5246FDA8227233E310029392 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941610AD1EAB95125C61917833BC45A /* Alamofire.swift */; };
 		7CE014755BE741DFB9CD6C8FB5B68839 /* POPAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD91413141836D05DBD633763C4445F /* POPAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D20525F653F7AD72D6DA68EE5CB2445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		815CEF64097CEBA53063A0A9D6DFCFF1 /* POPDecayAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4A7030007D8E4C8D958F426ADCDB3902 /* POPDecayAnimation.mm */; };
 		83A3D16194B48D06E508E791E85AF642 /* POPAnimationEventInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 77DBB4B2E2A71D17CCB2946049B75A2E /* POPAnimationEventInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		86ED08F33B7D357932A9AB743E9D9EA7 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1234CFFC74E82156E354AA14E9B38 /* Response.swift */; };
 		8A43ACBCDF712D546E1482659A43072B /* POPAnimationTracerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 067601D7860E38533EE9FB7FD54F3B33 /* POPAnimationTracerInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8C0A088E1CB1495F91553F459C991A3D /* POPBasicAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BDD55CF0F2C3D2CAFE7B2ECC00E5B8B /* POPBasicAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8C10EC90F09485417428D386EA96F1A0 /* POPAnimationRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9349DFE52ED07646F90DD0BBFFF0A93F /* POPAnimationRuntime.mm */; };
+		8D463A0A4C65C02FDD5211F0F3C6F8B8 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C05C5BD517E335FF2D29390604CD9AC8 /* Alamofire-dummy.m */; };
 		8D4F09CD5616846041B77D8091E7320D /* TransformationMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 83071B09CEF1C8AB8A0F32C531D600C0 /* TransformationMatrix.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D1984C4CFF96B4CB1A8D794F14F45F /* Alamofire.swift */; };
+		907AB123FBC8BC9340D5B7350CE828DF /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B82FE2AE8922458D515D60EBC53463A /* SessionDelegate.swift */; };
 		91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		937E92459D8EA91852FC39083EDFE3D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EB5FA24DBA3C45DCB2EA04F226B2A67 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 263262573B0C1EBFB59220F2CFB5D26B /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EE62A35F3DD9702BAFCC918CD2D5150 /* POPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BACAAE47B9D3AE67634AA8DE9A0ED45 /* POPMath.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A17261ED8E3FEFEF2A05DDA7BA0CDD6A /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5FF2E082293F7AC52C92E91859CD1AF /* TransformationMatrix.cpp */; };
 		A561D6FE668D1D6B9A82A9FD861264D2 /* POPAnimationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = C4BC6732B9D69D16CD458CB1E4006F75 /* POPAnimationEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD54875240AEECA1629F67201E7D234 /* Result.swift */; };
+		A79AC30123B0C2177D67F6ED6A1B3215 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033DBA535C740A34FA8EB1A1B8916841 /* SessionManager.swift */; };
 		AB020836BDB1DC6DBCD8E9AF582F0660 /* POP.h in Headers */ = {isa = PBXBuildFile; fileRef = DC40461E23511163AFFAFCCAB53A25BA /* POP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6607A32D105C1806D64B07A1BCC4FD18 /* Alamofire-dummy.m */; };
-		AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACBEC9201ED10968C0521586948B713 /* Stream.swift */; };
+		AF158CAAF4DD319009AFC855DC995D90 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414871E86C36B28D19EE588A1890D5DC /* ParameterEncoding.swift */; };
 		B352775824C6AFCA8E1F2C7D0A41BC36 /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = B67ABFDC04B068DDDAEDB10F46A9BB60 /* POPLayerExtras.mm */; };
+		B8154C96802336E5DDA5CEE97C3180A0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39667A51DB011ECFFFA6F50882A7AD3 /* ResponseSerialization.swift */; };
 		B85D9599B6937FFB71789DCC17313488 /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C30C4DAC4928B265D4F369B89B5D7A7 /* POPPropertyAnimation.mm */; };
-		BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ACEFF54F7E9CE02F5F548E7980ED24 /* Notifications.swift */; };
-		C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF28039F773E38C620947F697E10C4A /* ParameterEncoding.swift */; };
+		C0AEA97E7684DDAD56998C0AE198A433 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD612E85B963C1A96EAA2DDC6A6BB88 /* ServerTrustPolicy.swift */; };
 		C251A0F36C47FE17C2BA146DC568D302 /* POPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AF85900E4AA9ACD372EA8DB9AF3D95 /* POPAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A988A9FB131F2CD714ED8E7D16B93F /* MultipartFormData.swift */; };
+		C7A3408350643ADE1018826C766EE356 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD28EABBD762AF74882CECEB9B3FBC1 /* MultipartFormData.swift */; };
 		C7CF98C5B2233928E66939B06B478054 /* POPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 995173D140906C30C7836342F4EC4A8C /* POPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8B559D3264721D4D68D77EF8CDB0A16 /* POPAnimationTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = A2B5B06E1064179706294CC2C420C8E9 /* POPAnimationTracer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8E3017A8E782F4393AEECE9CFA52C29 /* POPSpringAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A53F432194A347FC317B177D856F4FD /* POPSpringAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -82,14 +78,18 @@
 		DBD3E0C0FEEC16B65850DDDE4ECB73AC /* POPAnimationRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5169F5F9C0157B34594D8015D5477D /* POPAnimationRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DCEE92E87E020A0F71429276416EF338 /* POPDecayAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = D0E42A845E8C5BEB9F8F69531C21E51C /* POPDecayAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DE97BA01583C545DF4AF8E14E07D48ED /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEE80CE0FB0628160410671DC27E72D6 /* POPAnimatableProperty.mm */; };
+		DF1BBF94997A2F4248B42B25EA919EC2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63383D09DECC6BB59AEA6922ED939377 /* Result.swift */; };
+		E1F583CB4A68A928CD197250AA752926 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445AA756C26826F770ADBAC0FBDC106 /* TaskDelegate.swift */; };
+		E2A1C34237B4E928E5F85C097F4C2551 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3264A85ABE0EB03260721EB6B3F72756 /* DispatchQueue+Alamofire.swift */; };
+		E59BF19C0AFA68B741552319FC478C7B /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1920A8842374E24010F6A9D363E9A /* NetworkReachabilityManager.swift */; };
 		E824D817EDF1AD93E81A6A08845C4712 /* POPAnimatableProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 069BC638A64AB9B42C3EFA5C831AF019 /* POPAnimatableProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9A108F9AA894841FB9C75D1B8FAA890 /* POPPropertyAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B3D4CAC4CEC5C2A644B0DD74DF763B /* POPPropertyAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EB8C869D6DEF03E85A130525C0D7CCDE /* Pods-GrizCrimeApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15EB0CDBB0B1DF1AB88BDFAECE3752BE /* Pods-GrizCrimeApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF622394EF494F257DEDEDDF56B6B0EB /* UnitBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EAFD8CD92D962B70BD716414C6BA4C0 /* UnitBezier.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EF708B6A7009572A04E0B2FCABC07B6C /* POPAnimationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B9E50B1552B1365849CEF51EFCBCFAB /* POPAnimationExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C657C7D37CE151B9B07C9A5F251B1C59 /* Request.swift */; };
 		F2631B08E91BB621722568DD65D2FD0E /* POPBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = DB24F66AD1078E0D0F87EE5EE428D446 /* POPBasicAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F77AE922E007EB3A6E36D1AC827F6EE5 /* POPAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = F7899998625EFEE14A926895568BFC57 /* POPAnimation.mm */; };
+		FFFDD494EE6D1B83DDAF5F2721F685A6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454FD6B89C6B07BCDF3B2643936AA04 /* Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,20 +111,23 @@
 
 /* Begin PBXFileReference section */
 		03392A75660B805C1C7920F859A0C80C /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
-		037F14D371F629D50FF31545AF46641B /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		033DBA535C740A34FA8EB1A1B8916841 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		0445AA756C26826F770ADBAC0FBDC106 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		0454FD6B89C6B07BCDF3B2643936AA04 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		067601D7860E38533EE9FB7FD54F3B33 /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
 		069BC638A64AB9B42C3EFA5C831AF019 /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
 		0914700C11677C9FF6118AEDDD805739 /* Pods-GrizCrimeAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GrizCrimeAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		09D1234CFFC74E82156E354AA14E9B38 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		0B9E50B1552B1365849CEF51EFCBCFAB /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
 		0C30C4DAC4928B265D4F369B89B5D7A7 /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
+		0D48390FE06098DDDDA45165305EA900 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		0E865A1B12B826FCCC5E0341DC0EFBC4 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EAFD8CD92D962B70BD716414C6BA4C0 /* UnitBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnitBezier.h; path = pop/WebCore/UnitBezier.h; sourceTree = "<group>"; };
-		0EB5FA24DBA3C45DCB2EA04F226B2A67 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		0EC0572B5C6EF49FE0AF0E3E410426DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE581188ADC403D69D71622279A8078 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		101FBD68740C1410742FBAC03971FE89 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		10F7BB1ECEA9F738A3EC481B99FD813D /* Pods-GrizCrimeApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GrizCrimeApp-dummy.m"; sourceTree = "<group>"; };
 		15EB0CDBB0B1DF1AB88BDFAECE3752BE /* Pods-GrizCrimeApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GrizCrimeApp-umbrella.h"; sourceTree = "<group>"; };
-		16EEDF4A61B3873B606A5FCBA56CA512 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		17C7AFA0CE5D5C840F26930A05716DD5 /* Pods_GrizCrimeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrizCrimeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1888488E9DEB6B04824C48809AE3452E /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
 		1A3171EFCC8CD51419AAAFC6CF2541CD /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
@@ -133,37 +136,42 @@
 		20A73771BA91C9A88E54FA814C9F50D1 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		233B6D65C95C6BDF6B73A8F0A8C82F57 /* Pods-GrizCrimeApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrizCrimeApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		23AB1388D362949EFBC1CAB8E5A48C6C /* POPSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimation.h; path = pop/POPSpringAnimation.h; sourceTree = "<group>"; };
-		2BAD8C3CC4F39925292D4E987C334B56 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		263262573B0C1EBFB59220F2CFB5D26B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		2B82FE2AE8922458D515D60EBC53463A /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		2BB1920A8842374E24010F6A9D363E9A /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		2C50846B4A06C4C6E6553DD6EB3A68DC /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		2D9C8193A46B17382E47F6C10D359E5C /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
 		2E25DA6A36FED3AE6DEC1EF4EB08B023 /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
 		2EDF1C9381C8041EBE7C7AA45A7E1461 /* Pods-GrizCrimeAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GrizCrimeAppTests-dummy.m"; sourceTree = "<group>"; };
 		2F1F51EE6AE1E87B812B486FA519BA6F /* Pods-GrizCrimeAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GrizCrimeAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		305474D3F89C40B83622C7CE21FD4E77 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		3264A85ABE0EB03260721EB6B3F72756 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		3362494EF83957BE456BF8C0F39EE46E /* Pods-GrizCrimeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrizCrimeAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A53F432194A347FC317B177D856F4FD /* POPSpringAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimationInternal.h; path = pop/POPSpringAnimationInternal.h; sourceTree = "<group>"; };
 		3BACAAE47B9D3AE67634AA8DE9A0ED45 /* POPMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPMath.h; path = pop/POPMath.h; sourceTree = "<group>"; };
-		3DD54875240AEECA1629F67201E7D234 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		3EF4312DB069450A5A8B61B87DBF6AD4 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		3F09994B774066E006D9A5BE6DECB8BC /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		414871E86C36B28D19EE588A1890D5DC /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		46A3B2AABC7082503696BC3CC001776A /* POPAnimationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationPrivate.h; path = pop/POPAnimationPrivate.h; sourceTree = "<group>"; };
 		48EB78B123A4770BBB722438C7B21502 /* Pods-GrizCrimeAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrizCrimeAppUITests-frameworks.sh"; sourceTree = "<group>"; };
 		4A7030007D8E4C8D958F426ADCDB3902 /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
 		4A9C3D7EE596C7027186E1F1E8D9B1E1 /* Pods_GrizCrimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrizCrimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B4D81CB3E7B6B3F13974A76DAD10FE1 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		4CD28EABBD762AF74882CECEB9B3FBC1 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		4E1310EAACAE2300B476A5084D1A386D /* Pods-GrizCrimeAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GrizCrimeAppTests-umbrella.h"; sourceTree = "<group>"; };
 		5041F1315F6786168DFC1EFA9E41E4A8 /* pop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = pop.modulemap; sourceTree = "<group>"; };
 		5AFACBC354AEB6FED2E884A07D68D396 /* Pods-GrizCrimeAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GrizCrimeAppTests.modulemap"; sourceTree = "<group>"; };
 		5F193AE75717ABCEAD5CB151C7C08E6E /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
 		606818C4B6BC118CB85B7FDC9B91D8E0 /* POPGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPGeometry.h; path = pop/POPGeometry.h; sourceTree = "<group>"; };
-		6607A32D105C1806D64B07A1BCC4FD18 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		63383D09DECC6BB59AEA6922ED939377 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		683A9A6454870E262FFE47625EC36A23 /* Pods-GrizCrimeApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GrizCrimeApp.modulemap"; sourceTree = "<group>"; };
-		6AF28039F773E38C620947F697E10C4A /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		68A832DEB7A16F660ED4DD93F5153AE1 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		6DB342DA4195F2495CDBF4E2BB684150 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
-		713839567765A0BE07C5BBFFDB26E461 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
 		71AF85900E4AA9ACD372EA8DB9AF3D95 /* POPAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAction.h; path = pop/POPAction.h; sourceTree = "<group>"; };
-		74A988A9FB131F2CD714ED8E7D16B93F /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		750848A735F8896802453EC89A472910 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		731719B02A3F99EC62D6F212C1720660 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		76014E6336EFE00D0CADAF00A688707E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76292AD864461FD8FC15C722185B2D5F /* pop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-umbrella.h"; sourceTree = "<group>"; };
 		77DBB4B2E2A71D17CCB2946049B75A2E /* POPAnimationEventInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEventInternal.h; path = pop/POPAnimationEventInternal.h; sourceTree = "<group>"; };
+		7941610AD1EAB95125C61917833BC45A /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		7BDD55CF0F2C3D2CAFE7B2ECC00E5B8B /* POPBasicAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimationInternal.h; path = pop/POPBasicAnimationInternal.h; sourceTree = "<group>"; };
 		7C1DE939BE90DAEB38469787BCD4AA3B /* Pods-GrizCrimeAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrizCrimeAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D2C9CD9638DA19925A1DE7D0D112DCB /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
@@ -174,15 +182,14 @@
 		8B4A60BA7C7E06B0AA93EB4159DE5F77 /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
 		8CD91413141836D05DBD633763C4445F /* POPAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimator.h; path = pop/POPAnimator.h; sourceTree = "<group>"; };
 		8CE0C64F3101E95839AED743C5B2FF4E /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
-		925806C10EA4CA4C95934F3ABDC1134B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		9349DFE52ED07646F90DD0BBFFF0A93F /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93CDE71DA9F6968509041F8D1255C2A5 /* POPAnimatorPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatorPrivate.h; path = pop/POPAnimatorPrivate.h; sourceTree = "<group>"; };
 		94825ECD86A4ECB91292770D1CF68681 /* POPDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimation.h; path = pop/POPDecayAnimation.h; sourceTree = "<group>"; };
-		94ACEFF54F7E9CE02F5F548E7980ED24 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		9731C63098038185C031F2526024ACD6 /* POPLayerExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPLayerExtras.h; path = pop/POPLayerExtras.h; sourceTree = "<group>"; };
 		983735405FF83657ED20B368B4C37B3F /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
 		995173D140906C30C7836342F4EC4A8C /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
+		9A5E53A9A1FD9B281FAABFE068CAEE18 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		9B69BEB2548F73A66749816C68DA43A0 /* Pods-GrizCrimeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrizCrimeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9B74ED97A9DD8F7B8FDB6354789BC6CC /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
 		9D1B2073CD75C61B2383E0B64B4B3824 /* Pods-GrizCrimeAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GrizCrimeAppUITests-dummy.m"; sourceTree = "<group>"; };
@@ -190,43 +197,36 @@
 		9E7D8020225FFC7F395494EF79EF66A7 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
 		9FCAFFCBEEEC557F9FEC0FC72724F83E /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
 		A2B5B06E1064179706294CC2C420C8E9 /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
-		A7D1984C4CFF96B4CB1A8D794F14F45F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		A39667A51DB011ECFFFA6F50882A7AD3 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		A9B3D4CAC4CEC5C2A644B0DD74DF763B /* POPPropertyAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimationInternal.h; path = pop/POPPropertyAnimationInternal.h; sourceTree = "<group>"; };
 		AABBD2B6F9CF174FD628BA053CAFA2E6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B03712143DFD4A26684BEF595875892B /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
 		B2321546F90841290AF8560054EAB22B /* Pods-GrizCrimeAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrizCrimeAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B2CC5782C2C55CF638E5AF3896D2E2AC /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
 		B364E1DC4B645C5F058EF2564E6FC766 /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
-		B3EF3F00615367911F77921DC22DE360 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B65CB70DEB04FAEB5FB94A143B9EA530 /* Pods-GrizCrimeAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GrizCrimeAppUITests-umbrella.h"; sourceTree = "<group>"; };
 		B67ABFDC04B068DDDAEDB10F46A9BB60 /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
 		BD291581ADF9C4546175708059E30F40 /* Pods-GrizCrimeAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrizCrimeAppTests-resources.sh"; sourceTree = "<group>"; };
 		BEE8487F7F6552F2C6C447EFFB926CE5 /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
-		C1DBED244CC620F8E24CE3A16A1D2755 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		C05C5BD517E335FF2D29390604CD9AC8 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		C31EB993EDBA9926527A137ECC45D1FA /* Pods-GrizCrimeAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrizCrimeAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C417AA9B9488BF19613A9E5CE9CB9139 /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
 		C4BC6732B9D69D16CD458CB1E4006F75 /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
 		C5FF2E082293F7AC52C92E91859CD1AF /* TransformationMatrix.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = TransformationMatrix.cpp; path = pop/WebCore/TransformationMatrix.cpp; sourceTree = "<group>"; };
-		C657C7D37CE151B9B07C9A5F251B1C59 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		C8B1452A30BC536666CF6627CDA99D75 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		CAD24645FDE3DC494F41914C8AC86286 /* Pods-GrizCrimeAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrizCrimeAppUITests-resources.sh"; sourceTree = "<group>"; };
+		CAD612E85B963C1A96EAA2DDC6A6BB88 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		CDF5E649E4E99EFFF4D2F1A95B22130C /* POPVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPVector.h; path = pop/POPVector.h; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D0E42A845E8C5BEB9F8F69531C21E51C /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimationInternal.h; path = pop/POPDecayAnimationInternal.h; sourceTree = "<group>"; };
 		D11253666585CACA41DD5B0BA6E421F9 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
 		D14060636DEF19449E350FDB93103835 /* POPAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimation.h; path = pop/POPAnimation.h; sourceTree = "<group>"; };
 		D2940776D579E326B9D96663AA413FF0 /* Pods-GrizCrimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrizCrimeApp.debug.xcconfig"; sourceTree = "<group>"; };
-		D50D693033C1F339307B7BA17B43D16F /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
-		DACBEC9201ED10968C0521586948B713 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
 		DB24F66AD1078E0D0F87EE5EE428D446 /* POPBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimation.h; path = pop/POPBasicAnimation.h; sourceTree = "<group>"; };
 		DC40461E23511163AFFAFCCAB53A25BA /* POP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POP.h; path = pop/POP.h; sourceTree = "<group>"; };
 		DEEBE017B7303EAB4DD45D77C5358C65 /* pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-prefix.pch"; sourceTree = "<group>"; };
-		E0295E68DB400F45ECC78B3FDF3C0548 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		E201F7F8DD2488D0831065D97AF669BF /* Pods-GrizCrimeAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrizCrimeAppTests-frameworks.sh"; sourceTree = "<group>"; };
 		E628AB450D4445DF01F97B5328128F9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7B9EAE55AE5573059790B8DE4795CE8 /* Pods-GrizCrimeAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GrizCrimeAppUITests.modulemap"; sourceTree = "<group>"; };
 		E7D4944C41258B497378262B0E30E664 /* Pods-GrizCrimeApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrizCrimeApp-resources.sh"; sourceTree = "<group>"; };
-		EA02D075D6E2E46DAE9566E85071F520 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		EBF49C9270C99295F10F118207EDE529 /* Pods-GrizCrimeApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrizCrimeApp-frameworks.sh"; sourceTree = "<group>"; };
 		ED83C033E6D02F13025DD2257A1C8EE6 /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
 		EECDA3AB7C4DE8701525FFF5D8643507 /* Pods-GrizCrimeApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GrizCrimeApp-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -300,6 +300,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		08DAB7FB0C5FA9D4F1A5755C55D1AD35 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F09994B774066E006D9A5BE6DECB8BC /* Alamofire.modulemap */,
+				2C50846B4A06C4C6E6553DD6EB3A68DC /* Alamofire.xcconfig */,
+				C05C5BD517E335FF2D29390604CD9AC8 /* Alamofire-dummy.m */,
+				9A5E53A9A1FD9B281FAABFE068CAEE18 /* Alamofire-prefix.pch */,
+				263262573B0C1EBFB59220F2CFB5D26B /* Alamofire-umbrella.h */,
+				0FE581188ADC403D69D71622279A8078 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
 		096665E7DAAC87BE4A5AE35CECC76144 /* Pods-GrizCrimeAppUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,37 +374,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		29C21A89BBFCC3950282161DE3413FD5 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				A7D1984C4CFF96B4CB1A8D794F14F45F /* Alamofire.swift */,
-				713839567765A0BE07C5BBFFDB26E461 /* Download.swift */,
-				4B4D81CB3E7B6B3F13974A76DAD10FE1 /* Error.swift */,
-				D50D693033C1F339307B7BA17B43D16F /* Manager.swift */,
-				74A988A9FB131F2CD714ED8E7D16B93F /* MultipartFormData.swift */,
-				2BAD8C3CC4F39925292D4E987C334B56 /* NetworkReachabilityManager.swift */,
-				94ACEFF54F7E9CE02F5F548E7980ED24 /* Notifications.swift */,
-				6AF28039F773E38C620947F697E10C4A /* ParameterEncoding.swift */,
-				C657C7D37CE151B9B07C9A5F251B1C59 /* Request.swift */,
-				C8B1452A30BC536666CF6627CDA99D75 /* Response.swift */,
-				C1DBED244CC620F8E24CE3A16A1D2755 /* ResponseSerialization.swift */,
-				3DD54875240AEECA1629F67201E7D234 /* Result.swift */,
-				750848A735F8896802453EC89A472910 /* ServerTrustPolicy.swift */,
-				DACBEC9201ED10968C0521586948B713 /* Stream.swift */,
-				037F14D371F629D50FF31545AF46641B /* Timeline.swift */,
-				B2CC5782C2C55CF638E5AF3896D2E2AC /* Upload.swift */,
-				16EEDF4A61B3873B606A5FCBA56CA512 /* Validation.swift */,
-				A8F06AE7AD770541392C57B7B3C037E0 /* Support Files */,
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
 		2E2A3D2BA2E957A4929CBF30861CBA9C /* GoogleNetworkingUtilities */ = {
 			isa = PBXGroup;
 			children = (
 				5C95E49A570DF858E3B2049E1040D3DD /* Frameworks */,
 			);
 			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		2ECAF527A7A9DB93DD2FEDA2DB5E7771 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				68A832DEB7A16F660ED4DD93F5153AE1 /* AFError.swift */,
+				7941610AD1EAB95125C61917833BC45A /* Alamofire.swift */,
+				3264A85ABE0EB03260721EB6B3F72756 /* DispatchQueue+Alamofire.swift */,
+				4CD28EABBD762AF74882CECEB9B3FBC1 /* MultipartFormData.swift */,
+				2BB1920A8842374E24010F6A9D363E9A /* NetworkReachabilityManager.swift */,
+				305474D3F89C40B83622C7CE21FD4E77 /* Notifications.swift */,
+				414871E86C36B28D19EE588A1890D5DC /* ParameterEncoding.swift */,
+				731719B02A3F99EC62D6F212C1720660 /* Request.swift */,
+				09D1234CFFC74E82156E354AA14E9B38 /* Response.swift */,
+				A39667A51DB011ECFFFA6F50882A7AD3 /* ResponseSerialization.swift */,
+				63383D09DECC6BB59AEA6922ED939377 /* Result.swift */,
+				CAD612E85B963C1A96EAA2DDC6A6BB88 /* ServerTrustPolicy.swift */,
+				2B82FE2AE8922458D515D60EBC53463A /* SessionDelegate.swift */,
+				033DBA535C740A34FA8EB1A1B8916841 /* SessionManager.swift */,
+				0445AA756C26826F770ADBAC0FBDC106 /* TaskDelegate.swift */,
+				0D48390FE06098DDDDA45165305EA900 /* Timeline.swift */,
+				0454FD6B89C6B07BCDF3B2643936AA04 /* Validation.swift */,
+				08DAB7FB0C5FA9D4F1A5755C55D1AD35 /* Support Files */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -463,7 +477,7 @@
 		A387C3EA75D945ED3A94F4B9C35159DD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				29C21A89BBFCC3950282161DE3413FD5 /* Alamofire */,
+				2ECAF527A7A9DB93DD2FEDA2DB5E7771 /* Alamofire */,
 				B61DC7A1FB6CF1441A8E040EB76C9CFB /* Firebase */,
 				6472EABAB869CDC3B797F8A9DB72CDE4 /* FirebaseAnalytics */,
 				EA3938B33738D805D8266051B66C8178 /* FirebaseAuth */,
@@ -477,20 +491,6 @@
 				DCD978CB740DE28CD8F4DFF1BC18AAF8 /* pop */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		A8F06AE7AD770541392C57B7B3C037E0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E0295E68DB400F45ECC78B3FDF3C0548 /* Alamofire.modulemap */,
-				EA02D075D6E2E46DAE9566E85071F520 /* Alamofire.xcconfig */,
-				6607A32D105C1806D64B07A1BCC4FD18 /* Alamofire-dummy.m */,
-				925806C10EA4CA4C95934F3ABDC1134B /* Alamofire-prefix.pch */,
-				0EB5FA24DBA3C45DCB2EA04F226B2A67 /* Alamofire-umbrella.h */,
-				B3EF3F00615367911F77921DC22DE360 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
 		A9C1418EFF1FC25AF49B49006B6ABBAE /* GoogleUtilities */ = {
@@ -815,7 +815,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				95CC2C7E06DC188A05DAAEE9CAA555A3 /* Sources */,
+				120C4E824DDCCA024C170A491FF221A5 /* Sources */,
 				B1729F851F648EC60EE93CDB3C8BAEAD /* Frameworks */,
 				EFDF3B631BBB965A372347705CA14854 /* Headers */,
 			);
@@ -853,6 +853,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					6A287DF115988A0D5EBDAE45297E4665 = {
+						LastSwiftMigration = 0810;
+					};
+					79C040AFDDCE1BCBF6D8B5EB0B85887F = {
+						LastSwiftMigration = 0810;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -884,6 +892,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		120C4E824DDCCA024C170A491FF221A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62143065F94E53F437DCE5D7A998D66D /* AFError.swift in Sources */,
+				8D463A0A4C65C02FDD5211F0F3C6F8B8 /* Alamofire-dummy.m in Sources */,
+				7CA5A9BA5246FDA8227233E310029392 /* Alamofire.swift in Sources */,
+				E2A1C34237B4E928E5F85C097F4C2551 /* DispatchQueue+Alamofire.swift in Sources */,
+				C7A3408350643ADE1018826C766EE356 /* MultipartFormData.swift in Sources */,
+				E59BF19C0AFA68B741552319FC478C7B /* NetworkReachabilityManager.swift in Sources */,
+				0C1B4E9FFB8B81E8833A3BAD537B1990 /* Notifications.swift in Sources */,
+				AF158CAAF4DD319009AFC855DC995D90 /* ParameterEncoding.swift in Sources */,
+				12118C354EFA36292F82A8D0CFCE45B2 /* Request.swift in Sources */,
+				86ED08F33B7D357932A9AB743E9D9EA7 /* Response.swift in Sources */,
+				B8154C96802336E5DDA5CEE97C3180A0 /* ResponseSerialization.swift in Sources */,
+				DF1BBF94997A2F4248B42B25EA919EC2 /* Result.swift in Sources */,
+				C0AEA97E7684DDAD56998C0AE198A433 /* ServerTrustPolicy.swift in Sources */,
+				907AB123FBC8BC9340D5B7350CE828DF /* SessionDelegate.swift in Sources */,
+				A79AC30123B0C2177D67F6ED6A1B3215 /* SessionManager.swift in Sources */,
+				E1F583CB4A68A928CD197250AA752926 /* TaskDelegate.swift in Sources */,
+				3982B850C43B41BA6D25F440F0412E9B /* Timeline.swift in Sources */,
+				FFFDD494EE6D1B83DDAF5F2721F685A6 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46E91BD5CAEEEF55FB285229954468FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -897,31 +930,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E95A2BF68A8EDBAADCB3110BF43D776 /* Pods-GrizCrimeAppUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		95CC2C7E06DC188A05DAAEE9CAA555A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */,
-				8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */,
-				5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */,
-				095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */,
-				4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */,
-				C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */,
-				34CCDCA848A701466256BC2927DA8856 /* NetworkReachabilityManager.swift in Sources */,
-				BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */,
-				C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */,
-				EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */,
-				62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */,
-				3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */,
-				AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */,
-				7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */,
-				AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */,
-				16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */,
-				5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */,
-				2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -998,9 +1006,77 @@
 			};
 			name = Debug;
 		};
+		2B7557479FF60835B63BA70EBDC76026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2940776D579E326B9D96663AA413FF0 /* Pods-GrizCrimeApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GrizCrimeApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GrizCrimeApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		319CC177E6AEE3A20CEF847A2D578228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3362494EF83957BE456BF8C0F39EE46E /* Pods-GrizCrimeAppTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GrizCrimeAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GrizCrimeAppTests/Pods-GrizCrimeAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GrizCrimeAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		32AD5F8918CA8B349E4671410FA624C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA02D075D6E2E46DAE9566E85071F520 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 2C50846B4A06C4C6E6553DD6EB3A68DC /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1021,13 +1097,14 @@
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1058,158 +1135,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		454B4E8EF5DD05D2F80EB5891AC27090 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B69BEB2548F73A66749816C68DA43A0 /* Pods-GrizCrimeAppUITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GrizCrimeAppUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GrizCrimeAppUITests/Pods-GrizCrimeAppUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GrizCrimeAppUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4555CB79A257E138DD614369D212F0A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2940776D579E326B9D96663AA413FF0 /* Pods-GrizCrimeApp.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GrizCrimeApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GrizCrimeApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4E93DACB04CC931CFF0449FCB844740C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F73D0E04619C1DF175BDBD436BB10192 /* Pods-GrizCrimeApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GrizCrimeApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GrizCrimeApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
 		75218111E718FACE36F771E8ABECDB62 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA02D075D6E2E46DAE9566E85071F520 /* Alamofire.xcconfig */;
+			baseConfigurationReference = 2C50846B4A06C4C6E6553DD6EB3A68DC /* Alamofire.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1231,6 +1166,40 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		785F364A6FCE37A0A7232E6230FE251F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C1DE939BE90DAEB38469787BCD4AA3B /* Pods-GrizCrimeAppUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GrizCrimeAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GrizCrimeAppUITests/Pods-GrizCrimeAppUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GrizCrimeAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1266,9 +1235,51 @@
 			};
 			name = Release;
 		};
-		9141B3EB3B3CB92A6C5BEA777E117CF4 /* Release */ = {
+		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3362494EF83957BE456BF8C0F39EE46E /* Pods-GrizCrimeAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C418756C350F6A0FD02966473EFBB7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B69BEB2548F73A66749816C68DA43A0 /* Pods-GrizCrimeAppUITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1279,46 +1290,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GrizCrimeAppTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GrizCrimeAppTests/Pods-GrizCrimeAppTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GrizCrimeAppTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A4EC1C3328E01E052D47716D64799A76 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C1DE939BE90DAEB38469787BCD4AA3B /* Pods-GrizCrimeAppUITests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GrizCrimeAppUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GrizCrimeAppUITests/Pods-GrizCrimeAppUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1330,9 +1308,9 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		B5E5CAEB06B914EFAA72FD813F216083 /* Debug */ = {
+		E23D753BD3D6E6AD09F1325849C4C529 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 86F0D2BFA136F74264CB594372ABEE73 /* Pods-GrizCrimeAppTests.debug.xcconfig */;
 			buildSettings = {
@@ -1347,7 +1325,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-GrizCrimeAppTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GrizCrimeAppTests/Pods-GrizCrimeAppTests.modulemap";
@@ -1364,6 +1342,40 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		FDCCBF4AB93A850761A64B5AC4B8BF5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F73D0E04619C1DF175BDBD436BB10192 /* Pods-GrizCrimeApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GrizCrimeApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GrizCrimeApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1380,8 +1392,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
-				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+				AE9439C22469D35336242DD983DB5C5F /* Debug */,
+				42287DDF97330524BA3EF220F0276DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1398,8 +1410,8 @@
 		5223D52FBBA0396029F62544A6F5CD73 /* Build configuration list for PBXNativeTarget "Pods-GrizCrimeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4555CB79A257E138DD614369D212F0A3 /* Debug */,
-				4E93DACB04CC931CFF0449FCB844740C /* Release */,
+				2B7557479FF60835B63BA70EBDC76026 /* Debug */,
+				FDCCBF4AB93A850761A64B5AC4B8BF5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1407,8 +1419,8 @@
 		52648BB5DB0FF5DC9FC513E04457C1A9 /* Build configuration list for PBXNativeTarget "Pods-GrizCrimeAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4EC1C3328E01E052D47716D64799A76 /* Debug */,
-				454B4E8EF5DD05D2F80EB5891AC27090 /* Release */,
+				785F364A6FCE37A0A7232E6230FE251F /* Debug */,
+				C418756C350F6A0FD02966473EFBB7E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1416,8 +1428,8 @@
 		52E61C8B33702080BE8D550A9C46B7D3 /* Build configuration list for PBXNativeTarget "Pods-GrizCrimeAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B5E5CAEB06B914EFAA72FD813F216083 /* Debug */,
-				9141B3EB3B3CB92A6C5BEA777E117CF4 /* Release */,
+				E23D753BD3D6E6AD09F1325849C4C529 /* Debug */,
+				319CC177E6AEE3A20CEF847A2D578228 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

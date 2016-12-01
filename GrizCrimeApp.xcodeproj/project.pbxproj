@@ -46,6 +46,7 @@
 		C7F3DDAA1D25C007006D95EA /* UIViewExten.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3DDA91D25C007006D95EA /* UIViewExten.swift */; };
 		C7F3DDAC1D2CB14C006D95EA /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3DDAB1D2CB14C006D95EA /* MaterialView.swift */; };
 		C7F3DDAE1D2F7869006D95EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F3DDAD1D2F7869006D95EA /* Post.swift */; };
+		C7FBA5861DE0BF66006A81C8 /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FBA5851DE0BF66006A81C8 /* AboutUsVC.swift */; };
 		DBF47B9A08860473953D28EA /* Pods_GrizCrimeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47BCA39F5B7156001749672 /* Pods_GrizCrimeAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +126,7 @@
 		C7F3DDA91D25C007006D95EA /* UIViewExten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExten.swift; sourceTree = "<group>"; };
 		C7F3DDAB1D2CB14C006D95EA /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		C7F3DDAD1D2F7869006D95EA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C7FBA5851DE0BF66006A81C8 /* AboutUsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
 		CC3B9C476078B7D1199BD6A7 /* Pods-GrizCrimeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrizCrimeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D749805CFBEA2454E41E4E86 /* Pods_GrizCrimeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrizCrimeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2D673D85D66EF4B326965C /* Pods_GrizCrimeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrizCrimeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +265,7 @@
 				C7CE22461D7DEEBD00318B82 /* ProfileVC.swift */,
 				C7CE22481D7DF13D00318B82 /* PostVC.swift */,
 				C73FD36E1D938D9500C40546 /* MapVC.swift */,
+				C7FBA5851DE0BF66006A81C8 /* AboutUsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -444,13 +447,17 @@
 				TargetAttributes = {
 					C71E00951D04CB31007D6D99 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = JDJW8889MB;
+						LastSwiftMigration = 0810;
 					};
 					C71E00A91D04CB32007D6D99 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 						TestTargetID = C71E00951D04CB31007D6D99;
 					};
 					C71E00B41D04CB32007D6D99 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 						TestTargetID = C71E00951D04CB31007D6D99;
 					};
 				};
@@ -652,6 +659,7 @@
 				C71E009A1D04CB31007D6D99 /* AppDelegate.swift in Sources */,
 				C73FD38E1D96D47D00C40546 /* CollectionViewCrimeExten.swift in Sources */,
 				C71E00D71D054AB7007D6D99 /* Constants.swift in Sources */,
+				C7FBA5861DE0BF66006A81C8 /* AboutUsVC.swift in Sources */,
 				C7F3DDAA1D25C007006D95EA /* UIViewExten.swift in Sources */,
 				C73FD3831D94B71500C40546 /* GFBase32Utils.m in Sources */,
 				C7F3DD9C1D24E0AB006D95EA /* TimeLineVC.swift in Sources */,
@@ -804,16 +812,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = JDJW8889MB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GrizCrimeApp",
 				);
 				INFOPLIST_FILE = GrizCrimeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.GrizCrimeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grizcrime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GrizCrimeApp/GrizCrimeApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -823,15 +833,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = JDJW8889MB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GrizCrimeApp",
 				);
 				INFOPLIST_FILE = GrizCrimeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.GrizCrimeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grizcrime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GrizCrimeApp/GrizCrimeApp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -844,6 +856,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.GrizCrimeAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrizCrimeApp.app/GrizCrimeApp";
 			};
 			name = Debug;
@@ -857,6 +870,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.GrizCrimeAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrizCrimeApp.app/GrizCrimeApp";
 			};
 			name = Release;
@@ -869,6 +883,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.GrizCrimeAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = GrizCrimeApp;
 			};
 			name = Debug;
@@ -881,6 +896,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nerdinabriefcase.GrizCrimeAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = GrizCrimeApp;
 			};
 			name = Release;

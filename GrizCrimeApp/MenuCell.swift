@@ -17,7 +17,7 @@ class MenuCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func configureCell(title:String, icon:String) {
+    func configureCell(_ title:String, icon:String) {
         titleLbl.text = title
         titleIconImg.image = UIImage(named:icon)
     }

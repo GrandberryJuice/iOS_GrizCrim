@@ -24,78 +24,94 @@ class PostCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        ContentView.backgroundColor = UIColor.clearColor()
+        ContentView.backgroundColor = UIColor.clear
     }
     
+
     
     //UIImage?
     //MARK: Setup posts and images for tableView Cell
-    func configureCell(img:UIImage?, post:Post) {
+    func configureCell(propicCrazy:UIImage?,img:UIImage?, post:Post) {
         self.post = post
         self.descriptionText.text = post.postDescription
         
+        
         if post.imageUrl != nil {
             if img != nil {
-                 self.postImage.hidden = false
-                print("imaged Cached:  \(img)")
+                self.postImage.isHidden = false
                 postImage.image = img
                 return
                 
             } else {
                 if let imageUrl = post.imageUrl {
-            
-                    let url = NSURL(string:imageUrl)
+                    let url = URL(string:imageUrl)
                     if let imgUrl = url {
-                        NSURLSession.sharedSession().dataTaskWithURL(imgUrl, completionHandler: { (data, response, error) in
+                        URLSession.shared.dataTask(with: imgUrl, completionHandler: { (data, response, error) in
                             if error != nil {
                                 print("error")
                             } else {
                                 if let imgData = data {
                                     if let downloadimg = UIImage(data: imgData) {
-                                        TimeLineVC.imageCache.setObject(downloadimg, forKey:imageUrl)
-                                        dispatch_async(dispatch_get_main_queue(), {
+                                        TimeLineVC.imageCache.setObject(downloadimg, forKey:imageUrl as AnyObject)
+                                        DispatchQueue.main.async(execute: {
                                             self.postImage.image = downloadimg
-                                            self.postImage.hidden = false
+                                            self.postImage.isHidden = false
                                         })
                                     }
                                 }
                             }
                             
                         }).resume()
-                    
                     }
                 }
             }
         } else {
-            self.postImage.hidden = true
+            self.postImage.isHidden = true
         }
     }
     
-    func configureCellProfile(username:String,imgProfile:String ) {
-        self.username.text = username
-        
-        let ref = FIRStorage.storage().referenceForURL(imgProfile)
-        ref.dataWithMaxSize(2*1024*1024, completion: { (data, error) in
-            if error != nil {
-                print("There was an error with image download")
-            } else {
-                print("There images where downloaded")
+
+    //MARK: configure profile picture
+    func configureProfileImages(propicCrazy:UIImage?, post:Post) {
+        if post.profilePic != nil {
+            if propicCrazy != nil {
                 
-                if let postImg = data {
-                    if let img = UIImage(data:postImg) {
-                        self.postImage.image = img
-                       
-                        TimeLineVC.imageCache.setObject(img, forKey:imgProfile )
+                self.profileImage.isHidden = false
+                profileImage.image = propicCrazy
+                return
+                
+            } else {
+                if let imageprofile = post.profilePic {
+                    let profileimgurl = URL(string:imageprofile)
+                    if let proimgUrl = profileimgurl {
+                        URLSession.shared.dataTask(with: proimgUrl, completionHandler: { (data, response, error) in
+                            if error != nil {
+                                print("error")
+                            } else {
+                                print("downloading image")
+                                if let testData = data {
+                                    if let downloading = UIImage(data: testData) {
+                                        TimeLineVC.imageCache.setObject(downloading, forKey:imageprofile  as NSString)
+                                        DispatchQueue.main.async(execute: {
+                                            print("still downloaded image")
+                                            self.profileImage.image = downloading
+                                            self.profileImage.isHidden = false
+                                            
+                                        })
+                                    }
+                                }
+                            }
+                        }).resume()
                     }
                 }
             }
-        })
-        
-        
+        } else {
+            self.profileImage.isHidden = true
+        }
     }
     
     //MARK Draw Circles around images
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         profileImage.circleImage(profileImage)
         profileImage.clipsToBounds = true
     }

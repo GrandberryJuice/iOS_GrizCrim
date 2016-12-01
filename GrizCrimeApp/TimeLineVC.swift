@@ -20,15 +20,16 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
     @IBOutlet weak var tableViewMenuConstraints: NSLayoutConstraint!
     
     @IBOutlet weak var menuview: UIView!
-    let listArray = ["Profile","Map","About","Close"]
-    let menu = ["user.png","menuMap-1.png","menuAbout-1.png", "menuClose-1.png"]
+    let listArray = ["Map","About","Close"]
+    let menu = ["menuMap-1.png","menuAbout-1.png", "menuClose-1.png"]
     
     var posts = [Post]()
     var profilePost = [PostProfile]()
     
     
-    static var imageCache = NSCache()
-    
+    static var imageCache = NSCache<AnyObject, AnyObject>()
+    static var profileimageCache = NSCache<NSString,UIImage>()
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,7 +47,7 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
         menuview.layer.cornerRadius = 5.0
        
         //MARK: Firebase Data Retrieve
-        DataService.ds.Ref_Post.observeEventType(.Value, withBlock:  { snapshot in
+        DataService.ds.Ref_Post.observe(.value, with:  { snapshot in
             self.posts = []
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 
@@ -59,33 +60,31 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
                 }
             }
             self.TableView.reloadData()
-            print(self.posts)
         })
-        self.menuConstraints.constant = -300
+        self.menuConstraints.constant = -400
     }
     
     
     //MARK: Animate menu view
-    @IBAction func PressedMenuBtn(sender: UIButton) {
+    @IBAction func PressedMenuBtn(_ sender: UIButton) {
         menuTableView.reloadData()
-        darkbackground.hidden = false
+        darkbackground.isHidden = false
         darkbackground.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleDismiss)))
             
-        UIView.animateWithDuration(0.5) { () -> Void in
+        UIView.animate(withDuration: 0.5, animations: { () -> Void in
             self.menuTableView.reloadData()
             self.menuConstraints.constant = 0
             //self.tableViewMenuConstraints.constant = 0
-            
             self.view.layoutIfNeeded()
-        }
+        }) 
     }
     
     //MARK: Dismiss menu
     func handleDismiss() {
-        UIView.animateWithDuration(0.5) { () -> Void in
-            self.darkbackground.hidden = true
-            self.menuConstraints.constant = -300
-        }
+        UIView.animate(withDuration: 0.5, animations: { () -> Void in
+            self.darkbackground.isHidden = true
+            self.menuConstraints.constant = -400
+        }) 
     }
     
 }

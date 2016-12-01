@@ -23,30 +23,32 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        emailtxtField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [NSForegroundColorAttributeName:UIColor.white])
+        passwordtxtField.attributedPlaceholder = NSAttributedString(string:"Password", attributes: [NSForegroundColorAttributeName:UIColor.white])
         
-        emailtxtField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
-        passwordtxtField.attributedPlaceholder = NSAttributedString(string:"Password", attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
-        
-        emailtxtField.textColor = UIColor.whiteColor()
-        passwordtxtField.textColor = UIColor.whiteColor()
+        emailtxtField.textColor = UIColor.white
+        passwordtxtField.textColor = UIColor.white
         
         emailtxtField.delegate = self
         passwordtxtField.delegate = self
-       // UIApplication.sharedApplication().statusBarStyle = .LightContent
-        
-        if let email = NSUserDefaults.standardUserDefaults().valueForKey("email") as? String,
-            let password = NSUserDefaults.standardUserDefaults().valueForKey("password") as? String {
-            emailtxtField.text = email
-            passwordtxtField.text = password
-            login()
+
+        if let email = UserDefaults.standard.value(forKey: "email") as? String,
+            let password = UserDefaults.standard.value(forKey: "password") as? String {
+            //check if user has a profile image and username
+            if UserDefaults.standard.value(forKey: "profileImg") as? String != nil && UserDefaults.standard.value(forKey:"username") != nil {
+                emailtxtField.text = email
+                passwordtxtField.text = password
+                login()
+            } else {
+                performSegue(withIdentifier: "ProfileVC", sender: nil)
+            }
         }
-    
     }
     
     
     //MARK: Email sign in
-    @IBAction func Login_Signup(sender: AnyObject) {
-        FIRAuth.auth()?.createUserWithEmail(emailtxtField.text!, password: passwordtxtField.text!, completion: {
+    @IBAction func Login_Signup(_ sender: AnyObject) {
+        FIRAuth.auth()?.createUser(withEmail: emailtxtField.text!, password: passwordtxtField.text!, completion: {
         user, error in
             if error != nil{
                 self.login()
@@ -60,36 +62,36 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     //MARK: Login in User
     func login() {
-        FIRAuth.auth()?.signInWithEmail(emailtxtField.text!, password: passwordtxtField.text!, completion: {
+        FIRAuth.auth()?.signIn(withEmail: emailtxtField.text!, password: passwordtxtField.text!, completion: {
         user, error in
             if error != nil {
                 print(error)
-                if error!.code == STATUS_ACCOUNT_NONEXIST {
+                if error!._code == STATUS_ACCOUNT_NONEXIST {
                     self.showErrorAlert("Could not create Account", msg:"Problem creaing account.")
                 }
                 
             } else {
                 //write if let on user to ensure its not empty
-                if let userKey = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as? String {
+                if let userKey = UserDefaults.standard.value(forKey: KEY_UID) as? String {
                     if userKey == user!.uid {
-                        NSUserDefaults.standardUserDefaults().setValue(self.emailtxtField.text, forKey:"email")
-                        NSUserDefaults.standardUserDefaults().setValue(self.passwordtxtField.text, forKey: "password")
-                        self.performSegueWithIdentifier("LogTimeline", sender: nil)
+                        UserDefaults.standard.setValue(self.emailtxtField.text, forKey:"email")
+                        UserDefaults.standard.setValue(self.passwordtxtField.text, forKey: "password")
+                        self.performSegue(withIdentifier: "LogTimeline", sender: nil)
                     } else {
-                        NSUserDefaults.standardUserDefaults().setValue(self.emailtxtField.text, forKey:"email")
-                        NSUserDefaults.standardUserDefaults().setValue(self.passwordtxtField.text, forKey: "password")
-                        NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
+                        UserDefaults.standard.setValue(self.emailtxtField.text, forKey:"email")
+                        UserDefaults.standard.setValue(self.passwordtxtField.text, forKey: "password")
+                        UserDefaults.standard.setValue(user!.uid, forKey: KEY_UID)
                         let userData = ["provider":"email"]
                         DataService.ds.createFirebaseUser(user!.uid, user: userData)
-                        self.performSegueWithIdentifier("ProfileVC", sender: nil)
+                        self.performSegue(withIdentifier: "ProfileVC", sender: nil)
                     }
                 } else {
-                    NSUserDefaults.standardUserDefaults().setValue(self.emailtxtField.text, forKey:"email")
-                    NSUserDefaults.standardUserDefaults().setValue(self.passwordtxtField.text, forKey: "password")
-                    NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
+                    UserDefaults.standard.setValue(self.emailtxtField.text, forKey:"email")
+                    UserDefaults.standard.setValue(self.passwordtxtField.text, forKey: "password")
+                    UserDefaults.standard.setValue(user!.uid, forKey: KEY_UID)
                     let userData = ["provider":"email"]
                     DataService.ds.createFirebaseUser(user!.uid, user: userData)
-                    self.performSegueWithIdentifier("ProfileVC", sender: nil)
+                    self.performSegue(withIdentifier: "ProfileVC", sender: nil)
                 }
             }
             
@@ -97,29 +99,29 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
     
     //Move ScrollView for TextField
-    func textFieldDidBeginEditing(textField: UITextField) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         scrollView.setContentOffset(CGPoint(x: 0,y: 100), animated: true)
         scrollView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleDiss)))
     }
     
     //Close keyboard
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        scrollView.setContentOffset(CGPointMake(0, 0), animated: true)
+        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
         return true
     }
     
     func handleDiss() {
-        scrollView.setContentOffset(CGPointMake(0, 0), animated: true)
+        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
         view.endEditing(true)
     }
     
     //MARK: Error message to User
-    func showErrorAlert(title:String, msg:String) {
-        let alert = UIAlertController(title: title , message: msg, preferredStyle: .Alert)
-        let action = UIAlertAction(title: "ok", style:.Default, handler:nil)
+    func showErrorAlert(_ title:String, msg:String) {
+        let alert = UIAlertController(title: title , message: msg, preferredStyle: .alert)
+        let action = UIAlertAction(title: "ok", style:.default, handler:nil)
         alert.addAction(action)
-        presentViewController(alert, animated:true, completion: nil)
+        present(alert, animated:true, completion: nil)
     }
     
 

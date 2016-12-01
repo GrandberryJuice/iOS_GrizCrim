@@ -10,8 +10,8 @@ import UIKit
 
 
 class CrimeCollectionView {
-    private var _name:String!
-    private var _image:String!
+    fileprivate var _name:String!
+    fileprivate var _image:String!
     
     var name:String {
         return _name

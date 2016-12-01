@@ -31,36 +31,36 @@ class MapVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate, UICol
         mapView.delegate = self
         collectionView.delegate = self
         collectionView.dataSource = self
-        mapView.userTrackingMode = MKUserTrackingMode.Follow
+        mapView.userTrackingMode = MKUserTrackingMode.follow
         geoFireRef = FIRDatabase.database().reference()
         geoFire = GeoFire(firebaseRef:geoFireRef)
         collectionView.layer.cornerRadius = 5.0
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         locationAuthStatus()
     }
     
     func locationAuthStatus() {
-        if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             mapView.showsUserLocation = true
         } else {
             locationManager.requestWhenInUseAuthorization()
         }
     }
     
-    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        if status == CLAuthorizationStatus.AuthorizedWhenInUse {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == CLAuthorizationStatus.authorizedWhenInUse {
             mapView.showsUserLocation = true
         }
     }
 
-    func centerMapOnLocation(location:CLLocation) {
+    func centerMapOnLocation(_ location:CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, 2000, 2000)
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
-    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         if let loc = userLocation.location {
             if !mapHasCenteredOnce {
                 centerMapOnLocation(loc)
@@ -70,16 +70,16 @@ class MapVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate, UICol
     }
     
     
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         var annotationView: MKAnnotationView?
         let annoIdentifier = "Crime"
         
-        if let deqAnno = mapView.dequeueReusableAnnotationViewWithIdentifier(annoIdentifier) {
+        if let deqAnno = mapView.dequeueReusableAnnotationView(withIdentifier: annoIdentifier) {
             annotationView = deqAnno
             annotationView?.annotation = annotation
         } else {
             let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annoIdentifier)
-            av.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
+            av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
             annotationView = av
         }
         
@@ -102,7 +102,7 @@ class MapVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate, UICol
             
             let btn = UIButton()
             btn.frame = CGRect(x:0, y:0, width: 33, height: 32)
-            btn.setImage(UIImage(named:"map"), forState: .Normal)
+            btn.setImage(UIImage(named:"map"), for: UIControlState())
             annotationView.rightCalloutAccessoryView = btn
         }
         return annotationView
@@ -113,14 +113,14 @@ class MapVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate, UICol
     }
     
     
-    func mapView(mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+    func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
         let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
         showSittingOnMap(loc)
     }
     
-    func showSittingOnMap(location:CLLocation) {
-        let circleQuery = geoFire!.queryAtLocation(location, withRadius: 2.5)
-       _ = circleQuery?.observeEventType(GFEventType.KeyEntered, withBlock: { (key, location) in
+    func showSittingOnMap(_ location:CLLocation) {
+        let circleQuery = geoFire!.query(at: location, withRadius: 2.5)
+       _ = circleQuery?.observe(GFEventType.keyEntered, with: { (key, location) in
             if let key = key, let location = location {
                 let anno = CrimeAnnotation(coordinate: location.coordinate, crimeName: key)
                 self.mapView.addAnnotation(anno)
@@ -129,34 +129,33 @@ class MapVC: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate, UICol
     }
     
     
-    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if let anno = view.annotation as? CrimeAnnotation {
-  
         }
     }
     
-    @IBAction func spottedCrime(_sender:UIButton) {
+    @IBAction func spottedCrime(_ _sender:UIButton) {
         //Get the name of the crime to create a sighting
-        darkbackground.hidden = false
+        darkbackground.isHidden = false
         darkbackground.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleDismiss)))
         
-        UIView.animateWithDuration(0.5) { () -> Void in
+        UIView.animate(withDuration: 0.5, animations: { () -> Void in
             self.collectionView.reloadData()
-            self.collectionView.hidden = false
+            self.collectionView.isHidden = false
             self.view.layoutIfNeeded()
-        }
+        }) 
     }
     
     
     func handleDismiss() {
-        UIView.animateWithDuration(0.5) { () -> Void in
-            self.darkbackground.hidden = true
-            self.collectionView.hidden = true
-        }
+        UIView.animate(withDuration: 0.5, animations: { () -> Void in
+            self.darkbackground.isHidden = true
+            self.collectionView.isHidden = true
+        }) 
     }
    
-    @IBAction func goBacktoTimeline (_sender:UIButton) {
-        dismissViewControllerAnimated(true, completion: {})
+    @IBAction func goBacktoTimeline (_ _sender:UIButton) {
+        dismiss(animated: true, completion: {})
     }
     
     

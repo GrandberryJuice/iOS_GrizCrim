@@ -11,42 +11,39 @@ import Foundation
 
 extension MapVC: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-
-    
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let name = crimeNames[indexPath.row]
         let img = crimeImages[indexPath.row]
         
-        if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CrimeCell", forIndexPath: indexPath) as? CrimeCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CrimeCell", for: indexPath) as? CrimeCell {
             
             cell.configureCell(name,crimeImage:img)
             return cell
         } else {
             return UICollectionViewCell()
         }
-        
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let img = crimeNames[indexPath.row]
         let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
         createSighting(forLocation: loc, withCrimeType:img)
         
-        UIView.animateWithDuration(0.5) { () -> Void in
-            self.darkbackground.hidden = true
-            self.collectionView.hidden = true
-        }
+        UIView.animate(withDuration: 0.5, animations: { () -> Void in
+            self.darkbackground.isHidden = true
+            self.collectionView.isHidden = true
+        }) 
     }
 
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 6
     }
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake(105, 105)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 105, height: 105)
     }
 }
