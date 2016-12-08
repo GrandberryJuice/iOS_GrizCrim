@@ -434,10 +434,10 @@
                                                     <rect key="frame" x="8" y="8" width="319" height="671"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="izs-ih-ACI">
-                                                            <rect key="frame" x="3" y="3" width="321" height="655"/>
+                                                            <rect key="frame" x="3" y="3" width="322" height="655"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Kjw-gg-xNZ">
-                                                                    <rect key="frame" x="5" y="0.0" width="311" height="40"/>
+                                                                    <rect key="frame" x="5" y="0.0" width="312" height="40"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="celebrities-rocking-colorful-hair-u1" translatesAutoresizingMaskIntoConstraints="NO" id="ULn-6t-WnP">
                                                                             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -447,7 +447,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="@GrandberryJuice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0Y-Fz-LF7">
-                                                                            <rect key="frame" x="52" y="0.0" width="259" height="40"/>
+                                                                            <rect key="frame" x="52" y="0.0" width="260" height="40"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
