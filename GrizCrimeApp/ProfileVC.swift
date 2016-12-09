@@ -70,7 +70,6 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
                let userid = UserDefaults.standard.value(forKey: KEY_UID) as? String
                 DataService.ds.createFirebaseUserProfile(userid!, user: postDict)
             }
-            
         }
     }
     
