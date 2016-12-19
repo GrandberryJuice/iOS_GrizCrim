@@ -56,7 +56,7 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
     }
     
     //MARK: Back Btn Pressed
-    @IBAction func BackBtnPressed(_ sender: UIButton) {
+    @IBAction func BackBtnPressed(_ sender: UIButton?) {
         self.dismiss(animated: true, completion: {});
     }
     
@@ -76,19 +76,27 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
                 let alert = UIAlertController(title:"Post was made ", message: nil, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title:"OK", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
-                
+              
                 if let img = uploadImg.image {
                     let upload = UIImageJPEGRepresentation(img, 0.2)
                     
                     PostToFirebase(upload)
                     dismiss(animated: true, completion: {})
+                    print("I was never called")
                 } else {
+                 
                     PostToFirebase(nil)
+                  
                 }
                 
+                DispatchQueue.global(qos: .userInitiated).async {
+                    DispatchQueue.main.async {
+                        self.dismiss(animated: true, completion: {})
+                        print("I was called first")
+                    }
+                }
             }
         }
-        
     }
     
     //MARK: Pressed Camera Button
@@ -147,12 +155,19 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
                     firebasePost.setValue(postDict)
                     self.uploadImg = nil
                     self.dismiss(animated: true, completion: {})
+                    print("image call")
                 }
             }
             
         } else {
             firebasePost.setValue(postDict)
             self.dismiss(animated: true, completion: {})
+            DispatchQueue.global(qos: .userInitiated).async {
+                DispatchQueue.main.async {
+                    self.dismiss(animated: true, completion: {})
+                    print("I was called")
+                }
+            }
         }
     }
     
@@ -161,4 +176,6 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
         view.endEditing(true)
     }
     
+    
+  
 }

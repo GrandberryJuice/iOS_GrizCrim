@@ -59,6 +59,7 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
                     }
                 }
             }
+            self.posts.reverse()
             self.TableView.reloadData()
         })
         self.menuConstraints.constant = -400
@@ -78,6 +79,13 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
             self.view.layoutIfNeeded()
         }) 
     }
+   
+    
+    @IBAction func PressedPostBtn(_sender:UIButton) {
+        self.performSegue(withIdentifier: "PostVC", sender: nil)
+        
+    }
+    
     
     //MARK: Dismiss menu
     func handleDismiss() {
@@ -86,5 +94,10 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
             self.menuConstraints.constant = -400
         }) 
     }
+    
+    @IBAction func unwindToTimeLineVC(undwindSegue:UIStoryboardSegue) {
+        
+    }
+   
     
 }

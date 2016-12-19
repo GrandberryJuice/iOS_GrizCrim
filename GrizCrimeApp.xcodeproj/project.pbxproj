@@ -11,6 +11,7 @@
 		AF2927DAD00A013285BDE0A9 /* Pods_GrizCrimeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D749805CFBEA2454E41E4E86 /* Pods_GrizCrimeApp.framework */; };
 		C70C429C1D85FBF500F83C49 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C429B1D85FBF500F83C49 /* AnimationEngine.swift */; };
 		C70C429E1D862DE300F83C49 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70C429D1D862DE300F83C49 /* MenuCell.swift */; };
+		C70F85391DFB6461008E30E6 /* PolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F85381DFB6461008E30E6 /* PolicyVC.swift */; };
 		C71E009A1D04CB31007D6D99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E00991D04CB31007D6D99 /* AppDelegate.swift */; };
 		C71E009C1D04CB31007D6D99 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E009B1D04CB31007D6D99 /* LoginVC.swift */; };
 		C71E009F1D04CB31007D6D99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71E009D1D04CB31007D6D99 /* Main.storyboard */; };
@@ -74,6 +75,7 @@
 		C47BCA39F5B7156001749672 /* Pods_GrizCrimeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrizCrimeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70C429B1D85FBF500F83C49 /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
 		C70C429D1D862DE300F83C49 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		C70F85381DFB6461008E30E6 /* PolicyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyVC.swift; sourceTree = "<group>"; };
 		C71E00961D04CB31007D6D99 /* GrizCrimeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrizCrimeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71E00991D04CB31007D6D99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C71E009B1D04CB31007D6D99 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				C7CE22481D7DF13D00318B82 /* PostVC.swift */,
 				C73FD36E1D938D9500C40546 /* MapVC.swift */,
 				C7FBA5851DE0BF66006A81C8 /* AboutUsVC.swift */,
+				C70F85381DFB6461008E30E6 /* PolicyVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -659,6 +662,7 @@
 				C7CE22491D7DF13D00318B82 /* PostVC.swift in Sources */,
 				C71E009A1D04CB31007D6D99 /* AppDelegate.swift in Sources */,
 				C73FD38E1D96D47D00C40546 /* CollectionViewCrimeExten.swift in Sources */,
+				C70F85391DFB6461008E30E6 /* PolicyVC.swift in Sources */,
 				C71E00D71D054AB7007D6D99 /* Constants.swift in Sources */,
 				C7FBA5861DE0BF66006A81C8 /* AboutUsVC.swift in Sources */,
 				C7F3DDAA1D25C007006D95EA /* UIViewExten.swift in Sources */,
@@ -838,7 +842,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: KENNETH GRANDBERRY (JDJW8889MB)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JDJW8889MB;
 				FRAMEWORK_SEARCH_PATHS = (
