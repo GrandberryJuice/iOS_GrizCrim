@@ -1,163 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="huw-dO-Mk6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="huw-dO-Mk6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="dQg-2X-SKH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="nu1-Yi-rHg">
-                                <rect key="frame" x="96" y="5" width="183" height="154"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="154" id="2Xl-yG-tte"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="183" id="kmN-l6-mPG"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GrizCrime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DD-v9-XaL">
-                                <rect key="frame" x="86" y="173" width="203" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="1Ew-Ok-OKL"/>
-                                    <constraint firstAttribute="width" constant="203" id="Fxz-7c-r4a"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay in touch with some of the crime in Memphis" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPw-kO-ndh">
-                                <rect key="frame" x="55" y="225" width="264" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="Wua-4C-DMO"/>
-                                    <constraint firstAttribute="width" constant="264" id="qc2-SN-spK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email" translatesAutoresizingMaskIntoConstraints="NO" id="exy-ao-uLt">
-                                <rect key="frame" x="44" y="317" width="287" height="54"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="287" id="Hvm-FF-ZP7"/>
-                                    <constraint firstAttribute="height" constant="54" id="poj-nZ-M0s"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="DdP-FU-R8A" customClass="CustomTextField" customModule="GrizCrimeApp" customModuleProvider="target">
-                                <rect key="frame" x="55" y="329" width="270" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="270" id="225-Hl-Pxb"/>
-                                    <constraint firstAttribute="height" constant="30" id="NHB-4A-8fF"/>
-                                </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Password" translatesAutoresizingMaskIntoConstraints="NO" id="6j1-o7-7yI">
-                                <rect key="frame" x="44" y="384" width="287" height="54"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="287" id="M2u-1l-Xxw"/>
-                                    <constraint firstAttribute="height" constant="54" id="spA-4b-vUc"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uwj-ze-Xpm" customClass="CustomTextField" customModule="GrizCrimeApp" customModuleProvider="target">
-                                <rect key="frame" x="55" y="396" width="259" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="259" id="0Uo-eY-vh5"/>
-                                    <constraint firstAttribute="height" constant="30" id="a1v-kS-qPh"/>
-                                </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydt-Sd-NdQ">
-                                <rect key="frame" x="18" y="479" width="339" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="339" id="PBI-i7-dFo"/>
-                                    <constraint firstAttribute="height" constant="52" id="mh6-bc-LlF"/>
-                                </constraints>
-                                <state key="normal" image="Facebook"/>
-                                <connections>
-                                    <action selector="fbBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BYI-j5-Efp"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login / Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUe-JF-u5I">
-                                <rect key="frame" x="63" y="494" width="243" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="243" id="OoV-jH-yPC"/>
-                                    <constraint firstAttribute="height" constant="21" id="gjQ-Sj-LOU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXa-oF-VGT">
-                                <rect key="frame" x="142" y="552" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="QR1-Dv-fqI"/>
-                                    <constraint firstAttribute="height" constant="30" id="tIT-Ad-T3K"/>
-                                </constraints>
-                                <state key="normal" title="Login / Sign in"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="dQg-2X-SKH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="125-rX-uiL"/>
-                            <constraint firstItem="Uwj-ze-Xpm" firstAttribute="top" secondItem="exy-ao-uLt" secondAttribute="bottom" constant="25" id="2VA-Ct-ejr"/>
-                            <constraint firstItem="MUe-JF-u5I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Nc-pk-Wg0"/>
-                            <constraint firstItem="6j1-o7-7yI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6uA-zp-tMI"/>
-                            <constraint firstItem="DdP-FU-R8A" firstAttribute="top" secondItem="OPw-kO-ndh" secondAttribute="bottom" constant="41" id="Ee9-vE-BZF"/>
-                            <constraint firstItem="MUe-JF-u5I" firstAttribute="top" secondItem="6j1-o7-7yI" secondAttribute="bottom" constant="56" id="FOp-Fl-zZc"/>
-                            <constraint firstItem="dQg-2X-SKH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Htf-1Z-05y"/>
-                            <constraint firstItem="0DD-v9-XaL" firstAttribute="top" secondItem="nu1-Yi-rHg" secondAttribute="bottom" constant="14" id="OJq-BU-7TZ"/>
-                            <constraint firstItem="OPw-kO-ndh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PGS-zT-JvX"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dQg-2X-SKH" secondAttribute="bottom" id="SPD-ee-dcJ"/>
-                            <constraint firstItem="exy-ao-uLt" firstAttribute="top" secondItem="OPw-kO-ndh" secondAttribute="bottom" constant="29" id="Uzg-un-v57"/>
-                            <constraint firstItem="nu1-Yi-rHg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g0G-cE-k8n"/>
-                            <constraint firstItem="CXa-oF-VGT" firstAttribute="top" secondItem="Ydt-Sd-NdQ" secondAttribute="bottom" constant="21" id="jba-mu-Rrc"/>
-                            <constraint firstItem="Ydt-Sd-NdQ" firstAttribute="top" secondItem="6j1-o7-7yI" secondAttribute="bottom" constant="41" id="l5K-b9-OFy"/>
-                            <constraint firstItem="DdP-FU-R8A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lyT-zP-aen"/>
-                            <constraint firstAttribute="trailing" secondItem="dQg-2X-SKH" secondAttribute="trailing" id="nxn-JG-CTP"/>
-                            <constraint firstItem="nu1-Yi-rHg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="5" id="oWY-aY-UkT"/>
-                            <constraint firstItem="OPw-kO-ndh" firstAttribute="top" secondItem="0DD-v9-XaL" secondAttribute="bottom" constant="8" id="sz5-Ee-1gI"/>
-                            <constraint firstItem="exy-ao-uLt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t8y-mY-gTR"/>
-                            <constraint firstItem="6j1-o7-7yI" firstAttribute="top" secondItem="exy-ao-uLt" secondAttribute="bottom" constant="13" id="wKv-Hx-MeI"/>
-                            <constraint firstItem="Ydt-Sd-NdQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xQd-JV-mIq"/>
-                            <constraint firstItem="Uwj-ze-Xpm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ySm-O4-aue"/>
-                            <constraint firstItem="0DD-v9-XaL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zRQ-A4-Po3"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1406" y="172"/>
-        </scene>
         <!--ProfileVC-->
         <scene sceneID="kuf-sV-pP5">
             <objects>
@@ -600,7 +452,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="318" height="52"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vFj-de-uzO" id="8e2-fB-XWI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="318" height="51"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="318" height="52"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilemenu" translatesAutoresizingMaskIntoConstraints="NO" id="GSj-9J-AGb">
@@ -1050,7 +902,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="559" id="fvd-ny-euP"/>
                                                 </constraints>
-                                                <mutableString key="text">This End User License Agreement (“Agreement”) is between you and GrizCrime and governs use of this app made available through the Apple App Store. By installing the GrizCrime App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the &lt;App Name&gt; App.
+                                                <string key="text">This End User License Agreement (“Agreement”) is between you and GrizCrime and governs use of this app made available through the Apple App Store. By installing the GrizCrime App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the &lt;App Name&gt; App.
 
 In order to ensure GrizCrime provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the “Report as offensive” feature found under each post.
 
@@ -1088,7 +940,7 @@ GrizCrime, not Apple, is responsible for addressing any claims by you relating t
 
 9. Third Party Intellectual Property Claims
 
-GrizCrime shall not be obligated to indemnify or defend you with respect to any third party claim arising out or relating to the GrizCrime App. To the extent GrizCrime is required to provide indemnification by applicable law, GrizCrime, not Apple, shall be solely responsible for the investigation, defense, settlement and discharge of any claim that the GrizCrime App or your use of it infringes any third party intellectual property right.</mutableString>
+GrizCrime shall not be obligated to indemnify or defend you with respect to any third party claim arising out or relating to the GrizCrime App. To the extent GrizCrime is required to provide indemnification by applicable law, GrizCrime, not Apple, shall be solely responsible for the investigation, defense, settlement and discharge of any claim that the GrizCrime App or your use of it infringes any third party intellectual property right.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -1409,7 +1261,7 @@ GrizCrime shall not be obligated to indemnify or defend you with respect to any 
                                                         <rect key="frame" x="0.0" y="0.0" width="285" height="268.5"/>
                                                         <state key="normal" image=" Sign up"/>
                                                         <connections>
-                                                            <action selector="Login_Signup:" destination="huw-dO-Mk6" eventType="touchUpInside" id="JKR-uF-UDt"/>
+                                                            <action selector="Login_Signup:" destination="huw-dO-Mk6" eventType="touchUpInside" id="fbD-Xv-Nqd"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1459,8 +1311,6 @@ GrizCrime shall not be obligated to indemnify or defend you with respect to any 
         <image name=" Sign up" width="285" height="52"/>
         <image name="Background" width="375" height="667"/>
         <image name="Email" width="285" height="52"/>
-        <image name="Facebook" width="285" height="52"/>
-        <image name="Password" width="285" height="52"/>
         <image name="add pic" width="148" height="148"/>
         <image name="backBtn" width="18" height="30"/>
         <image name="camera" width="40" height="29"/>

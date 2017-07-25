@@ -824,6 +824,7 @@
 					"$(PROJECT_DIR)/GrizCrimeApp",
 				);
 				INFOPLIST_FILE = GrizCrimeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grizcrime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -850,6 +851,7 @@
 					"$(PROJECT_DIR)/GrizCrimeApp",
 				);
 				INFOPLIST_FILE = GrizCrimeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.grizcrime;
 				PRODUCT_NAME = "$(TARGET_NAME)";

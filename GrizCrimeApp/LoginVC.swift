@@ -48,6 +48,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     //MARK: Email sign in
     @IBAction func Login_Signup(_ sender: AnyObject) {
+        print("was touched ")
         FIRAuth.auth()?.createUser(withEmail: emailtxtField.text!, password: passwordtxtField.text!, completion: {
         user, error in
             if error != nil{
@@ -58,6 +59,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             }
         
         })
+        print("testing")
     }
     
     //MARK: Login in User
