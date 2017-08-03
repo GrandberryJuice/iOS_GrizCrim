@@ -18,6 +18,7 @@ extension TimeLineVC : UITableViewDataSource {
             if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
                 
                 cell.request?.cancel()
+                
                 var img: UIImage?
                 var profilePicture:UIImage?
                 
@@ -84,9 +85,9 @@ extension TimeLineVC : UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
         if tableView == self.menuTableView {
             let menuTitle = listArray[indexPath.row]
-            
             //Operate menu
             if menuTitle == "Map" {
                 performSegue(withIdentifier: "MapVC", sender: nil)
@@ -103,7 +104,23 @@ extension TimeLineVC : UITableViewDataSource {
                     self.menuConstraints.constant = -300
                 })
             }
+        } else if tableView == self.TableView {
+            let data = posts[indexPath.row]
+            
+            if let cell = tableView.cellForRow(at: indexPath) as? PostCell {
+               
+                let name = cell.username.text
+                let propic = cell.profileImage.image
+                let postImg = cell.postImage.image
+                let userpost = cell.descriptionText.text
+                
+                let dataArray = [name, propic ,postImg, userpost] as [Any]
+            
+                 performSegue(withIdentifier: "DetailPostVC", sender: dataArray)
+            }
+            
         }
+        
     }
     
 }

@@ -76,27 +76,20 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
                 let alert = UIAlertController(title:"Post was made ", message: nil, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title:"OK", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
-              
+                dismiss(animated: true, completion: {
+                    self.dismiss(animated: true, completion: nil)
+                })
+                
                 if let img = uploadImg.image {
                     let upload = UIImageJPEGRepresentation(img, 0.2)
-                    
                     PostToFirebase(upload)
                     dismiss(animated: true, completion: {})
-                    print("I was never called")
                 } else {
-                 
                     PostToFirebase(nil)
-                  
-                }
-                
-                DispatchQueue.global(qos: .userInitiated).async {
-                    DispatchQueue.main.async {
-                        self.dismiss(animated: true, completion: {})
-                        print("I was called first")
-                    }
                 }
             }
         }
+        dismiss(animated: true, completion: nil)
     }
     
     //MARK: Pressed Camera Button
@@ -175,7 +168,4 @@ class PostVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDeleg
         //Close keyboard
         view.endEditing(true)
     }
-    
-    
-  
 }

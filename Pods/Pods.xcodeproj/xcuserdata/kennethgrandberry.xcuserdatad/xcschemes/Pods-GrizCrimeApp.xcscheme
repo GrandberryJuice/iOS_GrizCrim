@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6A287DF115988A0D5EBDAE45297E4665"
+               BlueprintIdentifier = "2CA9508BD9E3127536E38F8CB0CAA310"
                BuildableName = "Pods_GrizCrimeApp.framework"
                BlueprintName = "Pods-GrizCrimeApp"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A287DF115988A0D5EBDAE45297E4665"
+            BlueprintIdentifier = "2CA9508BD9E3127536E38F8CB0CAA310"
             BuildableName = "Pods_GrizCrimeApp.framework"
             BlueprintName = "Pods-GrizCrimeApp"
             ReferencedContainer = "container:Pods.xcodeproj">

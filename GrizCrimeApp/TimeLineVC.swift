@@ -18,14 +18,13 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
     @IBOutlet weak var darkbackground: UIView!
     @IBOutlet weak var menuTableView: UITableView!
     @IBOutlet weak var tableViewMenuConstraints: NSLayoutConstraint!
-    
     @IBOutlet weak var menuview: UIView!
+    
     let listArray = ["Map","About","Close"]
     let menu = ["menuMap-1.png","menuAbout-1.png", "menuClose-1.png"]
-    
+    let buttonWasClicked = false
     var posts = [Post]()
     var profilePost = [PostProfile]()
-    
     
     static var imageCache = NSCache<AnyObject, AnyObject>()
     static var profileimageCache = NSCache<NSString,UIImage>()
@@ -47,7 +46,7 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
         menuview.layer.cornerRadius = 5.0
        
         //MARK: Firebase Data Retrieve
-        DataService.ds.Ref_Post.observe(.value, with:  { snapshot in
+        DataService.ds.Ref_Post.queryLimited(toLast: 500).observe(.value, with:  { snapshot in
             self.posts = []
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 
@@ -95,9 +94,47 @@ class TimeLineVC: UIViewController, UITableViewDelegate {
         }) 
     }
     
-    @IBAction func unwindToTimeLineVC(undwindSegue:UIStoryboardSegue) {
-        
-    }
-   
     
+    @IBAction func buttonTapped(_ sender:AnyObject) {
+        let buttonPosition:CGPoint = sender.convert(CGPoint.zero, to:TableView)
+        let indexPath = TableView.indexPathForRow(at: buttonPosition)
+    
+        let reportPost = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .actionSheet)
+        
+        let reportAction = UIAlertAction(title: "Report this Post", style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+          
+            self.deletePost(tag:(indexPath?.row)!)
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {
+            (alert: UIAlertAction!) -> Void in
+        })
+        
+        reportPost.addAction(reportAction)
+        reportPost.addAction(cancelAction)
+        self.present(reportPost, animated: true, completion: nil)
+    }
+    
+    
+    func deletePost(tag:Int) {
+        let post = self.posts[tag]
+        DataService.ds.Ref_Post.child(post.postKey).removeValue()
+    }
+    
+    @IBAction func unwindToTimeLineVC(undwindSegue:UIStoryboardSegue) {
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailPostVC" {
+            if let detailPostVC = segue.destination as? DetailPostVC {
+                if let data = sender as? [Any] {
+                    detailPostVC.name = data[0] as? String
+                    detailPostVC.post = data[3] as? String
+                    detailPostVC.userPostImg = data[2] as? UIImage
+                    detailPostVC.userPic = data[1] as? UIImage
+                }
+            }
+        }
+    }
 }

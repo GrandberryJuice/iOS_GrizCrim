@@ -12,7 +12,7 @@ target 'GrizCrimeApp' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-
+  pod 'paper-onboarding', '~> 2.0.1' 
   target 'GrizCrimeAppTests' do
     inherit! :search_paths
     # Pods for testing

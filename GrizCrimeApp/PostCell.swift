@@ -18,6 +18,8 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var descriptionText:UITextView!
     @IBOutlet weak var username:UILabel!
     @IBOutlet weak var postImage:UIImageView!
+    @IBOutlet weak var menuBtn:UIButton!
+    
     var post:Post!
     //AlamoreFire request
     var request:Request?
@@ -34,7 +36,7 @@ class PostCell: UITableViewCell {
     func configureCell(propicCrazy:UIImage?,img:UIImage?, post:Post) {
         self.post = post
         self.descriptionText.text = post.postDescription
-        
+        self.username.text = "@\(post.username)"
         
         if post.imageUrl != nil {
             if img != nil {
@@ -110,7 +112,7 @@ class PostCell: UITableViewCell {
         }
     }
     
-    //MARK Draw Circles around images
+    //MARK: Draw Circles around images
     override func draw(_ rect: CGRect) {
         profileImage.circleImage(profileImage)
         profileImage.clipsToBounds = true

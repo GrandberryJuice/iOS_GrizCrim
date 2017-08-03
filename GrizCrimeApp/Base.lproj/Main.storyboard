@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="huw-dO-Mk6">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="huw-dO-Mk6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,11 +22,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="rlU-lX-vf4">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="rlU-lX-vf4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Set up your profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-bU-Ce3">
-                                <rect key="frame" x="217" y="20" width="195" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set up your profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4x-bU-Ce3">
+                                <rect key="frame" x="90" y="20" width="195" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="50M-Y0-bzj"/>
                                     <constraint firstAttribute="height" constant="33" id="b6E-hj-kAS"/>
@@ -44,8 +44,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="add pic" translatesAutoresizingMaskIntoConstraints="NO" id="fPp-bF-Wje">
-                                <rect key="frame" x="221" y="68" width="159" height="154"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add pic" translatesAutoresizingMaskIntoConstraints="NO" id="fPp-bF-Wje">
+                                <rect key="frame" x="108" y="68" width="159" height="154"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="147" id="4yG-jt-eNH"/>
                                     <constraint firstAttribute="height" constant="200" id="9hR-GN-bCV"/>
@@ -63,8 +63,8 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtg-6B-2DZ">
-                                <rect key="frame" x="245" y="84" width="111" height="108"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtg-6B-2DZ">
+                                <rect key="frame" x="132" y="84" width="111" height="108"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="111" id="05Z-N5-i2T"/>
                                     <constraint firstAttribute="height" constant="108" id="Gzp-cV-W4D"/>
@@ -73,8 +73,8 @@
                                     <action selector="selectProfilePic:" destination="1CA-fV-ix8" eventType="touchUpInside" id="4Yq-sD-HnZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add Profile Picture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2H-1y-9oG">
-                                <rect key="frame" x="213" y="230" width="195" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Profile Picture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2H-1y-9oG">
+                                <rect key="frame" x="90.5" y="230" width="194.5" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="IKN-fY-Hjv"/>
                                     <constraint firstAttribute="width" constant="270" id="wRN-dI-nJc"/>
@@ -90,7 +90,7 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="o8U-3z-Fhe">
-                                <rect key="frame" x="163" y="278" width="307" height="52"/>
+                                <rect key="frame" x="163" y="278" width="306.5" height="52"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZ2-pR-rdA">
                                         <rect key="frame" x="0.0" y="0.0" width="16.5" height="52"/>
@@ -119,8 +119,8 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Create a username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJl-jt-u7P">
-                                <rect key="frame" x="223" y="338" width="174" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJl-jt-u7P">
+                                <rect key="frame" x="100.5" y="318" width="174" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="OJs-4k-ZGx"/>
                                     <constraint firstAttribute="height" constant="33" id="b5o-bt-sV7"/>
@@ -135,8 +135,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Os-He-kvr">
-                                <rect key="frame" x="172" y="528" width="285" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Os-He-kvr">
+                                <rect key="frame" x="45" y="595" width="285" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="B5q-VA-Ce4"/>
                                 </constraints>
@@ -146,7 +146,7 @@
                                 </state>
                                 <connections>
                                     <action selector="PressedContinue:" destination="1CA-fV-ix8" eventType="touchUpInside" id="fJg-vX-b6J"/>
-                                    <segue destination="Eaq-CT-KWr" kind="show" identifier="TimelineVC" id="thV-sH-5Vj"/>
+                                    <segue destination="in5-mG-Ja8" kind="show" id="hel-5n-c1k"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -197,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfM-44-kgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-263" y="1157"/>
+            <point key="canvasLocation" x="-1047" y="1182"/>
         </scene>
         <!--Time LineVC-->
         <scene sceneID="jBm-uN-s2q">
@@ -275,35 +275,49 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" alpha="0.10000000000000001" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="419" id="My3-ue-tc7" customClass="PostCell" customModule="GrizCrimeApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.10000000000000001" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="419" id="My3-ue-tc7" customClass="PostCell" customModule="GrizCrimeApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="419"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="My3-ue-tc7" id="GWZ-5A-kyE">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="419"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGn-KC-ZQq">
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGn-KC-ZQq">
                                                     <rect key="frame" x="8" y="8" width="319" height="671"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="izs-ih-ACI">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="izs-ih-ACI">
                                                             <rect key="frame" x="3" y="3" width="322" height="654"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Kjw-gg-xNZ">
                                                                     <rect key="frame" x="5" y="0.0" width="312" height="40"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="celebrities-rocking-colorful-hair-u1" translatesAutoresizingMaskIntoConstraints="NO" id="ULn-6t-WnP">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULn-6t-WnP">
                                                                             <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="40" id="Z3B-X5-g0m"/>
                                                                                 <constraint firstAttribute="height" constant="40" id="xGc-fY-OZt"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="@GrandberryJuice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0Y-Fz-LF7">
-                                                                            <rect key="frame" x="52" y="0.0" width="260" height="40"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0Y-Fz-LF7">
+                                                                            <rect key="frame" x="52" y="0.0" width="218" height="40"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
+                                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4c-hu-Mgi">
+                                                                            <rect key="frame" x="282" y="0.0" width="30" height="40"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="30" id="N5s-lD-8hT"/>
+                                                                                <constraint firstAttribute="height" constant="40" id="UiX-Ld-aco"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                            <state key="normal" title="...">
+                                                                                <color key="titleColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </state>
+                                                                            <connections>
+                                                                                <action selector="buttonTapped:" destination="Eaq-CT-KWr" eventType="touchUpInside" id="x7L-aJ-3aq"/>
+                                                                            </connections>
+                                                                        </button>
                                                                     </subviews>
                                                                     <constraints>
                                                                         <constraint firstItem="ULn-6t-WnP" firstAttribute="top" secondItem="Kjw-gg-xNZ" secondAttribute="top" id="4Hw-eh-aCm"/>
@@ -427,8 +441,10 @@
                                         <connections>
                                             <outlet property="ContentView" destination="GWZ-5A-kyE" id="Xsg-2u-AsD"/>
                                             <outlet property="descriptionText" destination="SAe-sW-CQm" id="W62-EG-I5q"/>
+                                            <outlet property="menuBtn" destination="S4c-hu-Mgi" id="TKq-ty-51h"/>
                                             <outlet property="postImage" destination="3t1-j9-eJJ" id="Jib-7P-HYM"/>
                                             <outlet property="profileImage" destination="ULn-6t-WnP" id="Ejl-RA-fDh"/>
+                                            <outlet property="username" destination="b0Y-Fz-LF7" id="IVo-uD-Roh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -448,7 +464,7 @@
                                         </constraints>
                                         <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="52" id="vFj-de-uzO" customClass="MenuCell" customModule="GrizCrimeApp" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="52" id="vFj-de-uzO" customClass="MenuCell" customModule="GrizCrimeApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="318" height="52"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vFj-de-uzO" id="8e2-fB-XWI">
@@ -577,6 +593,7 @@
                         <segue destination="IsF-Qk-fN1" kind="show" identifier="MapVC" id="Vl3-QT-aOJ"/>
                         <segue destination="GOM-Lb-pjl" kind="show" identifier="AboutUsVC" id="kp6-Wn-NuQ"/>
                         <segue destination="MTw-fv-cBH" kind="show" identifier="PostVC" id="6GY-gh-C91"/>
+                        <segue destination="Kf8-xq-lVb" kind="show" identifier="DetailPostVC" id="t9s-oF-19P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8k-eA-ojW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -902,7 +919,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="559" id="fvd-ny-euP"/>
                                                 </constraints>
-                                                <string key="text">This End User License Agreement (“Agreement”) is between you and GrizCrime and governs use of this app made available through the Apple App Store. By installing the GrizCrime App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the &lt;App Name&gt; App.
+                                                <string key="text">This End User License Agreement (“Agreement”) is between you and GrizCrime and governs use of this app made available through the Apple App Store. By installing the GrizCrime App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the Griz Crime App.
 
 In order to ensure GrizCrime provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the “Report as offensive” feature found under each post.
 
@@ -1158,7 +1175,235 @@ GrizCrime shall not be obligated to indemnify or defend you with respect to any 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q89-4P-CGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1393" y="42"/>
+            <point key="canvasLocation" x="1492" y="-466"/>
+        </scene>
+        <!--DetailPostVC-->
+        <scene sceneID="q6t-Ns-UPm">
+            <objects>
+                <viewController title="DetailPostVC" id="Kf8-xq-lVb" customClass="DetailPostVC" customModule="GrizCrimeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h40-Jo-fIl"/>
+                        <viewControllerLayoutGuide type="bottom" id="A9J-g8-X8Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Ma-bS-aLr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPZ-Md-aBd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thH-Oj-fyg">
+                                        <rect key="frame" x="20" y="22" width="18" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="20v-Dt-gXi"/>
+                                            <constraint firstAttribute="width" constant="18" id="J3N-Ih-wiU"/>
+                                        </constraints>
+                                        <state key="normal" image="backBtn"/>
+                                        <connections>
+                                            <action selector="BackBtnPressed:" destination="MTw-fv-cBH" eventType="touchUpInside" id="yFz-RC-zCN"/>
+                                            <action selector="backButtonPressed:" destination="Kf8-xq-lVb" eventType="touchUpInside" id="1MM-Z8-K1e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="thH-Oj-fyg" firstAttribute="leading" secondItem="uPZ-Md-aBd" secondAttribute="leading" constant="20" id="8Ej-hf-NHJ"/>
+                                    <constraint firstItem="thH-Oj-fyg" firstAttribute="top" secondItem="uPZ-Md-aBd" secondAttribute="top" constant="22" id="PjJ-Nv-CR3"/>
+                                    <constraint firstAttribute="height" constant="64" id="Q7k-ML-B0x"/>
+                                    <constraint firstAttribute="height" constant="64" id="wLh-SX-d05"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Q7k-ML-B0x"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RL8-gV-Xir">
+                                <rect key="frame" x="16" y="145" width="343" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="INo-pf-BEU"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eEA-A2-ZYd">
+                                <rect key="frame" x="16" y="72" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="NQA-mD-nUZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="ShK-8v-qJs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fn1-DI-rVQ">
+                                <rect key="frame" x="29" y="290" width="318" height="272"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77P-gJ-YtH">
+                                <rect key="frame" x="73" y="74" width="268" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Glz-rT-wla"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RL8-gV-Xir" firstAttribute="top" secondItem="eEA-A2-ZYd" secondAttribute="bottom" constant="33" id="09b-rF-85g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fn1-DI-rVQ" secondAttribute="trailing" constant="12" id="10P-94-hcG"/>
+                            <constraint firstAttribute="trailing" secondItem="uPZ-Md-aBd" secondAttribute="trailing" id="5WF-xo-pT2"/>
+                            <constraint firstItem="eEA-A2-ZYd" firstAttribute="top" secondItem="uPZ-Md-aBd" secondAttribute="bottom" constant="8" id="8jB-Pg-tBc"/>
+                            <constraint firstItem="fn1-DI-rVQ" firstAttribute="top" secondItem="RL8-gV-Xir" secondAttribute="bottom" constant="17" id="CfF-DZ-eWO"/>
+                            <constraint firstItem="77P-gJ-YtH" firstAttribute="leading" secondItem="eEA-A2-ZYd" secondAttribute="trailing" constant="17" id="OUW-OK-sqQ"/>
+                            <constraint firstItem="fn1-DI-rVQ" firstAttribute="leading" secondItem="4Ma-bS-aLr" secondAttribute="leadingMargin" constant="13" id="Qwu-09-zfD"/>
+                            <constraint firstItem="RL8-gV-Xir" firstAttribute="trailing" secondItem="4Ma-bS-aLr" secondAttribute="trailingMargin" id="SpM-g1-qWS"/>
+                            <constraint firstItem="eEA-A2-ZYd" firstAttribute="leading" secondItem="4Ma-bS-aLr" secondAttribute="leadingMargin" id="UyF-81-DW7"/>
+                            <constraint firstItem="RL8-gV-Xir" firstAttribute="leading" secondItem="4Ma-bS-aLr" secondAttribute="leadingMargin" id="Xiu-CL-J27"/>
+                            <constraint firstItem="uPZ-Md-aBd" firstAttribute="leading" secondItem="4Ma-bS-aLr" secondAttribute="leading" id="adM-ls-OaI"/>
+                            <constraint firstItem="A9J-g8-X8Y" firstAttribute="top" secondItem="fn1-DI-rVQ" secondAttribute="bottom" constant="105" id="kci-j8-sau"/>
+                            <constraint firstItem="77P-gJ-YtH" firstAttribute="top" secondItem="uPZ-Md-aBd" secondAttribute="bottom" constant="10" id="lmK-Nt-Nby"/>
+                            <constraint firstItem="uPZ-Md-aBd" firstAttribute="top" secondItem="4Ma-bS-aLr" secondAttribute="top" id="pKj-Qj-ew5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="77P-gJ-YtH" secondAttribute="trailing" constant="18" id="r5r-kZ-0Tb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="postImg" destination="fn1-DI-rVQ" id="TZp-gz-tMs"/>
+                        <outlet property="profilePic" destination="eEA-A2-ZYd" id="fca-NZ-Nqn"/>
+                        <outlet property="userPost" destination="RL8-gV-Xir" id="AYc-bS-JKD"/>
+                        <outlet property="username" destination="77P-gJ-YtH" id="U8M-GO-5Kt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAn-fv-fHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605.5999999999999" y="279.31034482758622"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1wZ-Hq-g55">
+            <objects>
+                <viewController id="in5-mG-Ja8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xoN-Gi-jRq"/>
+                        <viewControllerLayoutGuide type="bottom" id="pny-2S-h8X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4SO-Ht-e19">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7M-du-B7E">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="1wN-EW-NRp"/>
+                                    <constraint firstAttribute="height" constant="64" id="B09-ZQ-Xgt"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="B09-ZQ-Xgt"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please agree to the terms and conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1C-QG-oUk">
+                                <rect key="frame" x="16" y="76" width="343" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="uUh-9C-Egu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9AV-Ha-I7M">
+                                <rect key="frame" x="0.0" y="164" width="375" height="409"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This End User License Agreement (“Agreement”) is between you and GrizCrime and governs use of this app made available through the Apple App Store. By installing the GrizCrime App, you agree to be bound by this Agreement and understand that there is no tolerance for objectionable content. If you do not agree with the terms and conditions of this Agreement, you are not entitled to use the Griz Crime App.
+
+In order to ensure GrizCrime provides the best experience possible for everyone, we strongly enforce a no tolerance policy for objectionable content. If you see inappropriate content, please use the “Report as offensive” feature found under each post.
+
+1. Parties
+
+This Agreement is between you and GrizCrime only, and not Apple, Inc. (“Apple”). Notwithstanding the foregoing, you acknowledge that Apple and its subsidiaries are third party beneficiaries of this Agreement and Apple has the right to enforce this Agreement against you. GrizCrime, not Apple, is solely responsible for the GrizCrime App and its content.
+
+2. Privacy
+
+GrizCrime may collect and use information about your usage of the GrizCrime App, including certain types of information from and about your device. GrizCrime may use this information, as long as it is in a form that does not personally identify you, to measure the use and performance of the GrizCrime App.
+
+3. Limited License
+
+GrizCrime grants you a limited, non-exclusive, non-transferable, revocable license to use the GrizCrime App for your personal, non-commercial purposes. You may only use the GrizCrime App on Apple devices that you own or control and as permitted by the App Store Terms of Service.
+
+4. Age Restrictions
+
+By using the GrizCrime App, you represent and warrant that (a) you are 17 years of age or older and you agree to be bound by this Agreement; (b) if you are under 17 years of age, you have obtained verifiable consent from a parent or legal guardian; and (c) your use of the GrizCrime App does not violate any applicable law or regulation. Your access to the GrizCrime App may be terminated without warning if GrizCrime believes, in its sole discretion, that you are under the age of 17 years and have not obtained verifiable consent from a parent or legal guardian. If you are a parent or legal guardian and you provide your consent to your child’s use of the GrizCrime App, you agree to be bound by this Agreement in respect to your child’s use of the GrizCrime App.
+
+5. Objectionable Content Policy
+
+Content may not be submitted to GrizCrime, who will moderate all content and ultimately decide whether or not to post a submission to the extent such content includes, is in conjunction with, or alongside any, Objectionable Content. Objectionable Content includes, but is not limited to: (i) sexually explicit materials; (ii) obscene, defamatory, libelous, slanderous, violent and/or unlawful content or profanity; (iii) content that infringes upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary right, or that is deceptive or fraudulent; (iv) content that promotes the use or sale of illegal or regulated substances, tobacco products, ammunition and/or firearms; and (v) gambling, including without limitation, any online casino, sports books, bingo or poker.
+
+6. Warranty
+
+GrizCrime disclaims all warranties about the GrizCrime App to the fullest extent permitted by law. To the extent any warranty exists under law that cannot be disclaimed, GrizCrime, not Apple, shall be solely responsible for such warranty.
+
+7. Maintenance and Support
+
+GrizCrime does provide minimal maintenance or support for it but not to the extent that any maintenance or support is required by applicable law, GrizCrime, not Apple, shall be obligated to furnish any such maintenance or support.
+
+8. Product Claims
+
+GrizCrime, not Apple, is responsible for addressing any claims by you relating to the GrizCrime App or use of it, including, but not limited to: (i) any product liability claim; (ii) any claim that the GrizCrime App fails to conform to any applicable legal or regulatory requirement; and (iii) any claim arising under consumer protection or similar legislation. Nothing in this Agreement shall be deemed an admission that you may have such claims.
+
+9. Third Party Intellectual Property Claims
+
+GrizCrime shall not be obligated to indemnify or defend you with respect to any third party claim arising out or relating to the GrizCrime App. To the extent GrizCrime is required to provide indemnification by applicable law, GrizCrime, not Apple, shall be solely responsible for the investigation, defense, settlement and discharge of any claim that the GrizCrime App or your use of it infringes any third party intellectual property right.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GrizCrime App End User License Agreement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGK-IE-4x1">
+                                <rect key="frame" x="16" y="128" width="343" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="CLZ-pH-EZn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPl-pQ-sag">
+                                <rect key="frame" x="80" y="622" width="215" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="7eP-so-KGd"/>
+                                </constraints>
+                                <state key="normal" title="I Agree">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Eaq-CT-KWr" kind="show" id="Mxb-YK-DBJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j7M-du-B7E" firstAttribute="leading" secondItem="4SO-Ht-e19" secondAttribute="leading" id="0Cb-vs-ZaW"/>
+                            <constraint firstItem="E1C-QG-oUk" firstAttribute="top" secondItem="j7M-du-B7E" secondAttribute="bottom" constant="12" id="0gM-or-YCT"/>
+                            <constraint firstItem="9AV-Ha-I7M" firstAttribute="top" secondItem="yGK-IE-4x1" secondAttribute="bottom" constant="19" id="Ast-qc-a95"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iPl-pQ-sag" secondAttribute="trailing" constant="64" id="E1L-SD-gZS"/>
+                            <constraint firstAttribute="trailing" secondItem="j7M-du-B7E" secondAttribute="trailing" id="I2r-b0-SKx"/>
+                            <constraint firstItem="j7M-du-B7E" firstAttribute="top" secondItem="4SO-Ht-e19" secondAttribute="top" id="I7O-d1-E2l"/>
+                            <constraint firstItem="yGK-IE-4x1" firstAttribute="leading" secondItem="4SO-Ht-e19" secondAttribute="leadingMargin" id="Oe5-E4-MZj"/>
+                            <constraint firstItem="yGK-IE-4x1" firstAttribute="top" secondItem="E1C-QG-oUk" secondAttribute="bottom" constant="14" id="Vve-hw-9rb"/>
+                            <constraint firstItem="9AV-Ha-I7M" firstAttribute="leading" secondItem="4SO-Ht-e19" secondAttribute="leading" id="dac-pd-nxc"/>
+                            <constraint firstItem="E1C-QG-oUk" firstAttribute="trailing" secondItem="4SO-Ht-e19" secondAttribute="trailingMargin" id="dkV-X0-Y9w"/>
+                            <constraint firstItem="iPl-pQ-sag" firstAttribute="leading" secondItem="4SO-Ht-e19" secondAttribute="leadingMargin" constant="64" id="hA3-iN-abt"/>
+                            <constraint firstAttribute="trailing" secondItem="9AV-Ha-I7M" secondAttribute="trailing" id="l1X-TC-EHk"/>
+                            <constraint firstItem="yGK-IE-4x1" firstAttribute="trailing" secondItem="4SO-Ht-e19" secondAttribute="trailingMargin" id="o3j-2N-opD"/>
+                            <constraint firstItem="iPl-pQ-sag" firstAttribute="top" secondItem="9AV-Ha-I7M" secondAttribute="bottom" constant="49" id="oJv-um-QX5"/>
+                            <constraint firstItem="E1C-QG-oUk" firstAttribute="leading" secondItem="4SO-Ht-e19" secondAttribute="leadingMargin" id="oUJ-72-5hF"/>
+                            <constraint firstItem="pny-2S-h8X" firstAttribute="top" secondItem="iPl-pQ-sag" secondAttribute="bottom" constant="8" id="zGN-SO-VmH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZgL-wj-31Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183.19999999999999" y="1187.8560719640182"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="HiU-1s-bg4">
@@ -1298,13 +1543,13 @@ GrizCrime shall not be obligated to indemnify or defend you with respect to any 
                         <outlet property="emailtxtField" destination="cJd-bI-Kcs" id="CaO-R3-Uyc"/>
                         <outlet property="passwordtxtField" destination="b22-Xo-lzY" id="8rq-1V-u2A"/>
                         <outlet property="scrollView" destination="8h8-aB-2Gd" id="6yL-u4-F5K"/>
-                        <segue destination="1CA-fV-ix8" kind="show" identifier="ProfileVC" id="62z-JA-F5B"/>
                         <segue destination="Eaq-CT-KWr" kind="show" identifier="LogTimeline" id="eJM-RK-y5x"/>
+                        <segue destination="1CA-fV-ix8" kind="show" identifier="ProfileVC" id="dBq-fZ-937"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EkN-aU-bGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="42"/>
+            <point key="canvasLocation" x="-1046" y="-12"/>
         </scene>
     </scenes>
     <resources>
@@ -1314,7 +1559,6 @@ GrizCrime shall not be obligated to indemnify or defend you with respect to any 
         <image name="add pic" width="148" height="148"/>
         <image name="backBtn" width="18" height="30"/>
         <image name="camera" width="40" height="29"/>
-        <image name="celebrities-rocking-colorful-hair-u1" width="480" height="253"/>
         <image name="collectionTheif" width="70" height="70"/>
         <image name="logo" width="183" height="183"/>
         <image name="logogriz" width="54" height="54"/>

@@ -35,6 +35,7 @@ PODS:
   - GoogleSymbolUtilities (1.1.1)
   - GoogleUtilities (1.3.1):
     - GoogleSymbolUtilities (~> 1.0)
+  - paper-onboarding (2.0.1)
   - pop (1.0.9)
 
 DEPENDENCIES:
@@ -43,6 +44,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - paper-onboarding (~> 2.0.1)
   - pop (~> 1.0)
 
 SPEC CHECKSUMS:
@@ -57,8 +59,9 @@ SPEC CHECKSUMS:
   GoogleNetworkingUtilities: 3e83269048cfb498dc7ec83ab36813360965c74f
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
+  paper-onboarding: a8e001214d9ce9decf78e160b3823f396dbd51ac
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
 
-PODFILE CHECKSUM: b252af003b3a7a38ad0b8d271b2dd1f2cc0662eb
+PODFILE CHECKSUM: 6238cc2c1e0ce4cc845d7b38dbe2c222efd63180
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.1.1
