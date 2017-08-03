@@ -35,6 +35,8 @@
 		C73FD38C1D96D17A00C40546 /* CrimeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FD38B1D96D17A00C40546 /* CrimeCollectionView.swift */; };
 		C73FD38E1D96D47D00C40546 /* CollectionViewCrimeExten.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FD38D1D96D47D00C40546 /* CollectionViewCrimeExten.swift */; };
 		C73FD3901D9CC33A00C40546 /* PostProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73FD38F1D9CC33A00C40546 /* PostProfile.swift */; };
+		C798F2351F2E8DD800AC7074 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798F2341F2E8DD800AC7074 /* OnboardingVC.swift */; };
+		C798F2371F2EC18800AC7074 /* DetailPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C798F2361F2EC18800AC7074 /* DetailPostVC.swift */; };
 		C7CE22471D7DEEBD00318B82 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CE22461D7DEEBD00318B82 /* ProfileVC.swift */; };
 		C7CE22491D7DF13D00318B82 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CE22481D7DF13D00318B82 /* PostVC.swift */; };
 		C7F3DD9A1D236786006D95EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7F3DD991D236786006D95EA /* GoogleService-Info.plist */; };
@@ -116,6 +118,8 @@
 		C73FD38B1D96D17A00C40546 /* CrimeCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeCollectionView.swift; sourceTree = "<group>"; };
 		C73FD38D1D96D47D00C40546 /* CollectionViewCrimeExten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCrimeExten.swift; sourceTree = "<group>"; };
 		C73FD38F1D9CC33A00C40546 /* PostProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostProfile.swift; sourceTree = "<group>"; };
+		C798F2341F2E8DD800AC7074 /* OnboardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		C798F2361F2EC18800AC7074 /* DetailPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPostVC.swift; sourceTree = "<group>"; };
 		C7CE22461D7DEEBD00318B82 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C7CE22481D7DF13D00318B82 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		C7F3DD991D236786006D95EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -269,6 +273,8 @@
 				C73FD36E1D938D9500C40546 /* MapVC.swift */,
 				C7FBA5851DE0BF66006A81C8 /* AboutUsVC.swift */,
 				C70F85381DFB6461008E30E6 /* PolicyVC.swift */,
+				C798F2341F2E8DD800AC7074 /* OnboardingVC.swift */,
+				C798F2361F2EC18800AC7074 /* DetailPostVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -381,12 +387,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C71E00BE1D04CB32007D6D99 /* Build configuration list for PBXNativeTarget "GrizCrimeApp" */;
 			buildPhases = (
-				2099B2178A3DF5ACEEA3EEA7 /* 📦 Check Pods Manifest.lock */,
+				2099B2178A3DF5ACEEA3EEA7 /* [CP] Check Pods Manifest.lock */,
 				C71E00921D04CB31007D6D99 /* Sources */,
 				C71E00931D04CB31007D6D99 /* Frameworks */,
 				C71E00941D04CB31007D6D99 /* Resources */,
-				9606386DF7DA4E3976DA2B56 /* 📦 Embed Pods Frameworks */,
-				C20FB9C59386A45BEA9020EF /* 📦 Copy Pods Resources */,
+				9606386DF7DA4E3976DA2B56 /* [CP] Embed Pods Frameworks */,
+				C20FB9C59386A45BEA9020EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -401,12 +407,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C71E00C11D04CB32007D6D99 /* Build configuration list for PBXNativeTarget "GrizCrimeAppTests" */;
 			buildPhases = (
-				08800B38E1D7394738620228 /* 📦 Check Pods Manifest.lock */,
+				08800B38E1D7394738620228 /* [CP] Check Pods Manifest.lock */,
 				C71E00A61D04CB32007D6D99 /* Sources */,
 				C71E00A71D04CB32007D6D99 /* Frameworks */,
 				C71E00A81D04CB32007D6D99 /* Resources */,
-				30F18AD73F1ED08B5481FAEF /* 📦 Embed Pods Frameworks */,
-				D5557EA5C1E8011B7DD973E2 /* 📦 Copy Pods Resources */,
+				30F18AD73F1ED08B5481FAEF /* [CP] Embed Pods Frameworks */,
+				D5557EA5C1E8011B7DD973E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -422,11 +428,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C71E00C41D04CB32007D6D99 /* Build configuration list for PBXNativeTarget "GrizCrimeAppUITests" */;
 			buildPhases = (
-				024D76CDDE52840A77C7FBCB /* 📦 Check Pods Manifest.lock */,
+				024D76CDDE52840A77C7FBCB /* [CP] Check Pods Manifest.lock */,
 				C71E00B11D04CB32007D6D99 /* Sources */,
 				C71E00B21D04CB32007D6D99 /* Frameworks */,
 				C71E00B31D04CB32007D6D99 /* Resources */,
-				FCC6DABA0F26DAA773D38FD0 /* 📦 Copy Pods Resources */,
+				FCC6DABA0F26DAA773D38FD0 /* [CP] Copy Pods Resources */,
+				81EF5E9E51F9AE3DD00BC161 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -515,59 +522,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		024D76CDDE52840A77C7FBCB /* 📦 Check Pods Manifest.lock */ = {
+		024D76CDDE52840A77C7FBCB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		08800B38E1D7394738620228 /* 📦 Check Pods Manifest.lock */ = {
+		08800B38E1D7394738620228 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		2099B2178A3DF5ACEEA3EEA7 /* 📦 Check Pods Manifest.lock */ = {
+		2099B2178A3DF5ACEEA3EEA7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		30F18AD73F1ED08B5481FAEF /* 📦 Embed Pods Frameworks */ = {
+		30F18AD73F1ED08B5481FAEF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,14 +582,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrizCrimeAppTests/Pods-GrizCrimeAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9606386DF7DA4E3976DA2B56 /* 📦 Embed Pods Frameworks */ = {
+		81EF5E9E51F9AE3DD00BC161 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrizCrimeAppUITests/Pods-GrizCrimeAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9606386DF7DA4E3976DA2B56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,14 +612,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C20FB9C59386A45BEA9020EF /* 📦 Copy Pods Resources */ = {
+		C20FB9C59386A45BEA9020EF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,14 +627,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrizCrimeApp/Pods-GrizCrimeApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D5557EA5C1E8011B7DD973E2 /* 📦 Copy Pods Resources */ = {
+		D5557EA5C1E8011B7DD973E2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,14 +642,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrizCrimeAppTests/Pods-GrizCrimeAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FCC6DABA0F26DAA773D38FD0 /* 📦 Copy Pods Resources */ = {
+		FCC6DABA0F26DAA773D38FD0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,6 +669,7 @@
 				C7CE22471D7DEEBD00318B82 /* ProfileVC.swift in Sources */,
 				C7F3DD9E1D24E127006D95EA /* TableViewExten.swift in Sources */,
 				C7F3DDAC1D2CB14C006D95EA /* MaterialView.swift in Sources */,
+				C798F2351F2E8DD800AC7074 /* OnboardingVC.swift in Sources */,
 				C73FD38C1D96D17A00C40546 /* CrimeCollectionView.swift in Sources */,
 				C7F3DDAE1D2F7869006D95EA /* Post.swift in Sources */,
 				C73FD3821D94B71500C40546 /* GeoFire.m in Sources */,
@@ -672,6 +695,7 @@
 				C73FD38A1D96CEB200C40546 /* CrimeCell.swift in Sources */,
 				C73FD3841D94B71500C40546 /* GFGeoHash.m in Sources */,
 				C7F3DDA61D25779E006D95EA /* CustomTextField.swift in Sources */,
+				C798F2371F2EC18800AC7074 /* DetailPostVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

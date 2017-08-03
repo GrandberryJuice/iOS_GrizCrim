@@ -48,18 +48,16 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     //MARK: Email sign in
     @IBAction func Login_Signup(_ sender: AnyObject) {
-        print("was touched ")
         FIRAuth.auth()?.createUser(withEmail: emailtxtField.text!, password: passwordtxtField.text!, completion: {
         user, error in
             if error != nil{
                 self.login()
             } else {
-                print("User Created")
+                //created User
                 self.login()
             }
         
         })
-        print("testing")
     }
     
     //MARK: Login in User
@@ -67,7 +65,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         FIRAuth.auth()?.signIn(withEmail: emailtxtField.text!, password: passwordtxtField.text!, completion: {
         user, error in
             if error != nil {
-                print(error)
                 if error!._code == STATUS_ACCOUNT_NONEXIST {
                     self.showErrorAlert("Could not create Account", msg:"Problem creaing account.")
                 }

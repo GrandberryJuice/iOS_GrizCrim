@@ -12,17 +12,12 @@ class CrimeCell: UICollectionViewCell {
     @IBOutlet weak var thumbImg:UIImageView!
     @IBOutlet weak var thumbLabel:UILabel!
     
-//    var crimeVC:CrimeCollectionView!
-    
-    
     required init?(coder aDecoder:NSCoder) {
         super.init(coder: aDecoder)
         layer.cornerRadius = 5.0
     }
     
     func configureCell(_ crimeName:String,crimeImage:String) {
-//        self.crimeVC = crime
-        
         thumbImg.image = UIImage(named:crimeImage)
         thumbLabel.text = crimeName
     }

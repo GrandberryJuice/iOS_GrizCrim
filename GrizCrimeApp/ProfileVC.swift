@@ -49,7 +49,6 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
             "username": username.text! as AnyObject
         ]
         
-        
         let imgUid = UUID().uuidString
         DataService.ds.Ref_Profile_Images.child(imgUid)
         let metaData = FIRStorageMetadata()
